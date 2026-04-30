@@ -153,7 +153,24 @@ async function sendWithRetry(page, contact, maxTries = 2) {
   log('Iniciando automação...');
   const contacts = await loadContacts();
 
-  const browser = await chromium.launch({ headless: false });
+  // EXECUTAR EM PRODUÇÃO  
+  const browser = await chromium.launch({
+    headless: true,
+    args: [
+      '--disable-blink-features=AutomationControlled',
+      '--no-sandbox',
+      '--disable-setuid-sandbox'
+    ]
+  });
+  // CASO QUEIRA FAZER TESTES VENDO RODANDO, USAR BLOCO ABAIXO
+  // const browser = await chromium.launch({
+  //headless: false,
+  //args: [
+  //  '--disable-background-timer-throttling',
+  //  '--disable-backgrounding-occluded-windows',
+  //  '--disable-renderer-backgrounding'
+  //]
+  //}); 
   let context;
 
   if (fs.existsSync(SESSION_FILE)) {
@@ -163,7 +180,7 @@ async function sendWithRetry(page, contact, maxTries = 2) {
     log('Sem sessão. Fazendo login automático...');
     context = await browser.newContext();
     const page = await context.newPage();
-    
+
     await page.goto('https://www.linkedin.com/login', { waitUntil: 'domcontentloaded' });
     await sleep(2000);
 
@@ -184,7 +201,7 @@ async function sendWithRetry(page, contact, maxTries = 2) {
 
     await context.storageState({ path: SESSION_FILE });
     log('Sessão salva! Não precisará logar novamente.');
-}
+  }
 
   const page = await context.newPage();
 
