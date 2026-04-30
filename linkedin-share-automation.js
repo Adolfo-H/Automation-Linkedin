@@ -160,15 +160,31 @@ async function sendWithRetry(page, contact, maxTries = 2) {
     log('Sessão encontrada. Entrando direto...');
     context = await browser.newContext({ storageState: SESSION_FILE });
   } else {
-    log('Sem sessão. Realize o login no navegador...');
+    log('Sem sessão. Fazendo login automático...');
     context = await browser.newContext();
     const page = await context.newPage();
-    await page.goto('https://www.linkedin.com/login');
-    log('Aguardando login manual...');
-    await page.waitForURL('**/feed/**', { timeout: 120000 });
+    
+    await page.goto('https://www.linkedin.com/login', { waitUntil: 'domcontentloaded' });
+    await sleep(2000);
+
+    // Preenche email
+    await page.locator('#username').fill(CONFIG.linkedinEmail);
+    await sleep(1000);
+
+    // Preenche senha
+    await page.locator('#password').fill(CONFIG.linkedinPassword);
+    await sleep(1000);
+
+    // Clica em entrar
+    await page.locator('button[type="submit"]').click();
+    log('Credenciais enviadas. Aguardando feed...');
+
+    // Aguarda carregar o feed (até 60 segundos)
+    await page.waitForURL('**/feed/**', { timeout: 60000 });
+
     await context.storageState({ path: SESSION_FILE });
-    log('Sessão salva!');
-  }
+    log('Sessão salva! Não precisará logar novamente.');
+}
 
   const page = await context.newPage();
 
