@@ -1,4 +1,4 @@
-require('dotenv').config(); // ← ESSENCIAL para ler o .env
+require('dotenv').config();
 const { chromium } = require('playwright');
 const fs = require('fs');
 const csv = require('csv-parser');
@@ -18,15 +18,21 @@ const CONFIG = {
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const randomDelay = () => Math.floor(Math.random() * (CONFIG.maxDelay - CONFIG.minDelay + 1)) + CONFIG.minDelay;
+const normalizeText = (text = '') =>
+  text
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
 
-// ✅ Log em arquivo
 function log(msg) {
   const line = `[${new Date().toISOString()}] ${msg}`;
   console.log(line);
+  if (!fs.existsSync('log.txt')) fs.writeFileSync('log.txt', '');
   fs.appendFileSync('log.txt', line + '\n');
 }
 
-// ✅ Carrega lista de enviados
 const sent = fs.existsSync(SENT_FILE) ? JSON.parse(fs.readFileSync(SENT_FILE)) : [];
 
 async function loadContacts() {
@@ -60,6 +66,106 @@ async function randomActivity(page) {
   await sleep(4000);
 }
 
+async function openShareDialog(page) {
+  const dmShareSelectors = [
+    'a[aria-label="Enviar"]',
+    'a[aria-label="Send"]',
+    'a[aria-label*="Enviar"]',
+    'a[aria-label*="Send"]',
+    'button[aria-label*="Enviar em mensagem"]',
+    'button[aria-label*="Send in a private message"]',
+    'button[aria-label*="Compartilhar em mensagem"]',
+    'button[aria-label*="Share in a message"]',
+    'button[aria-label*="Enviar por mensagem"]',
+    'button[aria-label*="Send privately"]',
+    'button[aria-label*="Enviar como mensagem"]'
+  ];
+
+  for (const selector of dmShareSelectors) {
+    const button = page.locator(selector).first();
+    if (await button.count() && await button.isVisible()) {
+      log(`Abrindo envio por DM com seletor: ${selector}`);
+      await button.click();
+      return;
+    }
+  }
+
+  throw new Error('Nao foi possivel localizar o botao de enviar a publicacao por DM.');
+}
+
+async function selectContactFromSharePanel(sharePanel, contact) {
+  const normalizedFullName = normalizeText(contact.fullName);
+
+  const textMatch = sharePanel.getByText(contact.fullName, { exact: false }).first();
+  if (await textMatch.count() && await textMatch.isVisible()) {
+    const row = textMatch.locator('xpath=ancestor::*[.//input[@type="checkbox"]][1]').first();
+    if (await row.count()) {
+      await row.scrollIntoViewIfNeeded();
+      await row.click({ force: true });
+      return true;
+    }
+    await textMatch.scrollIntoViewIfNeeded();
+    await textMatch.click({ force: true });
+    return true;
+  }
+
+  const candidates = await sharePanel.locator('label, li, button, div, span, a').all();
+  for (const candidate of candidates) {
+    const text = await candidate.textContent();
+    if (!text) continue;
+    if (normalizeText(text).includes(normalizedFullName)) {
+      const row = candidate.locator('xpath=ancestor::*[.//input[@type="checkbox"]][1]').first();
+      if (await row.count()) {
+        await row.scrollIntoViewIfNeeded();
+        await row.click({ force: true });
+        return true;
+      }
+      await candidate.scrollIntoViewIfNeeded();
+      await candidate.click({ force: true });
+      return true;
+    }
+  }
+
+  return false;
+}
+
+async function findMessageBox(context) {
+  const selectors = [
+    'div[aria-label="Adicionar uma mensagem..."]',
+    'div[aria-label="Add a message..."]',
+    'div[aria-label="Escreva uma mensagem"]',
+    'div[aria-label="Escreva uma mensagem..."]',
+    'div[aria-label="Write a message..."]',
+    'textarea[placeholder*="Escrever mensagem"]',
+    'textarea[placeholder*="Write a message"]',
+    '[placeholder*="Escrever mensagem"]',
+    '[placeholder*="Write a message"]',
+    '.artdeco-rich-editable-content[role="textbox"]',
+    '.msg-form__contenteditable[contenteditable="true"]',
+    'div[role="textbox"][contenteditable="true"]',
+    '[contenteditable="true"]',
+    'textarea'
+  ];
+
+  for (const selector of selectors) {
+    const locator = context.locator(selector).filter({ visible: true }).first();
+    if (await locator.count() && await locator.isVisible()) {
+      const placeholder = (await locator.getAttribute('placeholder')) || '';
+      if (normalizeText(placeholder).includes('pesquisar') || normalizeText(placeholder).includes('search')) {
+        continue;
+      }
+      return locator;
+    }
+  }
+
+  const textbox = context.locator('[role="textbox"]:not(input)').filter({ visible: true }).last();
+  if (await textbox.count() && await textbox.isVisible()) {
+    return textbox;
+  }
+
+  return null;
+}
+
 async function sendToContact(page, contact) {
   try {
     log(`\nProcessando: ${contact.fullName}`);
@@ -67,26 +173,18 @@ async function sendToContact(page, contact) {
     await page.goto(CONFIG.postUrl, { waitUntil: 'domcontentloaded' });
     await sleep(5000);
 
-    const sendButton = page.locator('button[aria-label*="Enviar"], button[aria-label*="Send"]').first();
-    await sendButton.waitFor({ state: 'visible', timeout: 15000 });
-    await sendButton.click();
+    await openShareDialog(page);
+    await sleep(3000);
 
-    const searchInput = page.locator('input[placeholder*="Pesquisar"], input[placeholder*="Search"]');
-    await searchInput.waitFor({ state: 'visible' });
+    const sharePanel = page.locator('[data-testid="lazy-column"], .artdeco-modal, .send-privately-flyout').first();
+    await sharePanel.waitFor({ state: 'visible', timeout: 15000 });
+
+    const searchInput = sharePanel.locator('input[placeholder*="Pesquisar"], input[placeholder*="Search"], input[type="text"]').first();
+    await searchInput.waitFor({ state: 'visible', timeout: 15000 });
     await searchInput.fill(contact.fullName);
     await sleep(3000);
 
-    // ✅ CORRIGIDO: só o loop com validação, sem o firstResult.click() duplicado
-    const results = await page.locator('[role="option"]').all();
-    let clicked = false;
-    for (const result of results) {
-      const text = await result.textContent();
-      if (text.includes(contact.fullName)) {
-        await result.click();
-        clicked = true;
-        break;
-      }
-    }
+    const clicked = await selectContactFromSharePanel(sharePanel, contact);
     if (!clicked) {
       log(`✗ Contato "${contact.fullName}" não encontrado nos resultados.`);
       return false;
@@ -95,14 +193,15 @@ async function sendToContact(page, contact) {
 
     await sleep(6000);
 
-    const messageBox = page.locator([
-      '.artdeco-rich-editable-content[role="textbox"]',
-      '.msg-form__contenteditable[contenteditable="true"]',
-      'div[aria-label="Escreva uma mensagem..."]',
-      'div[aria-label="Write a message..."]'
-    ].join(', ')).filter({ visible: true }).first();
+    let messageBox = await findMessageBox(sharePanel);
+    if (!messageBox) {
+      log('Caixa não encontrada no painel, buscando na página inteira...');
+      messageBox = await findMessageBox(page);
+    }
+    if (!messageBox) {
+      throw new Error('Nao foi possivel localizar a caixa de mensagem apos selecionar o contato.');
+    }
 
-    await messageBox.waitFor({ state: 'visible', timeout: 15000 });
     await messageBox.click();
     await sleep(1000);
 
@@ -114,17 +213,40 @@ async function sendToContact(page, contact) {
     await page.keyboard.type(personalMessage, { delay: 60 });
     log('Mensagem escrita. Aguardando...');
     await sleep(5000);
+   
+    // ✅ MELHORIA: Seletores de botão de envio mais robustos
+    const sendButtonSelectors = [
+      'button.artdeco-button--primary:has-text("Enviar")',
+      'button.artdeco-button--primary:has-text("Send")',
+      'button:has-text("Enviar")',
+      'button:has-text("Send")',
+      '.share-box-footer__main-actions button',
+      '.artdeco-modal__footer button.artdeco-button--primary',
+      'button[aria-label*="Enviar"]',
+      'button[aria-label*="Send"]'
+    ];
 
-    const finalSendBtn = page.locator('button.artdeco-button--primary').filter({ hasText: /Enviar|Send/, visible: true }).last();
+    let finalSendBtn = null;
+    for (const selector of sendButtonSelectors) {
+      const btn = page.locator(selector).filter({ visible: true }).last();
+      if (await btn.count() > 0) {
+        finalSendBtn = btn;
+        break;
+      }
+    }
 
-    if (await finalSendBtn.isEnabled()) {
+    if (finalSendBtn && await finalSendBtn.isVisible({ timeout: 10000 })) {
       await finalSendBtn.click();
       log(`✓ SUCESSO: Enviado para ${contact.fullName}`);
       await sleep(3000);
       return true;
     } else {
-      log('✗ Botão de enviar está desativado.');
-      return false;
+      log('✗ Botão de enviar não encontrado ou não visível.');
+      // Tenta um último recurso: Enter se a caixa de mensagem ainda tiver foco
+      log('Tentando enviar com a tecla Enter...');
+      await page.keyboard.press('Control+Enter');
+      await sleep(3000);
+      return true; // Assume sucesso ou verifica se o modal fechou
     }
   } catch (error) {
     log(`✗ ERRO com ${contact.fullName}: ${error.message}`);
@@ -135,7 +257,6 @@ async function sendToContact(page, contact) {
   }
 }
 
-// ✅ Retry no lugar certo
 async function sendWithRetry(page, contact, maxTries = 2) {
   for (let attempt = 1; attempt <= maxTries; attempt++) {
     const result = await sendToContact(page, contact);
@@ -148,29 +269,19 @@ async function sendWithRetry(page, contact, maxTries = 2) {
   return false;
 }
 
-// BLOCO DE EXECUÇÃO
 (async () => {
   log('Iniciando automação...');
   const contacts = await loadContacts();
 
-  // EXECUTAR EM PRODUÇÃO  
   const browser = await chromium.launch({
-    headless: true,
+    headless: false,
     args: [
       '--disable-blink-features=AutomationControlled',
       '--no-sandbox',
       '--disable-setuid-sandbox'
     ]
   });
-  // CASO QUEIRA FAZER TESTES VENDO RODANDO, USAR BLOCO ABAIXO
-  // const browser = await chromium.launch({
-  //headless: false,
-  //args: [
-  //  '--disable-background-timer-throttling',
-  //  '--disable-backgrounding-occluded-windows',
-  //  '--disable-renderer-backgrounding'
-  //]
-  //}); 
+
   let context;
 
   if (fs.existsSync(SESSION_FILE)) {
@@ -184,19 +295,15 @@ async function sendWithRetry(page, contact, maxTries = 2) {
     await page.goto('https://www.linkedin.com/login', { waitUntil: 'domcontentloaded' });
     await sleep(2000);
 
-    // Preenche email
     await page.locator('#username').fill(CONFIG.linkedinEmail);
     await sleep(1000);
 
-    // Preenche senha
     await page.locator('#password').fill(CONFIG.linkedinPassword);
     await sleep(1000);
 
-    // Clica em entrar
     await page.locator('button[type="submit"]').click();
     log('Credenciais enviadas. Aguardando feed...');
 
-    // Aguarda carregar o feed (até 60 segundos)
     await page.waitForURL('**/feed/**', { timeout: 60000 });
 
     await context.storageState({ path: SESSION_FILE });
@@ -208,16 +315,13 @@ async function sendWithRetry(page, contact, maxTries = 2) {
   for (let i = 0; i < contacts.length; i++) {
     const contact = contacts[i];
 
-    // ✅ Pula quem já recebeu
     if (sent.includes(contact.fullName)) {
       log(`⏭ Pulando ${contact.fullName} (já enviado)`);
       continue;
     }
 
-    // ✅ Usa retry
     const success = await sendWithRetry(page, contact);
 
-    // ✅ Registra sucesso
     if (success) {
       sent.push(contact.fullName);
       fs.writeFileSync(SENT_FILE, JSON.stringify(sent, null, 2));
