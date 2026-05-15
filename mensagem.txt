@@ -1,3 +1,4 @@
 Olá {{firstName}}, tudo tranquilo?
-Passando para compartilhar uma publicação nova da nossa página ExportControl sobre um tema extremamente relevante para empresas que realizam vendas com fim específico de exportações.
-Fico à disposição caso queira trocar alguma ideia sobre o assunto.
+Quis te compartilhar essa publicação porque muitas empresas que fazem vendas com fim específico de exportação acreditam que todo o controle da comprovação fiscal fica com a trading 👇Fico à disposição caso queira trocar alguma ideia sobre o assunto.
+Mas quando a exportação não é comprovada no prazo ou ocorre algum problema na averbação, o impacto fiscal e o retorno do ICMS acabam voltando para o emissor da nota fiscal.
+Achei válido te enviar porque é um ponto que muitas empresas só percebem quando o problema já aconteceu.

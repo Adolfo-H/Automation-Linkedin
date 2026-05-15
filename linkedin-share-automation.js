@@ -1,4 +1,4 @@
-require('dotenv').config(); // ← ESSENCIAL para ler o .env
+require('dotenv').config();
 const { chromium } = require('playwright');
 const fs = require('fs');
 const csv = require('csv-parser');
@@ -8,7 +8,7 @@ const SESSION_FILE = 'session.json';
 const SENT_FILE = 'enviados.json';
 
 const CONFIG = {
-  postUrl: 'https://www.linkedin.com/posts/export-control_comercioexterior-exportaaexaeto-fiscal-activity-7454976608831979520-PZ22',
+  postUrl: 'https://www.linkedin.com/posts/export-control_a-trading-%C3%A9-respons%C3%A1vel-n%C3%A3o-preciso-me-activity-7460683085328621568-Kcie?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE6h4DIBN3u9tybRm2aS5FNVwT9cUKwdWKk',
   csvFile: 'contatos.csv',
   minDelay: 60000,
   maxDelay: 150000,
@@ -19,14 +19,12 @@ const CONFIG = {
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const randomDelay = () => Math.floor(Math.random() * (CONFIG.maxDelay - CONFIG.minDelay + 1)) + CONFIG.minDelay;
 
-// ✅ Log em arquivo
 function log(msg) {
   const line = `[${new Date().toISOString()}] ${msg}`;
   console.log(line);
   fs.appendFileSync('log.txt', line + '\n');
 }
 
-// ✅ Carrega lista de enviados
 const sent = fs.existsSync(SENT_FILE) ? JSON.parse(fs.readFileSync(SENT_FILE)) : [];
 
 async function loadContacts() {
@@ -67,24 +65,95 @@ async function sendToContact(page, contact) {
     await page.goto(CONFIG.postUrl, { waitUntil: 'domcontentloaded' });
     await sleep(5000);
 
-    const sendButton = page.locator('button[aria-label*="Enviar"], button[aria-label*="Send"]').first();
-    await sendButton.waitFor({ state: 'visible', timeout: 15000 });
-    await sendButton.click();
+    // ✅ DEBUG: loga TODOS os botões visíveis da página
+    const allBtns = await page.locator('button').all();
+    for (const btn of allBtns) {
+      const label = await btn.getAttribute('aria-label').catch(() => '');
+      const visible = await btn.isVisible().catch(() => false);
+      if (visible) log(`  [BTN] "${label}"`);
+    }
 
-    const searchInput = page.locator('input[placeholder*="Pesquisar"], input[placeholder*="Search"]');
-    await searchInput.waitFor({ state: 'visible' });
+    // ✅ Tenta clicar no botão de enviar por várias variações
+    let found = false;
+    const candidates = [
+      'button[aria-label*="parte"]',
+      'button[aria-label*="Parte"]',
+      'button[aria-label*="privad"]',
+      'button[aria-label*="Enviar em"]',
+      'button[aria-label*="Send in"]',
+      'button[aria-label*="private"]',
+    ];
+
+    for (const selector of candidates) {
+      const btn = page.locator(selector).first();
+      const count = await btn.count();
+      if (count > 0 && await btn.isVisible()) {
+        await btn.click();
+        found = true;
+        log(`Botão encontrado com seletor: ${selector}`);
+        break;
+      }
+    }
+
+    // ✅ Fallback: clica no 4º li da barra de ações
+    if (!found) {
+      log('Fallback: clicando nos li da barra de ações...');
+      const liButtons = page.locator('li.feed-shared-social-action-bar__action-button');
+      const liCount = await liButtons.count();
+      log(`  [DEBUG] li buttons: ${liCount}`);
+      if (liCount >= 4) {
+        await liButtons.nth(3).click();
+        found = true;
+      } else if (liCount > 0) {
+        await liButtons.last().click();
+        found = true;
+      }
+    }
+
+    // ✅ Fallback final: clica no último botão da página antes do campo de comentário
+    if (!found) {
+      log('Fallback final: tentando pelo data-control-name...');
+      const btn = page.locator('[data-control-name*="share"], [data-control-name*="send"]').first();
+      if (await btn.count() > 0) {
+        await btn.click();
+        found = true;
+      }
+    }
+
+    if (!found) {
+      log(`✗ Não encontrou o botão de enviar.`);
+      return false;
+    }
+
+    // ✅ Modal aberto — busca o contato
+    await sleep(2000);
+
+    const searchInput = page.locator('input[placeholder="Pesquisar"]').first();
+    await searchInput.waitFor({ state: 'visible', timeout: 15000 });
     await searchInput.fill(contact.fullName);
+    log(`Buscando: ${contact.fullName}...`);
     await sleep(3000);
 
-    // ✅ CORRIGIDO: só o loop com validação, sem o firstResult.click() duplicado
-    const results = await page.locator('[role="option"]').all();
+    // ✅ Seleciona o contato
+    const results = await page.locator('[role="option"], [role="listitem"], li').all();
     let clicked = false;
     for (const result of results) {
       const text = await result.textContent();
-      if (text.includes(contact.fullName)) {
+      if (text && text.includes(contact.fullName)) {
         await result.click();
         clicked = true;
         break;
+      }
+    }
+    if (!clicked) {
+      for (const result of results) {
+        const text = await result.textContent();
+        if (text && text.includes(contact.firstName)) {
+          await result.click();
+          clicked = true;
+          log(`Selecionado pelo primeiro nome: ${contact.firstName}`);
+          break;
+        }
       }
     }
     if (!clicked) {
@@ -92,14 +161,15 @@ async function sendToContact(page, contact) {
       return false;
     }
     log('Contato selecionado...');
+    await sleep(2000);
 
-    await sleep(6000);
-
+    // ✅ Escreve a mensagem
     const messageBox = page.locator([
-      '.artdeco-rich-editable-content[role="textbox"]',
+      'div[contenteditable="true"]',
       '.msg-form__contenteditable[contenteditable="true"]',
+      '.artdeco-rich-editable-content[role="textbox"]',
       'div[aria-label="Escreva uma mensagem..."]',
-      'div[aria-label="Write a message..."]'
+      'div[aria-label="Write a message..."]',
     ].join(', ')).filter({ visible: true }).first();
 
     await messageBox.waitFor({ state: 'visible', timeout: 15000 });
@@ -108,15 +178,15 @@ async function sendToContact(page, contact) {
 
     await page.keyboard.press('Control+A');
     await page.keyboard.press('Backspace');
-    await sleep(1000);
+    await sleep(500);
 
     const personalMessage = template.replace('{{firstName}}', contact.firstName);
     await page.keyboard.type(personalMessage, { delay: 60 });
     log('Mensagem escrita. Aguardando...');
-    await sleep(5000);
+    await sleep(3000);
 
-    const finalSendBtn = page.locator('button.artdeco-button--primary').filter({ hasText: /Enviar|Send/, visible: true }).last();
-
+    // ✅ Botão final de enviar
+    const finalSendBtn = page.locator('button.artdeco-button--primary').filter({ hasText: /Enviar|Send/ }).last();
     if (await finalSendBtn.isEnabled()) {
       await finalSendBtn.click();
       log(`✓ SUCESSO: Enviado para ${contact.fullName}`);
@@ -126,6 +196,7 @@ async function sendToContact(page, contact) {
       log('✗ Botão de enviar está desativado.');
       return false;
     }
+
   } catch (error) {
     log(`✗ ERRO com ${contact.fullName}: ${error.message}`);
     await page.keyboard.press('Escape');
@@ -135,7 +206,6 @@ async function sendToContact(page, contact) {
   }
 }
 
-// ✅ Retry no lugar certo
 async function sendWithRetry(page, contact, maxTries = 2) {
   for (let attempt = 1; attempt <= maxTries; attempt++) {
     const result = await sendToContact(page, contact);
@@ -148,29 +218,19 @@ async function sendWithRetry(page, contact, maxTries = 2) {
   return false;
 }
 
-// BLOCO DE EXECUÇÃO
 (async () => {
   log('Iniciando automação...');
   const contacts = await loadContacts();
 
-  // EXECUTAR EM PRODUÇÃO  
   const browser = await chromium.launch({
-    headless: true,
+    headless: false,
     args: [
       '--disable-blink-features=AutomationControlled',
       '--no-sandbox',
       '--disable-setuid-sandbox'
     ]
   });
-  // CASO QUEIRA FAZER TESTES VENDO RODANDO, USAR BLOCO ABAIXO
-  // const browser = await chromium.launch({
-  //headless: false,
-  //args: [
-  //  '--disable-background-timer-throttling',
-  //  '--disable-backgrounding-occluded-windows',
-  //  '--disable-renderer-backgrounding'
-  //]
-  //}); 
+
   let context;
 
   if (fs.existsSync(SESSION_FILE)) {
@@ -184,19 +244,15 @@ async function sendWithRetry(page, contact, maxTries = 2) {
     await page.goto('https://www.linkedin.com/login', { waitUntil: 'domcontentloaded' });
     await sleep(2000);
 
-    // Preenche email
     await page.locator('#username').fill(CONFIG.linkedinEmail);
     await sleep(1000);
 
-    // Preenche senha
     await page.locator('#password').fill(CONFIG.linkedinPassword);
     await sleep(1000);
 
-    // Clica em entrar
     await page.locator('button[type="submit"]').click();
     log('Credenciais enviadas. Aguardando feed...');
 
-    // Aguarda carregar o feed (até 60 segundos)
     await page.waitForURL('**/feed/**', { timeout: 60000 });
 
     await context.storageState({ path: SESSION_FILE });
@@ -208,16 +264,13 @@ async function sendWithRetry(page, contact, maxTries = 2) {
   for (let i = 0; i < contacts.length; i++) {
     const contact = contacts[i];
 
-    // ✅ Pula quem já recebeu
     if (sent.includes(contact.fullName)) {
       log(`⏭ Pulando ${contact.fullName} (já enviado)`);
       continue;
     }
 
-    // ✅ Usa retry
     const success = await sendWithRetry(page, contact);
 
-    // ✅ Registra sucesso
     if (success) {
       sent.push(contact.fullName);
       fs.writeFileSync(SENT_FILE, JSON.stringify(sent, null, 2));
