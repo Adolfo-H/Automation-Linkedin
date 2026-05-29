@@ -1,7 +1,5 @@
 Olá {{firstName}}, tudo tranquilo?
 
-Quis te compartilhar essa publicação porque muitas empresas que fazem vendas com fim específico de exportação acreditam que todo o controle da comprovação fiscal fica com a trading 👇
+O grande gargalo da exportação indireta acontece quando a carga entra no porto. Se a comercial exportadora vincular uma quantidade menor na DU-E, mesmo que seja por uma diferença milimétrica de balança, o saldo restante fica pendente. Para o Fisco, se não há comprovação de embarque daquele saldo, o ICMS é devido por quem emitiu a NF-e original.
 
-Mas quando a exportação não é comprovada no prazo ou ocorre algum problema na averbação, o impacto fiscal e o retorno do ICMS acabam voltando para o emissor da nota fiscal. Achei válido te enviar porque é um ponto que muitas empresas só percebem quando o problema já aconteceu.
-
-Fico à disposição caso queira trocar alguma ideia sobre o assunto
+A equipe da ExportControl detalhou como automatizar essa conciliação e garantir o fechamento exato dos saldos alfandegados. Vale a leitura técnica no post abaixo:

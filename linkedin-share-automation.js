@@ -8,7 +8,7 @@ const SESSION_FILE = 'session.json';
 const SENT_FILE = 'enviados.json';
 
 const CONFIG = {
-  postUrl: 'https://www.linkedin.com/posts/a-trading-%C3%A9-respons%C3%A1vel-n%C3%A3o-preciso-me-share-7460683084292845568-dVXu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE6h4DIBN3u9tybRm2aS5FNVwT9cUKwdWKk',
+  postUrl: 'https://www.linkedin.com/posts/export-control_e-o-pior-%C3%A9-um-dinheiro-que-voc%C3%AA-perde-em-activity-7465758231273922560-MzCE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE6h4DIBN3u9tybRm2aS5FNVwT9cUKwdWKk',
   csvFile: 'contatos.csv',
   minDelay: 60000,
   maxDelay: 150000,
@@ -126,6 +126,79 @@ async function fillMessageInModal(modal, contact) {
   return false;
 }
 
+async function selectSuggestionRow(page, modal, row, logPrefix = '') {
+  const label = row.locator('label').first();
+  const checkbox = row.locator('input[type="checkbox"]').first();
+
+  const attemptClick = async (target, description) => {
+    if ((await target.count()) === 0) return false;
+
+    try {
+      await target.scrollIntoViewIfNeeded();
+    } catch (e) {
+      // Seguimos tentando; alguns itens já estão parcialmente visíveis.
+    }
+
+    try {
+      await target.click({ force: true });
+      return true;
+    } catch (err) {
+      log(`${logPrefix}Falha ao clicar ${description}: ${err.message}`);
+      return false;
+    }
+  };
+
+  if (await attemptClick(label, 'label')) return true;
+
+  try {
+    await row.scrollIntoViewIfNeeded();
+  } catch (e) {
+    // sem bloqueio: vamos tentar o próximo fallback
+  }
+
+  if (await attemptClick(row, 'linha')) return true;
+
+  if ((await checkbox.count()) > 0) {
+    try {
+      await checkbox.scrollIntoViewIfNeeded();
+    } catch (e) {
+      // continuar mesmo assim
+    }
+
+    try {
+      await checkbox.click({ force: true });
+      return true;
+    } catch (err) {
+      log(`${logPrefix}Falha ao clicar checkbox: ${err.message}`);
+    }
+
+    try {
+      const id = await checkbox.getAttribute('id');
+      if (id) {
+        await page.evaluate((elId) => {
+          const el = document.getElementById(elId);
+          if (el) {
+            el.checked = true;
+            el.dispatchEvent(new Event('input', { bubbles: true }));
+            el.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+        }, id);
+      } else {
+        await checkbox.evaluate((el) => {
+          el.checked = true;
+          el.dispatchEvent(new Event('input', { bubbles: true }));
+          el.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+      }
+      return true;
+    } catch (err) {
+      log(`${logPrefix}Falha ao forçar checkbox via JS: ${err.message}`);
+    }
+  }
+
+  return false;
+}
+
 async function sendToContact(page, contact) {
   try {
     log(`\n========== PROCESSANDO: ${contact.fullName} ==========`);
@@ -221,79 +294,9 @@ async function sendToContact(page, contact) {
       if (text.includes(contact.fullName) || text.includes(contact.firstName)) {
         matchedIndex = i;
         log(`Correspondência encontrada na linha ${i}: ${text}`);
-        // tentar clicar primeiro no label dentro desta linha para disparar a seleção correta
-        const label = r.locator('label').first();
-        const checkbox = r.locator('input[type="checkbox"]');
-        let selectionAttempted = false;
+        selected = await selectSuggestionRow(page, modal, r, 'Sugestão correspondente: ');
 
-        if ((await label.count()) > 0) {
-          try {
-            await label.click({ force: true });
-            selected = true;
-            selectionAttempted = true;
-          } catch (eLabel) {
-            try {
-              await label.scrollIntoViewIfNeeded();
-              await label.click({ force: true });
-              selected = true;
-              selectionAttempted = true;
-            } catch (eLabel2) {
-              log(`✗ Falha ao clicar label: ${eLabel2.message}`);
-            }
-          }
-        }
-
-        if (!selected && await checkbox.count() > 0) {
-          try {
-            await checkbox.click({ force: true });
-            selected = true;
-            selectionAttempted = true;
-          } catch (err) {
-            try {
-              await checkbox.scrollIntoViewIfNeeded();
-              await checkbox.click({ force: true });
-              selected = true;
-              selectionAttempted = true;
-            } catch (err2) {
-              // Último recurso: marcar via JS e disparar evento
-              try {
-                const id = await checkbox.getAttribute('id');
-                if (id) {
-                  await page.evaluate((elId) => {
-                    const el = document.getElementById(elId);
-                    if (el) { el.checked = true; el.dispatchEvent(new Event('change', { bubbles: true })); }
-                  }, id);
-                } else {
-                  await checkbox.evaluate(el => { el.checked = true; el.dispatchEvent(new Event('change', { bubbles: true })); });
-                }
-                selected = true;
-                selectionAttempted = true;
-              } catch (err3) {
-                log(`✗ Falha ao interagir com checkbox via JS: ${err3.message}`);
-              }
-            }
-          }
-        }
-
-        if (!selected) {
-          // Por fim, clicar na linha inteira
-          try {
-            await r.click({ force: true });
-            selected = true;
-            selectionAttempted = true;
-          } catch (eClick) {
-            try {
-              await r.scrollIntoViewIfNeeded();
-              await r.click({ force: true });
-              selected = true;
-              selectionAttempted = true;
-            } catch (e) {
-              log(`✗ Falha ao clicar a linha: ${e.message}`);
-            }
-          }
-        }
-
-        if (selectionAttempted) {
+        if (selected) {
           await sleep(500);
           // verificar se o contato entrou na lista de selecionados
           try {
@@ -316,19 +319,7 @@ async function sendToContact(page, contact) {
     if (!selected && count > 0) {
       log('Nenhuma correspondência exata encontrada; marcando a primeira sugestão disponível.');
       const first = rows.first();
-      try {
-        const checkbox = first.locator('input[type="checkbox"]');
-        if (await checkbox.count() > 0) {
-          await checkbox.click({ force: true });
-        } else if ((await first.locator('label').count()) > 0) {
-          await first.locator('label').first().click({ force: true });
-        } else {
-          await first.click({ force: true });
-        }
-        selected = true;
-      } catch (err) {
-        log(`✗ Falha ao marcar primeira sugestão: ${err.message}`);
-      }
+      selected = await selectSuggestionRow(page, modal, first, 'Primeira sugestão: ');
     }
 
     if (selected) {
