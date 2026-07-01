@@ -1,5 +1,5 @@
-Olá {{firstName}}, tudo tranquilo?
+Bom dia, tudo certo?
 
-O grande gargalo da exportação indireta acontece quando a carga entra no porto. Se a comercial exportadora vincular uma quantidade menor na DU-E, mesmo que seja por uma diferença milimétrica de balança, o saldo restante fica pendente. Para o Fisco, se não há comprovação de embarque daquele saldo, o ICMS é devido por quem emitiu a NF-e original.
+Com as novas exigências na Manifestação do Destinatário, o Fisco passa a cruzar os dados de forma ainda mais automatizada para validar a manutenção da imunidade fiscal. Se houver qualquer quebra de rastreabilidade entre a origem e o destino, a conta do imposto retroativo é cobrada direto de quem emitiu a nota.
 
-A equipe da ExportControl detalhou como automatizar essa conciliação e garantir o fechamento exato dos saldos alfandegados. Vale a leitura técnica no post abaixo:
+A equipe da ExportControl detalhou o impacto prático dessa recente mudança e como blindar a sua operação antes que qualquer inconsistência vire uma autuação. Vale a leitura técnica no post abaixo:

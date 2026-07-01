@@ -2,22 +2,39 @@ require('dotenv').config();
 const { chromium } = require('playwright');
 const fs = require('fs');
 const csv = require('csv-parser');
+const readline = require('readline');
 
 const template = fs.readFileSync('mensagem.txt', 'utf-8');
 const SESSION_FILE = 'session.json';
+const SESSION_META_FILE = 'session-meta.json';
 const SENT_FILE = 'enviados.json';
 
 const CONFIG = {
-  postUrl: 'https://www.linkedin.com/posts/export-control_e-o-pior-%C3%A9-um-dinheiro-que-voc%C3%AA-perde-em-activity-7465758231273922560-MzCE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE6h4DIBN3u9tybRm2aS5FNVwT9cUKwdWKk',
+  postUrl: 'https://www.linkedin.com/posts/export-control_alerta-fiscal-mudan%C3%A7a-na-manifesta%C3%A7%C3%A3o-activity-7467284055873544192-i2d1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE6h4DIBN3u9tybRm2aS5FNVwT9cUKwdWKk',
   csvFile: 'contatos.csv',
+  batchSize: 10,
   minDelay: 60000,
   maxDelay: 150000,
   linkedinEmail: process.env.LINKEDIN_EMAIL,
   linkedinPassword: process.env.LINKEDIN_PASSWORD
 };
 
+if (!CONFIG.linkedinEmail || !CONFIG.linkedinPassword) {
+  throw new Error('As variáveis de ambiente LINKEDIN_EMAIL e LINKEDIN_PASSWORD devem estar definidas no arquivo .env.');
+}
+
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const randomDelay = () => Math.floor(Math.random() * (CONFIG.maxDelay - CONFIG.minDelay + 1)) + CONFIG.minDelay;
+
+function waitForEnter() {
+  return new Promise((resolve) => {
+    const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+    rl.question('Pressione ENTER quando completar a verificação no LinkedIn...\n', () => {
+      rl.close();
+      resolve();
+    });
+  });
+}
 
 function log(msg) {
   const line = `[${new Date().toISOString()}] ${msg}`;
@@ -49,13 +66,85 @@ async function randomActivity(page) {
   const actions = ['feed', 'notifications'];
   const action = actions[Math.floor(Math.random() * actions.length)];
   log(`--- Disfarçando: Indo para ${action} ---`);
-  if (action === 'feed') {
-    await page.goto('https://www.linkedin.com/feed/', { waitUntil: 'domcontentloaded' });
-    await page.mouse.wheel(0, 400);
-  } else {
-    await page.goto('https://www.linkedin.com/notifications/', { waitUntil: 'domcontentloaded' });
+  try {
+    if (action === 'feed') {
+      await page.goto('https://www.linkedin.com/feed/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+      await page.mouse.wheel(0, 400).catch(() => {});
+    } else {
+      await page.goto('https://www.linkedin.com/notifications/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+    }
+  } catch (e) {
+    log(`⚠️ Disfarce ignorado: ${e.message}`);
   }
   await sleep(4000);
+}
+
+async function debugPage(page, prefix) {
+  try {
+    await page.screenshot({ path: `${prefix}.png`, fullPage: true });
+  } catch (e) {
+    // ignore screenshot failures
+  }
+
+  try {
+    const html = await page.content();
+    fs.writeFileSync(`${prefix}.html`, html, 'utf-8');
+  } catch (e) {
+    // ignore HTML capture failures
+  }
+}
+
+async function fillFirstVisible(page, selectors, value) {
+  for (const selector of selectors) {
+    const locator = page.locator(selector).first();
+    if ((await locator.count()) === 0) continue;
+
+    try {
+      await locator.waitFor({ state: 'visible', timeout: 5000 });
+      await locator.fill(value);
+      return selector;
+    } catch (e) {
+      continue;
+    }
+  }
+
+  return null;
+}
+
+async function fillByLabelOrSelector(page, candidates, value) {
+  for (const candidate of candidates) {
+    try {
+      if (candidate.type === 'label') {
+        const locator = page.getByLabel(candidate.value, { exact: false });
+        const count = await locator.count();
+        if (count === 0) continue;
+
+        for (let i = 0; i < count; i++) {
+          const field = locator.nth(i);
+          if (!(await field.isVisible().catch(() => false))) continue;
+          await field.fill(value);
+          return `label:${candidate.value}`;
+        }
+        continue;
+      }
+
+      const locator = page.locator(candidate.value);
+      const count = await locator.count();
+      if (count === 0) continue;
+
+      for (let i = 0; i < count; i++) {
+        const field = locator.nth(i);
+        if (!(await field.isVisible().catch(() => false))) continue;
+        await field.fill(value);
+        return candidate.value;
+      }
+    } catch (e) {
+      log(`Tentativa falhou em ${candidate.type}:${candidate.value} -> ${e.message}`);
+      continue;
+    }
+  }
+
+  return null;
 }
 
 function formatMessageHtml(message) {
@@ -209,13 +298,30 @@ async function sendToContact(page, contact) {
 
     // 2️⃣ CLICAR NO BOTÃO "ENVIAR" (Share/Send)
     log('Clicando no botão de compartilhar...');
-    const shareBtn = page.locator('button:has-text("Enviar"), [aria-label="Enviar"]').first();
-    
-    if (!(await shareBtn.isVisible())) {
+    const shareCandidates = [
+      page.getByRole('button', { name: /enviar/i }).first(),
+      page.locator('button:has(svg[aria-label="send-privately-small"])').first(),
+      page.locator('a:has(svg[aria-label="send-privately-small"])').first(),
+      page.locator('button:has-text("Enviar")').first(),
+      page.locator('a:has-text("Enviar")').first(),
+      page.locator('[aria-label="Enviar"]').first()
+    ];
+
+    let shareBtn = null;
+    for (const candidate of shareCandidates) {
+      if ((await candidate.count().catch(() => 0)) === 0) continue;
+      if (await candidate.isVisible().catch(() => false)) {
+        shareBtn = candidate;
+        break;
+      }
+    }
+
+    if (!shareBtn) {
       log('✗ Botão de compartilhar não encontrado!');
       return false;
     }
-    await shareBtn.click();
+
+    await shareBtn.click({ force: true });
 
     // 3️⃣ ESPERAR O MODAL ABRIR (testa vários seletores e salva debug se falhar)
     log('Aguardando modal...');
@@ -483,6 +589,169 @@ async function sendToContact(page, contact) {
   }
 }
 
+async function sendBatchToContacts(page, contactsBatch) {
+  if (contactsBatch.length === 0) return true;
+
+  log(`\n========== PROCESSANDO LOTE DE ${contactsBatch.length} CONTATOS ==========`);
+
+  await page.goto(CONFIG.postUrl, { waitUntil: 'domcontentloaded' });
+  await sleep(3000);
+
+  log('Clicando no botão de compartilhar...');
+  const shareCandidates = [
+    page.getByRole('button', { name: /enviar/i }).first(),
+    page.locator('button:has(svg[aria-label="send-privately-small"])').first(),
+    page.locator('a:has(svg[aria-label="send-privately-small"])').first(),
+    page.locator('button:has-text("Enviar")').first(),
+    page.locator('a:has-text("Enviar")').first(),
+    page.locator('[aria-label="Enviar"]').first()
+  ];
+
+  let shareBtn = null;
+  for (const candidate of shareCandidates) {
+    if ((await candidate.count().catch(() => 0)) === 0) continue;
+    if (await candidate.isVisible().catch(() => false)) {
+      shareBtn = candidate;
+      break;
+    }
+  }
+
+  if (!shareBtn) {
+    log('✗ Botão de compartilhar não encontrado!');
+    return false;
+  }
+
+  await shareBtn.click({ force: true });
+
+  log('Aguardando modal...');
+  const modalSelectors = ['dialog[open]', 'dialog[data-testid="dialog"]', 'dialog', '.artdeco-modal', '[role="dialog"]', 'div[aria-modal="true"]', '.share-box', '.msg-overlay-conversation-container'];
+  let modal = null;
+  let found = false;
+
+  for (const sel of modalSelectors) {
+    try {
+      const loc = page.locator(sel).last();
+      await loc.waitFor({ state: 'visible', timeout: 10000 });
+      modal = loc;
+      found = true;
+      break;
+    } catch (e) {}
+  }
+
+  if (!found) {
+    try {
+      const loc = page.locator('[role="dialog"], div[aria-modal="true"]').last();
+      await loc.waitFor({ state: 'visible', timeout: 5000 });
+      modal = loc;
+      found = true;
+    } catch (e) {}
+  }
+
+  if (!found) {
+    log('✗ Modal não detectado pelo Playwright! Salvando debug...');
+    const debugTime = Date.now();
+    await page.screenshot({ path: `debug_modal_${debugTime}.png`, fullPage: true }).catch(() => {});
+    fs.writeFileSync(`debug_modal_${debugTime}.html`, await page.content());
+    return false;
+  }
+
+  const selectedRecipients = new Set();
+
+  for (const contact of contactsBatch) {
+    const searchInput = modal.locator('input[placeholder*="Pesquisar"], input[placeholder*="Search"]').first();
+    await searchInput.waitFor({ state: 'visible', timeout: 5000 });
+    await searchInput.click({ force: true });
+    await searchInput.fill('');
+    log(`Digitando nome: ${contact.fullName}`);
+    await searchInput.type(contact.fullName, { delay: 100 });
+    await sleep(1500);
+
+    log('Buscando contato nos resultados...');
+    const rowSelector = 'div[role="menuitem"], [role="option"], div[role="option"], li[role="option"]';
+    const rows = modal.locator(rowSelector);
+    try { await rows.first().waitFor({ state: 'visible', timeout: 8000 }); } catch (e) {}
+    const count = await rows.count();
+    log(`Resultados encontrados: ${count}`);
+
+    let selected = false;
+    for (let i = 0; i < count; i++) {
+      const r = rows.nth(i);
+      const text = (await r.innerText()).replace(/\s+/g, ' ').trim();
+      if (!text) continue;
+      if (text.includes(contact.fullName) || text.includes(contact.firstName)) {
+        log(`Correspondência encontrada na linha ${i}: ${text}`);
+        selected = await selectSuggestionRow(page, modal, r, 'Sugestão correspondente: ');
+        break;
+      }
+    }
+
+    if (!selected && count > 0) {
+      log('Nenhuma correspondência exata encontrada; marcando a primeira sugestão disponível.');
+      selected = await selectSuggestionRow(page, modal, rows.first(), 'Primeira sugestão: ');
+    }
+
+    if (!selected) {
+      log(`✗ Não foi possível selecionar ${contact.fullName}`);
+      continue;
+    }
+
+    selectedRecipients.add(contact.fullName);
+    await sleep(600);
+  }
+
+  const firstContact = contactsBatch[0];
+  const messageFilled = await fillMessageInModal(modal, firstContact);
+  if (messageFilled) log('Mensagem preenchida com sucesso.');
+
+  log('Aguardando botões finais do modal...');
+  const sendSeparatelyCandidates = [
+    modal.getByRole('button', { name: /enviar separadamente/i }).first(),
+    modal.locator('button:has-text("Enviar separadamente")').first(),
+    modal.locator('a:has-text("Enviar separadamente")').first(),
+    modal.locator('[aria-label="Enviar separadamente"]').first()
+  ];
+
+  let sendSeparatelyBtn = null;
+  for (const candidate of sendSeparatelyCandidates) {
+    if ((await candidate.count().catch(() => 0)) === 0) continue;
+    if (await candidate.isVisible().catch(() => false)) {
+      sendSeparatelyBtn = candidate;
+      break;
+    }
+  }
+
+  if (!sendSeparatelyBtn) {
+    log('✗ Botão "Enviar separadamente" não encontrado.');
+    return false;
+  }
+
+  const start = Date.now();
+  while (Date.now() - start < 10000) {
+    try {
+      if (await sendSeparatelyBtn.isVisible() && await sendSeparatelyBtn.isEnabled()) break;
+    } catch (e) {}
+    await sleep(300);
+  }
+
+  try {
+    await sendSeparatelyBtn.click({ force: true });
+  } catch (err) {
+    log(`Aviso: falha ao clicar no botão "Enviar separadamente" via Playwright: ${err.message}`);
+    await page.evaluate(() => {
+      const btn = Array.from(document.querySelectorAll('button, a')).find(el => {
+        const text = el.textContent?.trim();
+        const aria = el.getAttribute('aria-label');
+        return /enviar separadamente/i.test(text || '') || /enviar separadamente/i.test(aria || '');
+      });
+      btn?.click();
+    });
+  }
+
+  log(`✓✓✓ SUCESSO: COMPARTILHADO COM LOTE DE ${selectedRecipients.size} CONTATOS ✓✓✓`);
+  await sleep(2000);
+  return true;
+}
+
 async function sendWithRetry(page, contact, maxTries = 2) {
   for (let attempt = 1; attempt <= maxTries; attempt++) {
     const result = await sendToContact(page, contact);
@@ -496,10 +765,25 @@ async function sendWithRetry(page, contact, maxTries = 2) {
   return false;
 }
 
+function chunkContacts(contacts, size) {
+  const chunks = [];
+  for (let i = 0; i < contacts.length; i += size) {
+    chunks.push(contacts.slice(i, i + size));
+  }
+  return chunks;
+}
+
 (async () => {
   log('🚀 INICIANDO AUTOMAÇÃO...');
   const contacts = await loadContacts();
   log(`📋 ${contacts.length} contatos carregados`);
+  const pendingContacts = contacts.filter(contact => !sent.includes(contact.fullName));
+  const skippedCount = contacts.length - pendingContacts.length;
+  if (skippedCount > 0) {
+    log(`⏭️  ${skippedCount} contato(s) já estavam em enviados.json e serão pulados antes de iniciar`);
+  }
+  const batches = chunkContacts(pendingContacts, CONFIG.batchSize);
+  log(`📦 Processando em lotes de ${CONFIG.batchSize} contatos (${batches.length} lote(s))`);
 
   const browser = await chromium.launch({
     headless: false,
@@ -507,41 +791,134 @@ async function sendWithRetry(page, contact, maxTries = 2) {
   });
 
   let context;
+  let useExistingSession = false;
+
   if (fs.existsSync(SESSION_FILE)) {
+    if (fs.existsSync(SESSION_META_FILE)) {
+      try {
+        const meta = JSON.parse(fs.readFileSync(SESSION_META_FILE, 'utf-8'));
+        if (meta.linkedinEmail === CONFIG.linkedinEmail) {
+          useExistingSession = true;
+        } else {
+          log('⚠️ A sessão existente pertence a outra conta. Irei usar as credenciais do .env e criar nova sessão.');
+        }
+      } catch (e) {
+        log('⚠️ Não foi possível ler session-meta.json. Recriando sessão para garantir o usuário correto.');
+      }
+    } else {
+      log('⚠️ session.json existe mas não há metadados de sessão. Recriando sessão com as credenciais atuais.');
+    }
+  }
+
+  if (useExistingSession) {
     log('✓ Usando sessão existente...');
     context = await browser.newContext({ storageState: SESSION_FILE });
   } else {
     log('⚠️ Fazendo login...');
     context = await browser.newContext();
     const page = await context.newPage();
-    await page.goto('https://www.linkedin.com/login');
-    await page.locator('#username').fill(CONFIG.linkedinEmail);
-    await page.locator('#password').fill(CONFIG.linkedinPassword);
-    await page.locator('button[type="submit"]').click();
-    await page.waitForURL('**/feed/**', { timeout: 60000 });
+    await page.goto('https://www.linkedin.com/login', { waitUntil: 'domcontentloaded' });
+    await page.waitForLoadState('domcontentloaded').catch(() => {});
+    await page.waitForTimeout(3000);
+
+    log(`Login URL atual: ${page.url()}`);
+
+    const userSelector = await fillByLabelOrSelector(page, [
+      { type: 'label', value: 'E-mail ou telefone' },
+      { type: 'label', value: 'Email or phone' },
+      { type: 'selector', value: 'input[name="session_key"]' },
+      { type: 'selector', value: 'input[autocomplete*="username"]' },
+      { type: 'selector', value: 'input[type="email"]' },
+      { type: 'selector', value: 'input[id^=":r"]' }
+    ], CONFIG.linkedinEmail);
+
+    const passSelector = await fillByLabelOrSelector(page, [
+      { type: 'label', value: 'Senha' },
+      { type: 'label', value: 'Password' },
+      { type: 'selector', value: 'input[name="session_password"]' },
+      { type: 'selector', value: 'input[autocomplete="current-password"]' },
+      { type: 'selector', value: 'input[type="password"]' },
+      { type: 'selector', value: 'input[id^=":r"]' }
+    ], CONFIG.linkedinPassword);
+
+    log(`Seletores usados: user=${userSelector || 'none'}, pass=${passSelector || 'none'}`);
+
+    if (!userSelector || !passSelector) {
+      log(`❌ Formulário de login não encontrado. Seletores: user=${userSelector}, pass=${passSelector}`);
+      await debugPage(page, 'login-debug');
+      throw new Error('Não foi possível localizar o formulário de login do LinkedIn.');
+    }
+
+    const passwordField = page.locator('input[name="session_password"], input[autocomplete="current-password"], input[type="password"]').first();
+    if (await passwordField.count()) {
+      await passwordField.press('Enter');
+    } else {
+      const submitCandidates = page.locator('button:has-text("Entrar"), button:has-text("Sign in"), button[type="submit"]');
+      const submitCount = await submitCandidates.count();
+      let clicked = false;
+
+      for (let i = 0; i < submitCount; i++) {
+        const button = submitCandidates.nth(i);
+        if (!(await button.isVisible().catch(() => false))) continue;
+        await button.click();
+        clicked = true;
+        break;
+      }
+
+      if (!clicked) {
+        throw new Error('Não encontrei um botão de envio visível no formulário de login.');
+      }
+    }
+    await page.waitForLoadState('networkidle').catch(() => {});
+    await page.waitForURL(/linkedin\.com\/feed|linkedin\.com\/checkpoint|linkedin\.com\/signup|linkedin\.com\/login/i, { timeout: 60000 });
+
+    let currentUrl = page.url();
+    if (/linkedin\.com\/feed/i.test(currentUrl)) {
+      log('✓ Login concluído e feed carregado.');
+    } else if (/checkpoint|signup|login/i.test(currentUrl)) {
+      log(`⚠️ Verificação detectada na URL: ${currentUrl}`);
+      log('Por favor, complete o código de confirmação no browser do LinkedIn. O script vai aguardar até que a página do feed seja carregada.');
+      await waitForEnter();
+      try {
+        await page.waitForURL(/linkedin\.com\/feed/i, { timeout: 300000 });
+        log('✓ Login concluído após confirmação.');
+      } catch (e) {
+        log('❌ Tempo limite ao aguardar a página do feed após confirmação.');
+        await debugPage(page, 'login-debug-after-confirmation');
+        throw new Error('Login não avançou para o feed depois da verificação. Confira o browser e tente novamente.');
+      }
+    }
+
     await context.storageState({ path: SESSION_FILE });
+    fs.writeFileSync(SESSION_META_FILE, JSON.stringify({
+      linkedinEmail: CONFIG.linkedinEmail,
+      createdAt: new Date().toISOString()
+    }, null, 2), 'utf-8');
     log('💾 Sessão salva!');
   }
 
   const page = await context.newPage();
 
-  for (let i = 0; i < contacts.length; i++) {
-    const contact = contacts[i];
+  for (let batchIndex = 0; batchIndex < batches.length; batchIndex++) {
+    const batch = batches[batchIndex];
+    log(`\n========== LOTE ${batchIndex + 1}/${batches.length} (${batch.length} contatos) ==========`);
 
-    if (sent.includes(contact.fullName)) {
-      log(`⏭️  PULANDO ${contact.fullName} (já enviado)`);
-      continue;
+    const batchToSend = batch.filter(contact => !sent.includes(contact.fullName));
+    const skipped = batch.length - batchToSend.length;
+    if (skipped > 0) {
+      log(`⏭️  PULANDO ${skipped} contato(s) já enviados neste lote`);
     }
 
-    const success = await sendWithRetry(page, contact);
-
+    const success = await sendBatchToContacts(page, batchToSend);
     if (success) {
-      sent.push(contact.fullName);
+      for (const contact of batchToSend) {
+        sent.push(contact.fullName);
+      }
       fs.writeFileSync(SENT_FILE, JSON.stringify(sent, null, 2));
     }
 
-    if (i < contacts.length - 1) {
-      if (i % 3 === 0) await randomActivity(page);
+    if (batchIndex < batches.length - 1) {
+      if (batchIndex % 2 === 0) await randomActivity(page);
       const delay = randomDelay();
       log(`⏰ Pausa de segurança: ${Math.round(delay / 1000)}s\n`);
       await sleep(delay);

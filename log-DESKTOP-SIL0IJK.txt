@@ -1,0 +1,2507 @@
+[2026-05-29T13:52:19.618Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:52:19.673Z] 📋 342 contatos carregados
+[2026-05-29T13:52:20.586Z] ⚠️ Fazendo login...
+[2026-05-29T13:55:18.949Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:55:18.976Z] 📋 342 contatos carregados
+[2026-05-29T13:55:19.237Z] ⚠️ Fazendo login...
+[2026-05-29T13:55:28.840Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:55:28.871Z] 📋 342 contatos carregados
+[2026-05-29T13:55:29.169Z] ⚠️ Fazendo login...
+[2026-05-29T13:55:38.805Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:55:38.836Z] 📋 342 contatos carregados
+[2026-05-29T13:55:39.094Z] ⚠️ Fazendo login...
+[2026-05-29T13:56:04.947Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:56:04.976Z] 📋 342 contatos carregados
+[2026-05-29T13:56:05.530Z] ⚠️ Fazendo login...
+[2026-05-29T13:56:31.348Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:56:31.377Z] 📋 342 contatos carregados
+[2026-05-29T13:56:31.620Z] ⚠️ Fazendo login...
+[2026-05-29T13:56:41.480Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:56:41.506Z] 📋 342 contatos carregados
+[2026-05-29T13:56:41.767Z] ⚠️ Fazendo login...
+[2026-05-29T13:57:10.272Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:57:10.307Z] 📋 342 contatos carregados
+[2026-05-29T13:57:10.578Z] ⚠️ Fazendo login...
+[2026-05-29T13:57:51.479Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:57:51.497Z] 📋 342 contatos carregados
+[2026-05-29T13:57:51.765Z] ⚠️ Fazendo login...
+[2026-05-29T13:58:02.128Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T13:58:02.150Z] 📋 342 contatos carregados
+[2026-05-29T13:58:02.404Z] ⚠️ Fazendo login...
+[2026-05-29T14:00:16.033Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:00:16.058Z] 📋 342 contatos carregados
+[2026-05-29T14:00:16.478Z] ⚠️ Fazendo login...
+[2026-05-29T14:00:26.225Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:00:26.246Z] 📋 342 contatos carregados
+[2026-05-29T14:00:26.531Z] ⚠️ Fazendo login...
+[2026-05-29T14:00:35.334Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:00:35.347Z] 📋 342 contatos carregados
+[2026-05-29T14:00:35.575Z] ⚠️ Fazendo login...
+[2026-05-29T14:00:52.886Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:00:52.906Z] 📋 342 contatos carregados
+[2026-05-29T14:00:53.132Z] ⚠️ Fazendo login...
+[2026-05-29T14:01:40.193Z] ❌ Formulário de login não encontrado. Seletores: user=null, pass=null
+[2026-05-29T14:02:34.861Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:02:34.878Z] 📋 342 contatos carregados
+[2026-05-29T14:02:35.147Z] ⚠️ Fazendo login...
+[2026-05-29T14:02:43.794Z] ❌ Formulário de login não encontrado. Seletores: user=null, pass=null
+[2026-05-29T14:02:45.104Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:02:45.115Z] 📋 342 contatos carregados
+[2026-05-29T14:02:45.339Z] ⚠️ Fazendo login...
+[2026-05-29T14:02:59.799Z] ❌ Formulário de login não encontrado. Seletores: user=null, pass=null
+[2026-05-29T14:03:01.670Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:03:01.686Z] 📋 342 contatos carregados
+[2026-05-29T14:03:01.939Z] ⚠️ Fazendo login...
+[2026-05-29T14:04:05.237Z] ❌ Formulário de login não encontrado. Seletores: user=null, pass=null
+[2026-05-29T14:09:03.982Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:09:04.002Z] 📋 342 contatos carregados
+[2026-05-29T14:09:04.420Z] ⚠️ Fazendo login...
+[2026-05-29T14:09:09.803Z] Login URL atual: https://www.linkedin.com/login/
+[2026-05-29T14:09:15.275Z] Tentativa falhou em label:E-mail ou telefone -> locator.waitFor: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for getByLabel('E-mail ou telefone').first() to be visible[22m
+[2m    15 × locator resolved to hidden <input value="" dir="auto" type="email" id=":R3jvr8t766ab9j6:" autocomplete="username" aria-describedby=":R3jvr8t766ab9j6:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:09:15.278Z] Tentativa falhou em label:Email or phone -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.281Z] Tentativa falhou em selector:input[autocomplete*="username"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.283Z] Tentativa falhou em selector:input[type="email"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.285Z] Tentativa falhou em selector:input[name="session_key"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.288Z] Tentativa falhou em selector:input[id^=":r"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.290Z] Tentativa falhou em label:Senha -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.294Z] Tentativa falhou em label:Password -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.303Z] Tentativa falhou em selector:input[autocomplete="current-password"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.307Z] Tentativa falhou em selector:input[type="password"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.310Z] Tentativa falhou em selector:input[name="session_password"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.322Z] Tentativa falhou em selector:input[id^=":r"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:15.333Z] Seletores usados: user=none, pass=none
+[2026-05-29T14:09:15.341Z] ❌ Formulário de login não encontrado. Seletores: user=null, pass=null
+[2026-05-29T14:09:17.750Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:09:17.767Z] 📋 342 contatos carregados
+[2026-05-29T14:09:18.012Z] ⚠️ Fazendo login...
+[2026-05-29T14:09:24.245Z] Login URL atual: https://www.linkedin.com/login/
+[2026-05-29T14:09:35.207Z] Tentativa falhou em label:E-mail ou telefone -> locator.waitFor: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for getByLabel('E-mail ou telefone').first() to be visible[22m
+[2m    3 × locator resolved to hidden <input id=":r0:" dir="auto" value="ad" type="email" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+[2m    - locator resolved to hidden <input id=":r0:" dir="auto" value="ado" type="email" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+[2m    - locator resolved to hidden <input id=":r0:" dir="auto" type="email" value="adol" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+[2m    - locator resolved to hidden <input id=":r0:" dir="auto" type="email" value="adolfo" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+[2m    - locator resolved to hidden <input id=":r0:" dir="auto" type="email" value="adolfoheer" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+[2m    - locator resolved to hidden <input id=":r0:" dir="auto" type="email" value="adolfoheerdt_" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+[2m    - locator resolved to hidden <input id=":r0:" dir="auto" type="email" autocomplete="username" value="adolfoheerdt_@hotm" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+[2m    - locator resolved to hidden <input id=":r0:" dir="auto" type="email" autocomplete="username" aria-describedby=":r0:-info" value="adolfoheerdt_@hotmail." class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+[2m    5 × locator resolved to hidden <input id=":r0:" dir="auto" type="email" autocomplete="username" aria-describedby=":r0:-info" value="adolfoheerdt_@hotmail.com" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+[2m    - waiting for" https://www.linkedin.com/feed/" navigation to finish...[22m
+[2m    - navigated to "https://www.linkedin.com/feed/"[22m
+
+[2026-05-29T14:09:35.212Z] Tentativa falhou em label:Email or phone -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.216Z] Tentativa falhou em selector:input[autocomplete*="username"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.224Z] Tentativa falhou em selector:input[type="email"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.227Z] Tentativa falhou em selector:input[name="session_key"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.232Z] Tentativa falhou em selector:input[id^=":r"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.236Z] Tentativa falhou em label:Senha -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.240Z] Tentativa falhou em label:Password -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.252Z] Tentativa falhou em selector:input[autocomplete="current-password"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.270Z] Tentativa falhou em selector:input[type="password"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.274Z] Tentativa falhou em selector:input[name="session_password"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.276Z] Tentativa falhou em selector:input[id^=":r"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:09:35.278Z] Seletores usados: user=none, pass=none
+[2026-05-29T14:09:35.282Z] ❌ Formulário de login não encontrado. Seletores: user=null, pass=null
+[2026-05-29T14:09:42.310Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:09:42.330Z] 📋 342 contatos carregados
+[2026-05-29T14:09:42.591Z] ⚠️ Fazendo login...
+[2026-05-29T14:09:48.365Z] Login URL atual: https://www.linkedin.com/login/
+[2026-05-29T14:10:03.403Z] Tentativa falhou em label:E-mail ou telefone -> locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for getByLabel('E-mail ou telefone').first() to be visible[22m
+[2m    34 × locator resolved to hidden <input value="" id=":r0:" dir="auto" type="email" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:10:10.122Z] Tentativa falhou em selector:input[autocomplete*="username"] -> locator.waitFor: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('input[autocomplete*="username"]').first() to be visible[22m
+[2m    18 × locator resolved to hidden <input value="" id=":r0:" dir="auto" type="email" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:10:10.124Z] Tentativa falhou em selector:input[type="email"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:10:10.133Z] Tentativa falhou em selector:input[name="session_key"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:10:10.140Z] Tentativa falhou em selector:input[id^=":r"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:10:10.142Z] Tentativa falhou em label:Senha -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:10:10.146Z] Tentativa falhou em label:Password -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:10:10.161Z] Tentativa falhou em selector:input[autocomplete="current-password"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:10:10.206Z] Tentativa falhou em selector:input[type="password"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:10:10.263Z] Tentativa falhou em selector:input[name="session_password"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:10:10.287Z] Tentativa falhou em selector:input[id^=":r"] -> locator.count: Target page, context or browser has been closed
+[2026-05-29T14:10:10.289Z] Seletores usados: user=none, pass=none
+[2026-05-29T14:10:10.290Z] ❌ Formulário de login não encontrado. Seletores: user=null, pass=null
+[2026-05-29T14:10:23.274Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:10:23.291Z] 📋 342 contatos carregados
+[2026-05-29T14:10:23.551Z] ⚠️ Fazendo login...
+[2026-05-29T14:10:28.507Z] Login URL atual: https://www.linkedin.com/login/
+[2026-05-29T14:10:43.544Z] Tentativa falhou em label:E-mail ou telefone -> locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for getByLabel('E-mail ou telefone').first() to be visible[22m
+[2m    34 × locator resolved to hidden <input value="" id=":r0:" dir="auto" type="email" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:10:58.565Z] Tentativa falhou em selector:input[autocomplete*="username"] -> locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[autocomplete*="username"]').first() to be visible[22m
+[2m    34 × locator resolved to hidden <input value="" id=":r0:" dir="auto" type="email" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:11:13.578Z] Tentativa falhou em selector:input[type="email"] -> locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[type="email"]').first() to be visible[22m
+[2m    34 × locator resolved to hidden <input value="" id=":r0:" dir="auto" type="email" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:11:28.586Z] Tentativa falhou em selector:input[id^=":r"] -> locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[id^=":r"]').first() to be visible[22m
+[2m    34 × locator resolved to hidden <input value="" id=":r0:" dir="auto" type="email" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:11:43.601Z] Tentativa falhou em label:Senha -> locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for getByLabel('Senha').first() to be visible[22m
+[2m    34 × locator resolved to hidden <input value="" id=":r1:" dir="auto" type="password" aria-describedby=":r1:-info" autocomplete="current-password" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:11:58.617Z] Tentativa falhou em selector:input[autocomplete="current-password"] -> locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[autocomplete="current-password"]').first() to be visible[22m
+[2m    34 × locator resolved to hidden <input value="" id=":r1:" dir="auto" type="password" aria-describedby=":r1:-info" autocomplete="current-password" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:12:13.631Z] Tentativa falhou em selector:input[type="password"] -> locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[type="password"]').first() to be visible[22m
+[2m    34 × locator resolved to hidden <input value="" id=":r1:" dir="auto" type="password" aria-describedby=":r1:-info" autocomplete="current-password" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:12:28.649Z] Tentativa falhou em selector:input[id^=":r"] -> locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[id^=":r"]').first() to be visible[22m
+[2m    34 × locator resolved to hidden <input value="" id=":r0:" dir="auto" type="email" autocomplete="username" aria-describedby=":r0:-info" class="_6ac6eabd d361ae25 _9c0944a0 _4374e01d d1ddf0de a2342e38 _87cca307 c506316d _04986447 _10431072 d222de27 _2a4a3046 _5b63af8f _69518389 _79538cea c341069b fe600705 _31c885ba feb49e41 _26811523 a5cb7e31"/>[22m
+
+[2026-05-29T14:12:28.650Z] Seletores usados: user=none, pass=none
+[2026-05-29T14:12:28.651Z] ❌ Formulário de login não encontrado. Seletores: user=null, pass=null
+[2026-05-29T14:13:54.479Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:13:54.492Z] 📋 342 contatos carregados
+[2026-05-29T14:13:54.732Z] ⚠️ Fazendo login...
+[2026-05-29T14:13:59.475Z] Login URL atual: https://www.linkedin.com/login/
+[2026-05-29T14:13:59.569Z] Seletores usados: user=label:E-mail ou telefone, pass=label:Senha
+[2026-05-29T14:15:53.630Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:15:53.641Z] 📋 342 contatos carregados
+[2026-05-29T14:15:53.882Z] ⚠️ Fazendo login...
+[2026-05-29T14:15:58.664Z] Login URL atual: https://www.linkedin.com/login/
+[2026-05-29T14:15:58.762Z] Seletores usados: user=label:E-mail ou telefone, pass=label:Senha
+[2026-05-29T14:16:29.318Z] 💾 Sessão salva!
+[2026-05-29T14:16:29.387Z] 
+========== PROCESSANDO: ADRIANE RODRIGUES DA SILVA DECKER ==========
+[2026-05-29T14:16:33.810Z] Clicando no botão de compartilhar...
+[2026-05-29T14:16:34.444Z] Aguardando modal...
+[2026-05-29T14:16:36.042Z] Digitando nome: ADRIANE RODRIGUES DA SILVA DECKER
+[2026-05-29T14:16:41.303Z] Buscando contato nos resultados...
+[2026-05-29T14:16:41.312Z] Resultados encontrados: 1
+[2026-05-29T14:16:41.321Z] Correspondência encontrada na linha 0: ADRIANE RODRIGUES DA SILVA DECKER Analista de Faturamento na Agrícola São João
+[2026-05-29T14:16:42.067Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:16:42.068Z] ✓ Contato selecionado!
+[2026-05-29T14:16:42.588Z] Checkbox confirmado como marcado.
+[2026-05-29T14:16:42.732Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:16:44.012Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:16:44.014Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:16:44.108Z] ✓✓✓ SUCESSO: COMPARTILHADO COM ADRIANE RODRIGUES DA SILVA DECKER ✓✓✓
+[2026-05-29T14:16:46.122Z] --- Disfarçando: Indo para feed ---
+[2026-05-29T14:17:58.792Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:17:58.805Z] 📋 342 contatos carregados
+[2026-05-29T14:17:59.245Z] ✓ Usando sessão existente...
+[2026-05-29T14:17:59.886Z] ⏭️  PULANDO ADRIANE RODRIGUES DA SILVA DECKER (já enviado)
+[2026-05-29T14:17:59.889Z] 
+========== PROCESSANDO: Adriano Guarato Bastos ==========
+[2026-05-29T14:18:05.544Z] Clicando no botão de compartilhar...
+[2026-05-29T14:18:05.680Z] Aguardando modal...
+[2026-05-29T14:18:07.871Z] Digitando nome: Adriano Guarato Bastos
+[2026-05-29T14:18:11.840Z] Buscando contato nos resultados...
+[2026-05-29T14:18:11.851Z] Resultados encontrados: 1
+[2026-05-29T14:18:11.857Z] Correspondência encontrada na linha 0: Adriano Guarato Bastos Controller
+[2026-05-29T14:18:12.489Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:18:12.490Z] ✓ Contato selecionado!
+[2026-05-29T14:18:12.995Z] Checkbox confirmado como marcado.
+[2026-05-29T14:18:13.056Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:18:14.227Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:18:14.229Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:18:14.275Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Adriano Guarato Bastos ✓✓✓
+[2026-05-29T14:18:16.297Z] ⏰ Pausa de segurança: 63s
+
+[2026-05-29T14:33:35.572Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T14:33:35.603Z] 📋 342 contatos carregados
+[2026-05-29T14:33:35.956Z] ✓ Usando sessão existente...
+[2026-05-29T14:33:37.887Z] ⏭️  PULANDO ADRIANE RODRIGUES DA SILVA DECKER (já enviado)
+[2026-05-29T14:33:37.907Z] ⏭️  PULANDO Adriano Guarato Bastos (já enviado)
+[2026-05-29T14:33:37.934Z] 
+========== PROCESSANDO: Adriano Petry ==========
+[2026-05-29T14:33:44.023Z] Clicando no botão de compartilhar...
+[2026-05-29T14:33:44.239Z] Aguardando modal...
+[2026-05-29T14:33:45.776Z] Digitando nome: Adriano Petry
+[2026-05-29T14:33:48.801Z] Buscando contato nos resultados...
+[2026-05-29T14:33:48.810Z] Resultados encontrados: 1
+[2026-05-29T14:33:48.817Z] Correspondência encontrada na linha 0: Adriano Petry Coordenador de Produção / Valorem Agronegócios
+[2026-05-29T14:33:50.108Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:33:50.109Z] ✓ Contato selecionado!
+[2026-05-29T14:33:50.620Z] Checkbox confirmado como marcado.
+[2026-05-29T14:33:50.684Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:33:51.865Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:33:51.866Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:33:51.910Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Adriano Petry ✓✓✓
+[2026-05-29T14:33:53.914Z] ⏰ Pausa de segurança: 98s
+
+[2026-05-29T14:35:31.967Z] 
+========== PROCESSANDO: Adriano Rosa Jr. ==========
+[2026-05-29T14:35:36.428Z] Clicando no botão de compartilhar...
+[2026-05-29T14:35:37.793Z] Aguardando modal...
+[2026-05-29T14:35:39.313Z] Digitando nome: Adriano Rosa Jr.
+[2026-05-29T14:35:42.641Z] Buscando contato nos resultados...
+[2026-05-29T14:35:42.650Z] Resultados encontrados: 1
+[2026-05-29T14:35:42.655Z] Correspondência encontrada na linha 0: Adriano Rosa Jr. Analista Financeiro | SAP | Conciliações | Contratos
+[2026-05-29T14:35:43.309Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:35:43.309Z] ✓ Contato selecionado!
+[2026-05-29T14:35:43.822Z] Checkbox confirmado como marcado.
+[2026-05-29T14:35:43.907Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:35:45.070Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:35:45.072Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:35:45.116Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Adriano Rosa Jr. ✓✓✓
+[2026-05-29T14:35:47.121Z] --- Disfarçando: Indo para feed ---
+[2026-05-29T14:35:54.657Z] ⏰ Pausa de segurança: 143s
+
+[2026-05-29T14:38:17.303Z] 
+========== PROCESSANDO: Airton Lima ==========
+[2026-05-29T14:38:21.740Z] Clicando no botão de compartilhar...
+[2026-05-29T14:38:23.981Z] Aguardando modal...
+[2026-05-29T14:38:25.711Z] Digitando nome: Airton Lima
+[2026-05-29T14:38:28.529Z] Buscando contato nos resultados...
+[2026-05-29T14:38:28.566Z] Resultados encontrados: 1
+[2026-05-29T14:38:28.573Z] Correspondência encontrada na linha 0: Airton Lima Business Development | International Trade | Comércio Exterior | Comercial
+[2026-05-29T14:38:29.249Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:38:29.249Z] ✓ Contato selecionado!
+[2026-05-29T14:38:29.764Z] Checkbox confirmado como marcado.
+[2026-05-29T14:38:29.831Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:38:30.989Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:38:30.990Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:38:31.043Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Airton Lima ✓✓✓
+[2026-05-29T14:38:33.068Z] ⏰ Pausa de segurança: 144s
+
+[2026-05-29T14:40:57.231Z] 
+========== PROCESSANDO: Aldo Lemos ==========
+[2026-05-29T14:41:02.361Z] Clicando no botão de compartilhar...
+[2026-05-29T14:41:04.480Z] Aguardando modal...
+[2026-05-29T14:41:06.381Z] Digitando nome: Aldo Lemos
+[2026-05-29T14:41:09.052Z] Buscando contato nos resultados...
+[2026-05-29T14:41:09.061Z] Resultados encontrados: 1
+[2026-05-29T14:41:09.067Z] Correspondência encontrada na linha 0: Aldo Lemos Gestão Orçamentária | Planejamento e Análise Financeira (FP&A) | Controladoria de Custos Industriais | Gestão de Inventários e OPEX | Implementação de Políticas e Compliance | Supply Chain
+[2026-05-29T14:41:11.130Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:41:11.131Z] ✓ Contato selecionado!
+[2026-05-29T14:41:11.640Z] Checkbox confirmado como marcado.
+[2026-05-29T14:41:13.554Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:41:14.983Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:41:14.984Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:41:15.037Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Aldo Lemos ✓✓✓
+[2026-05-29T14:41:17.049Z] ⏰ Pausa de segurança: 95s
+
+[2026-05-29T14:42:52.338Z] 
+========== PROCESSANDO: Alessandra Machado da Costa ==========
+[2026-05-29T14:42:56.859Z] Clicando no botão de compartilhar...
+[2026-05-29T14:42:58.283Z] Aguardando modal...
+[2026-05-29T14:42:59.404Z] Digitando nome: Alessandra Machado da Costa
+[2026-05-29T14:43:06.057Z] Buscando contato nos resultados...
+[2026-05-29T14:43:06.067Z] Resultados encontrados: 1
+[2026-05-29T14:43:06.073Z] Correspondência encontrada na linha 0: Alessandra Machado da Costa Trader | Agronegócio | Comercial | Commodities
+[2026-05-29T14:43:07.913Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:43:07.913Z] ✓ Contato selecionado!
+[2026-05-29T14:43:08.425Z] Checkbox confirmado como marcado.
+[2026-05-29T14:43:10.356Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:43:11.535Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:43:11.537Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:43:11.591Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Alessandra Machado da Costa ✓✓✓
+[2026-05-29T14:43:13.601Z] --- Disfarçando: Indo para notifications ---
+[2026-05-29T14:43:13.822Z] ⚠️ Disfarce ignorado: page.goto: net::ERR_ABORTED at https://www.linkedin.com/notifications/
+Call log:
+[2m  - navigating to "https://www.linkedin.com/notifications/", waiting until "domcontentloaded"[22m
+
+[2026-05-29T14:43:17.829Z] ⏰ Pausa de segurança: 127s
+
+[2026-05-29T14:45:24.373Z] 
+========== PROCESSANDO: Alessandra Silva Lopes ==========
+[2026-05-29T14:45:29.209Z] Clicando no botão de compartilhar...
+[2026-05-29T14:45:30.590Z] Aguardando modal...
+[2026-05-29T14:45:31.969Z] Digitando nome: Alessandra Silva Lopes
+[2026-05-29T14:45:37.007Z] Buscando contato nos resultados...
+[2026-05-29T14:45:37.016Z] Resultados encontrados: 1
+[2026-05-29T14:45:37.020Z] Correspondência encontrada na linha 0: Alessandra Silva Lopes Analista de Exportação
+[2026-05-29T14:45:39.233Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:45:39.234Z] ✓ Contato selecionado!
+[2026-05-29T14:45:39.740Z] Checkbox confirmado como marcado.
+[2026-05-29T14:45:41.691Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:45:42.871Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:45:42.872Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:45:42.913Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Alessandra Silva Lopes ✓✓✓
+[2026-05-29T14:45:44.928Z] ⏰ Pausa de segurança: 111s
+
+[2026-05-29T14:47:36.377Z] 
+========== PROCESSANDO: Alex Junior ==========
+[2026-05-29T14:47:40.692Z] Clicando no botão de compartilhar...
+[2026-05-29T14:47:42.616Z] Aguardando modal...
+[2026-05-29T14:47:43.992Z] Digitando nome: Alex Junior
+[2026-05-29T14:47:46.766Z] Buscando contato nos resultados...
+[2026-05-29T14:47:46.780Z] Resultados encontrados: 1
+[2026-05-29T14:47:46.788Z] Correspondência encontrada na linha 0: Alex Junior Analista de Faturamento PL.|| Bacharel em Ciências Econômicas|| Técnico em Agropecuária.
+[2026-05-29T14:47:49.277Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:47:49.277Z] ✓ Contato selecionado!
+[2026-05-29T14:47:49.790Z] Checkbox confirmado como marcado.
+[2026-05-29T14:47:51.729Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:47:52.878Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:47:52.879Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:47:52.938Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Alex Junior ✓✓✓
+[2026-05-29T14:47:54.943Z] ⏰ Pausa de segurança: 77s
+
+[2026-05-29T14:49:12.099Z] 
+========== PROCESSANDO: Alex Silva Cunha ==========
+[2026-05-29T14:49:18.222Z] Clicando no botão de compartilhar...
+[2026-05-29T14:49:21.017Z] Aguardando modal...
+[2026-05-29T14:49:21.951Z] Digitando nome: Alex Silva Cunha
+[2026-05-29T14:49:26.214Z] Buscando contato nos resultados...
+[2026-05-29T14:49:26.222Z] Resultados encontrados: 1
+[2026-05-29T14:49:26.226Z] Correspondência encontrada na linha 0: Alex Silva Cunha Assistente de Cadastro
+[2026-05-29T14:49:27.932Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:49:27.933Z] ✓ Contato selecionado!
+[2026-05-29T14:49:28.451Z] Checkbox confirmado como marcado.
+[2026-05-29T14:49:30.352Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:49:31.581Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:49:31.582Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:49:31.641Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Alex Silva Cunha ✓✓✓
+[2026-05-29T14:49:33.647Z] --- Disfarçando: Indo para feed ---
+[2026-05-29T14:49:42.477Z] ⏰ Pausa de segurança: 77s
+
+[2026-05-29T14:50:59.740Z] 
+========== PROCESSANDO: Alfredo Sérgio Lazzareschi Neto ==========
+[2026-05-29T14:51:05.616Z] Clicando no botão de compartilhar...
+[2026-05-29T14:51:06.968Z] Aguardando modal...
+[2026-05-29T14:51:07.949Z] Digitando nome: Alfredo Sérgio Lazzareschi Neto
+[2026-05-29T14:51:38.877Z] Buscando contato nos resultados...
+[2026-05-29T14:51:44.490Z] Resultados encontrados: 1
+[2026-05-29T14:51:45.506Z] Correspondência encontrada na linha 0: Alfredo Sérgio Lazzareschi Neto Advogado (contencioso e consultivo). Autor do livro Lei das S/A Comentada e Anotada (7ª ed.). Árbitro e parecerista. Conselheiro de companhias abertas.
+[2026-05-29T14:52:05.349Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:52:05.350Z] ✓ Contato selecionado!
+[2026-05-29T14:52:05.861Z] Checkbox confirmado como marcado.
+[2026-05-29T14:52:07.842Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:52:09.022Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:52:09.024Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:52:09.097Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Alfredo Sérgio Lazzareschi Neto ✓✓✓
+[2026-05-29T14:52:11.105Z] ⏰ Pausa de segurança: 141s
+
+[2026-05-29T14:54:31.922Z] 
+========== PROCESSANDO: Alice Ramonica Nogueira ==========
+[2026-05-29T14:54:36.431Z] Clicando no botão de compartilhar...
+[2026-05-29T14:54:38.224Z] Aguardando modal...
+[2026-05-29T14:54:39.608Z] Digitando nome: Alice Ramonica Nogueira
+[2026-05-29T14:54:43.708Z] Buscando contato nos resultados...
+[2026-05-29T14:54:43.718Z] Resultados encontrados: 1
+[2026-05-29T14:54:43.722Z] Correspondência encontrada na linha 0: Alice Ramonica Nogueira Contadora | Analista Fiscal | MBA em Auditoria e Planejamento Tributário | Experiência em Compliance e Gestão Fiscal.
+[2026-05-29T14:54:45.887Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T14:54:45.887Z] ✓ Contato selecionado!
+[2026-05-29T14:54:46.398Z] Checkbox confirmado como marcado.
+[2026-05-29T14:54:48.325Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T14:54:49.499Z] Mensagem preenchida com sucesso.
+[2026-05-29T14:54:49.500Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T14:54:49.545Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Alice Ramonica Nogueira ✓✓✓
+[2026-05-29T14:54:51.568Z] ⏰ Pausa de segurança: 75s
+
+[2026-05-29T14:56:06.458Z] 
+========== PROCESSANDO: Alícia Noêmi C. Grayze Machado ==========
+[2026-05-29T17:25:00.634Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-05-29T17:25:00.700Z] 📋 342 contatos carregados
+[2026-05-29T17:25:01.762Z] ✓ Usando sessão existente...
+[2026-05-29T17:25:03.189Z] ⏭️  PULANDO ADRIANE RODRIGUES DA SILVA DECKER (já enviado)
+[2026-05-29T17:25:03.193Z] ⏭️  PULANDO Adriano Guarato Bastos (já enviado)
+[2026-05-29T17:25:03.210Z] ⏭️  PULANDO Adriano Petry (já enviado)
+[2026-05-29T17:25:03.213Z] ⏭️  PULANDO Adriano Rosa Jr. (já enviado)
+[2026-05-29T17:25:03.225Z] ⏭️  PULANDO Airton Lima (já enviado)
+[2026-05-29T17:25:03.226Z] ⏭️  PULANDO Aldo Lemos (já enviado)
+[2026-05-29T17:25:03.232Z] ⏭️  PULANDO Alessandra Machado da Costa (já enviado)
+[2026-05-29T17:25:03.236Z] ⏭️  PULANDO Alessandra Silva Lopes (já enviado)
+[2026-05-29T17:25:03.239Z] ⏭️  PULANDO Alex Junior (já enviado)
+[2026-05-29T17:25:03.241Z] ⏭️  PULANDO Alex Silva Cunha (já enviado)
+[2026-05-29T17:25:03.248Z] ⏭️  PULANDO Alfredo Sérgio Lazzareschi Neto (já enviado)
+[2026-05-29T17:25:03.255Z] ⏭️  PULANDO Alice Ramonica Nogueira (já enviado)
+[2026-05-29T17:25:03.257Z] 
+========== PROCESSANDO: Alícia Noêmi C. Grayze Machado ==========
+[2026-05-29T17:25:09.234Z] Clicando no botão de compartilhar...
+[2026-05-29T17:25:09.443Z] Aguardando modal...
+[2026-05-29T17:25:11.557Z] Digitando nome: Alícia Noêmi C. Grayze Machado
+[2026-05-29T17:25:17.942Z] Buscando contato nos resultados...
+[2026-05-29T17:25:17.953Z] Resultados encontrados: 1
+[2026-05-29T17:25:17.960Z] Correspondência encontrada na linha 0: Alícia Noêmi C. Grayze Machado • Contencioso jurídico • Compliance e governança • Gestão de contratos • Regulamentação fundiária • Análise e recuperação de crédito
+[2026-05-29T17:25:18.608Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:25:18.609Z] ✓ Contato selecionado!
+[2026-05-29T17:25:19.124Z] Checkbox confirmado como marcado.
+[2026-05-29T17:25:19.196Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:25:20.360Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:25:20.361Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:25:20.407Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Alícia Noêmi C. Grayze Machado ✓✓✓
+[2026-05-29T17:25:22.412Z] --- Disfarçando: Indo para notifications ---
+[2026-05-29T17:25:29.835Z] ⏰ Pausa de segurança: 102s
+
+[2026-05-29T17:27:11.632Z] 
+========== PROCESSANDO: Aline Andrade ==========
+[2026-05-29T17:27:16.008Z] Clicando no botão de compartilhar...
+[2026-05-29T17:27:16.405Z] Aguardando modal...
+[2026-05-29T17:27:18.853Z] Digitando nome: Aline Andrade
+[2026-05-29T17:27:22.164Z] Buscando contato nos resultados...
+[2026-05-29T17:27:22.175Z] Resultados encontrados: 1
+[2026-05-29T17:27:22.180Z] Correspondência encontrada na linha 0: Aline Andrade --
+[2026-05-29T17:27:22.844Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:27:22.845Z] ✓ Contato selecionado!
+[2026-05-29T17:27:23.353Z] Checkbox confirmado como marcado.
+[2026-05-29T17:27:23.421Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:27:24.600Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:27:24.602Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:27:24.645Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Aline Andrade ✓✓✓
+[2026-05-29T17:27:26.649Z] ⏰ Pausa de segurança: 104s
+
+[2026-05-29T17:29:10.647Z] 
+========== PROCESSANDO: Aline Ferreira Bernardino ==========
+[2026-05-29T17:29:15.091Z] Clicando no botão de compartilhar...
+[2026-05-29T17:29:16.314Z] Aguardando modal...
+[2026-05-29T17:29:16.895Z] Digitando nome: Aline Ferreira Bernardino
+[2026-05-29T17:29:21.287Z] Buscando contato nos resultados...
+[2026-05-29T17:29:21.295Z] Resultados encontrados: 1
+[2026-05-29T17:29:21.301Z] Correspondência encontrada na linha 0: Aline Ferreira Bernardino Supervisora Financeira | Administradora CRA-MG 01-068516/D | Controles Internos | PQO Compliance | Gestão de Resultados
+[2026-05-29T17:29:21.960Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:29:21.960Z] ✓ Contato selecionado!
+[2026-05-29T17:29:22.479Z] Checkbox confirmado como marcado.
+[2026-05-29T17:29:22.553Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:29:23.697Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:29:23.698Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:29:23.743Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Aline Ferreira Bernardino ✓✓✓
+[2026-05-29T17:29:25.749Z] ⏰ Pausa de segurança: 86s
+
+[2026-05-29T17:30:51.615Z] 
+========== PROCESSANDO: Aline Grando ==========
+[2026-05-29T17:30:55.696Z] Clicando no botão de compartilhar...
+[2026-05-29T17:30:56.678Z] Aguardando modal...
+[2026-05-29T17:30:57.656Z] Digitando nome: Aline Grando
+[2026-05-29T17:31:00.583Z] Buscando contato nos resultados...
+[2026-05-29T17:31:00.593Z] Resultados encontrados: 1
+[2026-05-29T17:31:00.598Z] Correspondência encontrada na linha 0: Aline Grando Especialista fiscal no GRUPO OLFAR
+[2026-05-29T17:31:01.264Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:31:01.264Z] ✓ Contato selecionado!
+[2026-05-29T17:31:01.774Z] Checkbox confirmado como marcado.
+[2026-05-29T17:31:01.840Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:31:02.991Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:31:02.992Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:31:03.033Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Aline Grando ✓✓✓
+[2026-05-29T17:31:05.047Z] --- Disfarçando: Indo para notifications ---
+[2026-05-29T17:31:12.511Z] ⏰ Pausa de segurança: 80s
+
+[2026-05-29T17:32:32.635Z] 
+========== PROCESSANDO: Aline Lopes ==========
+[2026-05-29T17:32:36.960Z] Clicando no botão de compartilhar...
+[2026-05-29T17:32:37.850Z] Aguardando modal...
+[2026-05-29T17:32:38.985Z] Digitando nome: Aline Lopes
+[2026-05-29T17:32:41.873Z] Buscando contato nos resultados...
+[2026-05-29T17:32:41.882Z] Resultados encontrados: 1
+[2026-05-29T17:32:41.887Z] Correspondência encontrada na linha 0: Aline Lopes Analista Fiscal Sênior
+[2026-05-29T17:32:42.531Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:32:42.531Z] ✓ Contato selecionado!
+[2026-05-29T17:32:43.043Z] Checkbox confirmado como marcado.
+[2026-05-29T17:32:43.110Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:32:44.271Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:32:44.272Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:32:44.314Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Aline Lopes ✓✓✓
+[2026-05-29T17:32:46.336Z] ⏰ Pausa de segurança: 111s
+
+[2026-05-29T17:34:37.194Z] 
+========== PROCESSANDO: Aline Xavier de Oliveira ==========
+[2026-05-29T17:34:41.504Z] Clicando no botão de compartilhar...
+[2026-05-29T17:34:42.718Z] Aguardando modal...
+[2026-05-29T17:34:43.458Z] Digitando nome: Aline Xavier de Oliveira
+[2026-05-29T17:34:47.900Z] Buscando contato nos resultados...
+[2026-05-29T17:34:47.909Z] Resultados encontrados: 1
+[2026-05-29T17:34:47.918Z] Correspondência encontrada na linha 0: Aline Xavier de Oliveira Analista de Planejamento e Orçamento | Análise financeira | Análise de dados
+[2026-05-29T17:34:48.557Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:34:48.557Z] ✓ Contato selecionado!
+[2026-05-29T17:34:49.069Z] Checkbox confirmado como marcado.
+[2026-05-29T17:34:49.216Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:34:50.366Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:34:50.367Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:34:50.420Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Aline Xavier de Oliveira ✓✓✓
+[2026-05-29T17:34:52.430Z] ⏰ Pausa de segurança: 129s
+
+[2026-05-29T17:37:01.135Z] 
+========== PROCESSANDO: Aloisio Nascimento ==========
+[2026-05-29T17:37:05.195Z] Clicando no botão de compartilhar...
+[2026-05-29T17:37:05.375Z] Aguardando modal...
+[2026-05-29T17:37:06.292Z] Digitando nome: Aloisio Nascimento
+[2026-05-29T17:37:09.888Z] Buscando contato nos resultados...
+[2026-05-29T17:37:09.899Z] Resultados encontrados: 1
+[2026-05-29T17:37:09.903Z] Correspondência encontrada na linha 0: Aloisio Nascimento Gerente Sênior Crédito & Recebimento | Financeiro |Barter | Liderança Estratégica | Gestão de Pessoas |
+[2026-05-29T17:37:10.551Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:37:10.552Z] ✓ Contato selecionado!
+[2026-05-29T17:37:11.060Z] Checkbox confirmado como marcado.
+[2026-05-29T17:37:11.114Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:37:12.277Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:37:12.277Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:37:12.319Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Aloisio Nascimento ✓✓✓
+[2026-05-29T17:37:14.323Z] --- Disfarçando: Indo para notifications ---
+[2026-05-29T17:37:23.298Z] ⏰ Pausa de segurança: 67s
+
+[2026-05-29T17:38:30.695Z] 
+========== PROCESSANDO: Amilcan Alexandre Secchi ==========
+[2026-05-29T17:38:35.024Z] Clicando no botão de compartilhar...
+[2026-05-29T17:38:35.996Z] Aguardando modal...
+[2026-05-29T17:38:36.874Z] Digitando nome: Amilcan Alexandre Secchi
+[2026-05-29T17:38:41.123Z] Buscando contato nos resultados...
+[2026-05-29T17:38:41.144Z] Resultados encontrados: 1
+[2026-05-29T17:38:41.154Z] Correspondência encontrada na linha 0: Amilcan Alexandre Secchi Commodity Broker B2B | Óleos Vegetais de Palma e PKO | Gorduras | Açúcar | Soja: Óleo, Grãos, Farelo | Mercado Interno e Exportação | Palm and PKO Oils | Fats | Soybean Oil | Sugar | Domestic And Export | BT AGRO BRASIL
+[2026-05-29T17:38:41.830Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:38:41.832Z] ✓ Contato selecionado!
+[2026-05-29T17:38:42.341Z] Checkbox confirmado como marcado.
+[2026-05-29T17:38:42.408Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:38:43.590Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:38:43.591Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:38:43.631Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Amilcan Alexandre Secchi ✓✓✓
+[2026-05-29T17:38:45.632Z] ⏰ Pausa de segurança: 142s
+
+[2026-05-29T17:41:07.679Z] 
+========== PROCESSANDO: Amanda Lima dos Santos ==========
+[2026-05-29T17:41:11.951Z] Clicando no botão de compartilhar...
+[2026-05-29T17:41:13.109Z] Aguardando modal...
+[2026-05-29T17:41:14.130Z] Digitando nome: Amanda Lima dos Santos
+[2026-05-29T17:41:18.162Z] Buscando contato nos resultados...
+[2026-05-29T17:41:18.171Z] Resultados encontrados: 1
+[2026-05-29T17:41:18.177Z] Correspondência encontrada na linha 0: Amanda Lima dos Santos Auxiliar Administrativo | Jurídico
+[2026-05-29T17:41:18.827Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:41:18.828Z] ✓ Contato selecionado!
+[2026-05-29T17:41:19.354Z] Checkbox confirmado como marcado.
+[2026-05-29T17:41:19.419Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:41:20.583Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:41:20.584Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:41:20.623Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Amanda Lima dos Santos ✓✓✓
+[2026-05-29T17:41:22.630Z] ⏰ Pausa de segurança: 126s
+
+[2026-05-29T17:43:28.952Z] 
+========== PROCESSANDO: Amanda Prata Lopes ==========
+[2026-05-29T17:43:32.966Z] Clicando no botão de compartilhar...
+[2026-05-29T17:43:33.875Z] Aguardando modal...
+[2026-05-29T17:43:34.911Z] Digitando nome: Amanda Prata Lopes
+[2026-05-29T17:43:38.482Z] Buscando contato nos resultados...
+[2026-05-29T17:43:38.491Z] Resultados encontrados: 1
+[2026-05-29T17:43:38.497Z] Correspondência encontrada na linha 0: Amanda Prata Lopes Departamento fiscal
+[2026-05-29T17:43:39.156Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:43:39.156Z] ✓ Contato selecionado!
+[2026-05-29T17:43:39.665Z] Checkbox confirmado como marcado.
+[2026-05-29T17:43:39.734Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:43:40.896Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:43:40.897Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:43:40.940Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Amanda Prata Lopes ✓✓✓
+[2026-05-29T17:43:42.945Z] --- Disfarçando: Indo para feed ---
+[2026-05-29T17:43:49.586Z] ⏰ Pausa de segurança: 115s
+
+[2026-05-29T17:45:44.648Z] 
+========== PROCESSANDO: Ana Amélia de Oliveira ==========
+[2026-05-29T17:45:48.694Z] Clicando no botão de compartilhar...
+[2026-05-29T17:45:48.893Z] Aguardando modal...
+[2026-05-29T17:45:49.830Z] Digitando nome: Ana Amélia de Oliveira
+[2026-05-29T17:45:53.882Z] Buscando contato nos resultados...
+[2026-05-29T17:45:53.891Z] Resultados encontrados: 1
+[2026-05-29T17:45:53.935Z] Correspondência encontrada na linha 0: Ana Amélia de Oliveira Comercial | Gestão Comercial | Analista Comercial | Pós Vendas | Agronegócio | ESG
+[2026-05-29T17:45:54.622Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:45:54.623Z] ✓ Contato selecionado!
+[2026-05-29T17:45:55.134Z] Checkbox confirmado como marcado.
+[2026-05-29T17:45:55.201Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:45:56.364Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:45:56.365Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:45:56.407Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Ana Amélia de Oliveira ✓✓✓
+[2026-05-29T17:45:58.412Z] ⏰ Pausa de segurança: 140s
+
+[2026-05-29T17:48:18.663Z] 
+========== PROCESSANDO: Ana Carolina Rodrigues da Silva ==========
+[2026-05-29T17:48:22.906Z] Clicando no botão de compartilhar...
+[2026-05-29T17:48:23.114Z] Aguardando modal...
+[2026-05-29T17:48:24.564Z] Digitando nome: Ana Carolina Rodrigues da Silva
+[2026-05-29T17:48:29.564Z] Buscando contato nos resultados...
+[2026-05-29T17:48:29.572Z] Resultados encontrados: 1
+[2026-05-29T17:48:29.577Z] Correspondência encontrada na linha 0: Ana Carolina Rodrigues da Silva Assistente contábil
+[2026-05-29T17:48:30.222Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:48:30.222Z] ✓ Contato selecionado!
+[2026-05-29T17:48:30.731Z] Checkbox confirmado como marcado.
+[2026-05-29T17:48:30.798Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:48:31.962Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:48:31.963Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:48:32.006Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Ana Carolina Rodrigues da Silva ✓✓✓
+[2026-05-29T17:48:34.025Z] ⏰ Pausa de segurança: 123s
+
+[2026-05-29T17:50:36.741Z] 
+========== PROCESSANDO: Ana Luiza Sipp Beling ==========
+[2026-05-29T17:50:40.788Z] Clicando no botão de compartilhar...
+[2026-05-29T17:50:40.917Z] Aguardando modal...
+[2026-05-29T17:50:41.879Z] Digitando nome: Ana Luiza Sipp Beling
+[2026-05-29T17:50:45.847Z] Buscando contato nos resultados...
+[2026-05-29T17:50:45.861Z] Resultados encontrados: 1
+[2026-05-29T17:50:45.869Z] Correspondência encontrada na linha 0: Ana Luiza Sipp Beling Gerente Administrativo na Rural Mais Agronegócios
+[2026-05-29T17:50:46.553Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:50:46.554Z] ✓ Contato selecionado!
+[2026-05-29T17:50:47.065Z] Checkbox confirmado como marcado.
+[2026-05-29T17:50:47.132Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:50:48.310Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:50:48.312Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:50:48.355Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Ana Luiza Sipp Beling ✓✓✓
+[2026-05-29T17:50:50.360Z] --- Disfarçando: Indo para notifications ---
+[2026-05-29T17:50:57.752Z] ⏰ Pausa de segurança: 107s
+
+[2026-05-29T17:52:45.194Z] 
+========== PROCESSANDO: Ana Oliveira ==========
+[2026-05-29T17:52:49.459Z] Clicando no botão de compartilhar...
+[2026-05-29T17:52:50.315Z] Aguardando modal...
+[2026-05-29T17:52:51.084Z] Digitando nome: Ana Oliveira
+[2026-05-29T17:52:54.095Z] Buscando contato nos resultados...
+[2026-05-29T17:52:54.104Z] Resultados encontrados: 2
+[2026-05-29T17:52:54.110Z] Correspondência encontrada na linha 0: Ana Oliveira Foco em Exportação de Café | Dados, Estratégia Fiscal e Inteligência Operacional
+[2026-05-29T17:52:54.762Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:52:54.763Z] ✓ Contato selecionado!
+[2026-05-29T17:52:55.273Z] Checkbox confirmado como marcado.
+[2026-05-29T17:52:55.340Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:52:56.502Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:52:56.504Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:52:56.547Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Ana Oliveira ✓✓✓
+[2026-05-29T17:52:58.552Z] ⏰ Pausa de segurança: 130s
+
+[2026-05-29T17:55:08.131Z] 
+========== PROCESSANDO: Ana Paula Pires ==========
+[2026-05-29T17:55:12.365Z] Clicando no botão de compartilhar...
+[2026-05-29T17:55:13.017Z] Aguardando modal...
+[2026-05-29T17:55:13.946Z] Digitando nome: Ana Paula Pires
+[2026-05-29T17:55:17.165Z] Buscando contato nos resultados...
+[2026-05-29T17:55:17.176Z] Resultados encontrados: 1
+[2026-05-29T17:55:17.180Z] Correspondência encontrada na linha 0: Ana Paula Pires Gestão Fiscal na Agrofel Agro Comercial S.A.
+[2026-05-29T17:55:17.839Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:55:17.840Z] ✓ Contato selecionado!
+[2026-05-29T17:55:18.354Z] Checkbox confirmado como marcado.
+[2026-05-29T17:55:18.416Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:55:19.580Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:55:19.581Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:55:19.621Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Ana Paula Pires ✓✓✓
+[2026-05-29T17:55:21.629Z] ⏰ Pausa de segurança: 114s
+
+[2026-05-29T17:57:15.632Z] 
+========== PROCESSANDO: Andre Luiz Rodrigues Muraoka ==========
+[2026-05-29T17:57:19.637Z] Clicando no botão de compartilhar...
+[2026-05-29T17:57:20.970Z] Aguardando modal...
+[2026-05-29T17:57:22.131Z] Digitando nome: Andre Luiz Rodrigues Muraoka
+[2026-05-29T17:57:27.022Z] Buscando contato nos resultados...
+[2026-05-29T17:57:27.030Z] Resultados encontrados: 1
+[2026-05-29T17:57:27.035Z] Correspondência encontrada na linha 0: Andre Luiz Rodrigues Muraoka Sustainability Manager
+[2026-05-29T17:57:27.677Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:57:27.678Z] ✓ Contato selecionado!
+[2026-05-29T17:57:28.183Z] Checkbox confirmado como marcado.
+[2026-05-29T17:57:28.241Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:57:29.393Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:57:29.394Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:57:29.446Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Andre Luiz Rodrigues Muraoka ✓✓✓
+[2026-05-29T17:57:31.452Z] --- Disfarçando: Indo para feed ---
+[2026-05-29T17:57:38.145Z] ⏰ Pausa de segurança: 81s
+
+[2026-05-29T17:58:59.397Z] 
+========== PROCESSANDO: Andrea Debroi ==========
+[2026-05-29T17:59:03.618Z] Clicando no botão de compartilhar...
+[2026-05-29T17:59:04.123Z] Aguardando modal...
+[2026-05-29T17:59:04.880Z] Digitando nome: Andrea Debroi
+[2026-05-29T17:59:07.956Z] Buscando contato nos resultados...
+[2026-05-29T17:59:07.965Z] Resultados encontrados: 1
+[2026-05-29T17:59:07.971Z] Correspondência encontrada na linha 0: Andrea Debroi Comercial / Customer Service
+[2026-05-29T17:59:08.696Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T17:59:08.697Z] ✓ Contato selecionado!
+[2026-05-29T17:59:09.209Z] Checkbox confirmado como marcado.
+[2026-05-29T17:59:09.274Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T17:59:10.437Z] Mensagem preenchida com sucesso.
+[2026-05-29T17:59:10.438Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T17:59:10.480Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Andrea Debroi ✓✓✓
+[2026-05-29T17:59:12.486Z] ⏰ Pausa de segurança: 126s
+
+[2026-05-29T18:01:18.579Z] 
+========== PROCESSANDO: Andreia Abreu ==========
+[2026-05-29T18:01:22.565Z] Clicando no botão de compartilhar...
+[2026-05-29T18:01:22.716Z] Aguardando modal...
+[2026-05-29T18:01:23.633Z] Digitando nome: Andreia Abreu
+[2026-05-29T18:01:26.638Z] Buscando contato nos resultados...
+[2026-05-29T18:01:26.655Z] Resultados encontrados: 1
+[2026-05-29T18:01:26.663Z] Correspondência encontrada na linha 0: Andreia Abreu Experiência integrada entre Controladoria, Jurídico e Administrativo.
+[2026-05-29T18:01:27.328Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:01:27.328Z] ✓ Contato selecionado!
+[2026-05-29T18:01:27.839Z] Checkbox confirmado como marcado.
+[2026-05-29T18:01:27.907Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:01:29.098Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:01:29.099Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:01:29.143Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Andreia Abreu ✓✓✓
+[2026-05-29T18:01:31.153Z] ⏰ Pausa de segurança: 89s
+
+[2026-05-29T18:03:00.350Z] 
+========== PROCESSANDO: Andreia Souza ==========
+[2026-05-29T18:03:04.490Z] Clicando no botão de compartilhar...
+[2026-05-29T18:03:04.607Z] Aguardando modal...
+[2026-05-29T18:03:05.502Z] Digitando nome: Andreia Souza
+[2026-05-29T18:03:08.521Z] Buscando contato nos resultados...
+[2026-05-29T18:03:08.530Z] Resultados encontrados: 1
+[2026-05-29T18:03:08.536Z] Correspondência encontrada na linha 0: Andreia Souza Bacharel em Direito e Administração Publica. MBA em Gestão de pessoas e Agronegocios
+[2026-05-29T18:03:09.215Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:03:09.216Z] ✓ Contato selecionado!
+[2026-05-29T18:03:09.731Z] Checkbox confirmado como marcado.
+[2026-05-29T18:03:09.805Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:03:10.952Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:03:10.954Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:03:10.995Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Andreia Souza ✓✓✓
+[2026-05-29T18:03:12.998Z] --- Disfarçando: Indo para feed ---
+[2026-05-29T18:03:20.223Z] ⏰ Pausa de segurança: 68s
+
+[2026-05-29T18:04:28.207Z] 
+========== PROCESSANDO: Andriele Costa ==========
+[2026-05-29T18:04:32.619Z] Clicando no botão de compartilhar...
+[2026-05-29T18:04:32.736Z] Aguardando modal...
+[2026-05-29T18:04:33.665Z] Digitando nome: Andriele Costa
+[2026-05-29T18:04:36.789Z] Buscando contato nos resultados...
+[2026-05-29T18:04:36.796Z] Resultados encontrados: 1
+[2026-05-29T18:04:36.802Z] Correspondência encontrada na linha 0: Andriele Costa Assistente fiscal
+[2026-05-29T18:04:37.442Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:04:37.442Z] ✓ Contato selecionado!
+[2026-05-29T18:04:37.948Z] Checkbox confirmado como marcado.
+[2026-05-29T18:04:38.018Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:04:39.183Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:04:39.184Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:04:39.229Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Andriele Costa ✓✓✓
+[2026-05-29T18:04:41.243Z] ⏰ Pausa de segurança: 129s
+
+[2026-05-29T18:06:50.257Z] 
+========== PROCESSANDO: Andrews Luciato ==========
+[2026-05-29T18:06:54.260Z] Clicando no botão de compartilhar...
+[2026-05-29T18:06:54.462Z] Aguardando modal...
+[2026-05-29T18:06:55.405Z] Digitando nome: Andrews Luciato
+[2026-05-29T18:06:58.630Z] Buscando contato nos resultados...
+[2026-05-29T18:06:58.639Z] Resultados encontrados: 1
+[2026-05-29T18:06:58.645Z] Correspondência encontrada na linha 0: Andrews Luciato Analista Contábil / Fiscal | Conciliação e Fechamento Contábil | Apuração de Tributos | SAP Business One | TOTVS Protheus | Logix | Reforma Tributária IBS/CBS.
+[2026-05-29T18:06:59.321Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:06:59.321Z] ✓ Contato selecionado!
+[2026-05-29T18:06:59.831Z] Checkbox confirmado como marcado.
+[2026-05-29T18:06:59.899Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:07:01.094Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:07:01.095Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:07:01.156Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Andrews Luciato ✓✓✓
+[2026-05-29T18:07:03.164Z] ⏰ Pausa de segurança: 77s
+
+[2026-05-29T18:08:20.460Z] 
+========== PROCESSANDO: Angélica Lima ==========
+[2026-05-29T18:08:24.425Z] Clicando no botão de compartilhar...
+[2026-05-29T18:08:26.492Z] Aguardando modal...
+[2026-05-29T18:08:27.351Z] Digitando nome: Angélica Lima
+[2026-05-29T18:08:30.383Z] Buscando contato nos resultados...
+[2026-05-29T18:08:30.390Z] Resultados encontrados: 1
+[2026-05-29T18:08:30.395Z] Correspondência encontrada na linha 0: Angélica Lima Administrativo | Fiscal. 🌱
+[2026-05-29T18:08:32.125Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:08:32.126Z] ✓ Contato selecionado!
+[2026-05-29T18:08:32.639Z] Checkbox confirmado como marcado.
+[2026-05-29T18:08:33.590Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:08:34.784Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:08:34.785Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:08:34.872Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Angélica Lima ✓✓✓
+[2026-05-29T18:08:36.883Z] --- Disfarçando: Indo para notifications ---
+[2026-05-29T18:08:44.422Z] ⏰ Pausa de segurança: 86s
+
+[2026-05-29T18:10:10.306Z] 
+========== PROCESSANDO: Anne Khelry ==========
+[2026-05-29T18:10:14.987Z] Clicando no botão de compartilhar...
+[2026-05-29T18:10:16.876Z] Aguardando modal...
+[2026-05-29T18:10:19.139Z] Digitando nome: Anne Khelry
+[2026-05-29T18:10:23.153Z] Buscando contato nos resultados...
+[2026-05-29T18:10:25.906Z] Resultados encontrados: 1
+[2026-05-29T18:10:26.341Z] Correspondência encontrada na linha 0: Anne Khelry Analista Fiscal
+[2026-05-29T18:10:31.811Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:10:31.812Z] ✓ Contato selecionado!
+[2026-05-29T18:10:32.322Z] Checkbox confirmado como marcado.
+[2026-05-29T18:10:33.191Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:10:35.293Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:10:35.294Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:10:35.411Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Anne Khelry ✓✓✓
+[2026-05-29T18:10:37.426Z] ⏰ Pausa de segurança: 78s
+
+[2026-05-29T18:11:55.382Z] 
+========== PROCESSANDO: Annelise Miranda Paschoalini ==========
+[2026-05-29T18:11:59.726Z] Clicando no botão de compartilhar...
+[2026-05-29T18:12:01.903Z] Aguardando modal...
+[2026-05-29T18:12:03.387Z] Digitando nome: Annelise Miranda Paschoalini
+[2026-05-29T18:12:10.351Z] Buscando contato nos resultados...
+[2026-05-29T18:12:10.769Z] Resultados encontrados: 1
+[2026-05-29T18:12:10.777Z] Correspondência encontrada na linha 0: Annelise Miranda Paschoalini Fiscal | Adm
+[2026-05-29T18:12:13.389Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:12:13.389Z] ✓ Contato selecionado!
+[2026-05-29T18:12:13.901Z] Checkbox confirmado como marcado.
+[2026-05-29T18:12:15.872Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:12:17.052Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:12:17.053Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:12:17.099Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Annelise Miranda Paschoalini ✓✓✓
+[2026-05-29T18:12:19.117Z] ⏰ Pausa de segurança: 111s
+
+[2026-05-29T18:14:09.658Z] 
+========== PROCESSANDO: Antônio Damaceno ==========
+[2026-05-29T18:14:13.757Z] Clicando no botão de compartilhar...
+[2026-05-29T18:14:16.223Z] Aguardando modal...
+[2026-05-29T18:14:17.108Z] Digitando nome: Antônio Damaceno
+[2026-05-29T18:14:21.466Z] Buscando contato nos resultados...
+[2026-05-29T18:14:21.473Z] Resultados encontrados: 1
+[2026-05-29T18:14:21.478Z] Correspondência encontrada na linha 0: Antônio Damaceno Recursos Humanos l Departamento Pessoal l ERP Senior l SST I Liderança
+[2026-05-29T18:14:23.498Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:14:23.498Z] ✓ Contato selecionado!
+[2026-05-29T18:14:24.012Z] Checkbox confirmado como marcado.
+[2026-05-29T18:14:25.945Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:14:27.119Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:14:27.119Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:14:27.162Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Antônio Damaceno ✓✓✓
+[2026-05-29T18:14:29.167Z] --- Disfarçando: Indo para feed ---
+[2026-05-29T18:14:39.161Z] ⏰ Pausa de segurança: 141s
+
+[2026-05-29T18:17:00.404Z] 
+========== PROCESSANDO: Beatriz Karoline de Moraes ==========
+[2026-05-29T18:17:04.720Z] Clicando no botão de compartilhar...
+[2026-05-29T18:17:06.621Z] Aguardando modal...
+[2026-05-29T18:17:07.542Z] Digitando nome: Beatriz Karoline de Moraes
+[2026-05-29T18:17:13.274Z] Buscando contato nos resultados...
+[2026-05-29T18:17:13.282Z] Resultados encontrados: 1
+[2026-05-29T18:17:13.287Z] Correspondência encontrada na linha 0: Beatriz Karoline de Moraes Analista Fiscal Pleno na Klabin S.A
+[2026-05-29T18:17:15.345Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:17:15.346Z] ✓ Contato selecionado!
+[2026-05-29T18:17:15.856Z] Checkbox confirmado como marcado.
+[2026-05-29T18:17:17.794Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:17:18.973Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:17:18.974Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:17:19.020Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Beatriz Karoline de Moraes ✓✓✓
+[2026-05-29T18:17:21.022Z] ⏰ Pausa de segurança: 132s
+
+[2026-05-29T18:19:33.179Z] 
+========== PROCESSANDO: Bethânia Mota Araújo ==========
+[2026-05-29T18:19:37.296Z] Clicando no botão de compartilhar...
+[2026-05-29T18:19:39.093Z] Aguardando modal...
+[2026-05-29T18:19:39.997Z] Digitando nome: Bethânia Mota Araújo
+[2026-05-29T18:19:43.831Z] Buscando contato nos resultados...
+[2026-05-29T18:19:43.839Z] Resultados encontrados: 1
+[2026-05-29T18:19:43.846Z] Correspondência encontrada na linha 0: Bethânia Mota Araújo Analista Contábil
+[2026-05-29T18:19:45.757Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:19:45.757Z] ✓ Contato selecionado!
+[2026-05-29T18:19:46.318Z] Checkbox confirmado como marcado.
+[2026-05-29T18:19:47.205Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:19:48.377Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:19:48.378Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:19:48.421Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Bethânia Mota Araújo ✓✓✓
+[2026-05-29T18:19:50.429Z] ⏰ Pausa de segurança: 61s
+
+[2026-05-29T18:20:51.523Z] 
+========== PROCESSANDO: Bianca Lessa Generoso ==========
+[2026-05-29T18:20:55.741Z] Clicando no botão de compartilhar...
+[2026-05-29T18:20:57.358Z] Aguardando modal...
+[2026-05-29T18:21:01.408Z] Digitando nome: Bianca Lessa Generoso
+[2026-05-29T18:21:06.272Z] Buscando contato nos resultados...
+[2026-05-29T18:21:06.280Z] Resultados encontrados: 1
+[2026-05-29T18:21:06.285Z] Correspondência encontrada na linha 0: Bianca Lessa Generoso Analista Fiscal
+[2026-05-29T18:21:08.107Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:21:08.108Z] ✓ Contato selecionado!
+[2026-05-29T18:21:08.618Z] Checkbox confirmado como marcado.
+[2026-05-29T18:21:10.583Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:21:11.745Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:21:11.747Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:21:11.787Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Bianca Lessa Generoso ✓✓✓
+[2026-05-29T18:21:13.789Z] --- Disfarçando: Indo para notifications ---
+[2026-05-29T18:21:21.083Z] ⏰ Pausa de segurança: 73s
+
+[2026-05-29T18:22:34.476Z] 
+========== PROCESSANDO: Bianca Marques ==========
+[2026-05-29T18:22:38.741Z] Clicando no botão de compartilhar...
+[2026-05-29T18:22:40.939Z] Aguardando modal...
+[2026-05-29T18:22:41.772Z] Digitando nome: Bianca Marques
+[2026-05-29T18:22:44.921Z] Buscando contato nos resultados...
+[2026-05-29T18:22:48.753Z] Resultados encontrados: 1
+[2026-05-29T18:22:49.770Z] Correspondência encontrada na linha 0: Bianca Marques Gestão Administrativa Agro | Backoffice | Finanças | Planejamento e controle | S&OP | B2B | CSC
+[2026-05-29T18:22:52.404Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:22:52.405Z] ✓ Contato selecionado!
+[2026-05-29T18:22:52.967Z] Checkbox confirmado como marcado.
+[2026-05-29T18:22:54.846Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:22:56.027Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:22:56.028Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:22:56.069Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Bianca Marques ✓✓✓
+[2026-05-29T18:22:58.071Z] ⏰ Pausa de segurança: 96s
+
+[2026-05-29T18:24:34.145Z] 
+========== PROCESSANDO: Brenda Bren ==========
+[2026-05-29T18:24:38.429Z] Clicando no botão de compartilhar...
+[2026-05-29T18:24:40.571Z] Aguardando modal...
+[2026-05-29T18:24:41.471Z] Digitando nome: Brenda Bren
+[2026-05-29T18:24:45.288Z] Buscando contato nos resultados...
+[2026-05-29T18:24:45.562Z] Resultados encontrados: 1
+[2026-05-29T18:24:45.584Z] Correspondência encontrada na linha 0: Brenda Bren Web Developer | IA | Python | SQL | AWS
+[2026-05-29T18:24:48.172Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:24:48.173Z] ✓ Contato selecionado!
+[2026-05-29T18:24:48.684Z] Checkbox confirmado como marcado.
+[2026-05-29T18:24:50.633Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:24:51.813Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:24:51.816Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:24:51.857Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Brenda Bren ✓✓✓
+[2026-05-29T18:24:53.868Z] ⏰ Pausa de segurança: 91s
+
+[2026-05-29T18:26:24.866Z] 
+========== PROCESSANDO: Bruna de Sousa Vieira ==========
+[2026-05-29T18:26:28.867Z] Clicando no botão de compartilhar...
+[2026-05-29T18:26:30.272Z] Aguardando modal...
+[2026-05-29T18:26:31.158Z] Digitando nome: Bruna de Sousa Vieira
+[2026-05-29T18:26:36.867Z] Buscando contato nos resultados...
+[2026-05-29T18:26:36.875Z] Resultados encontrados: 1
+[2026-05-29T18:26:36.879Z] Correspondência encontrada na linha 0: Bruna de Sousa Vieira Coordenadora Fiscal-Tributário
+[2026-05-29T18:26:38.889Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:26:38.889Z] ✓ Contato selecionado!
+[2026-05-29T18:26:39.400Z] Checkbox confirmado como marcado.
+[2026-05-29T18:26:41.341Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:26:42.539Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:26:42.540Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:26:42.579Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Bruna de Sousa Vieira ✓✓✓
+[2026-05-29T18:26:44.587Z] --- Disfarçando: Indo para feed ---
+[2026-05-29T18:26:52.460Z] ⏰ Pausa de segurança: 144s
+
+[2026-05-29T18:29:16.882Z] 
+========== PROCESSANDO: Bruna Donata Saturnino ==========
+[2026-05-29T18:29:21.038Z] Clicando no botão de compartilhar...
+[2026-05-29T18:29:22.881Z] Aguardando modal...
+[2026-05-29T18:29:23.769Z] Digitando nome: Bruna Donata Saturnino
+[2026-05-29T18:29:31.723Z] Buscando contato nos resultados...
+[2026-05-29T18:29:31.731Z] Resultados encontrados: 1
+[2026-05-29T18:29:31.737Z] Correspondência encontrada na linha 0: Bruna Donata Saturnino Controladoria | Custos | Tax
+[2026-05-29T18:29:33.593Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:29:33.594Z] ✓ Contato selecionado!
+[2026-05-29T18:29:34.105Z] Checkbox confirmado como marcado.
+[2026-05-29T18:29:36.038Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:29:37.218Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:29:37.220Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:29:37.263Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Bruna Donata Saturnino ✓✓✓
+[2026-05-29T18:29:39.274Z] ⏰ Pausa de segurança: 89s
+
+[2026-05-29T18:31:08.463Z] 
+========== PROCESSANDO: Bruna Fontana ==========
+[2026-05-29T18:31:12.601Z] Clicando no botão de compartilhar...
+[2026-05-29T18:31:14.590Z] Aguardando modal...
+[2026-05-29T18:31:15.493Z] Digitando nome: Bruna Fontana
+[2026-05-29T18:31:18.503Z] Buscando contato nos resultados...
+[2026-05-29T18:31:18.524Z] Resultados encontrados: 1
+[2026-05-29T18:31:18.528Z] Correspondência encontrada na linha 0: Bruna Fontana Graduada em Ciências Contábeis / Analista Fiscal Jr
+[2026-05-29T18:31:20.265Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:31:20.266Z] ✓ Contato selecionado!
+[2026-05-29T18:31:20.909Z] Checkbox confirmado como marcado.
+[2026-05-29T18:31:22.685Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:31:23.864Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:31:23.865Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:31:23.906Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Bruna Fontana ✓✓✓
+[2026-05-29T18:31:25.915Z] ⏰ Pausa de segurança: 144s
+
+[2026-05-29T18:33:50.205Z] 
+========== PROCESSANDO: Bruna Rosa ==========
+[2026-05-29T18:33:54.851Z] Clicando no botão de compartilhar...
+[2026-05-29T18:33:56.130Z] Aguardando modal...
+[2026-05-29T18:33:57.004Z] Digitando nome: Bruna Rosa
+[2026-05-29T18:34:00.617Z] Buscando contato nos resultados...
+[2026-05-29T18:34:02.147Z] Resultados encontrados: 1
+[2026-05-29T18:34:03.161Z] Correspondência encontrada na linha 0: Bruna Rosa Biodiesel Byproducts Trader | Glycerin - Lecithin
+[2026-05-29T18:34:05.797Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:34:05.797Z] ✓ Contato selecionado!
+[2026-05-29T18:34:06.309Z] Checkbox confirmado como marcado.
+[2026-05-29T18:34:08.239Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:34:09.402Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:34:09.403Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:34:09.444Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Bruna Rosa ✓✓✓
+[2026-05-29T18:34:11.460Z] --- Disfarçando: Indo para feed ---
+[2026-05-29T18:34:20.367Z] ⏰ Pausa de segurança: 73s
+
+[2026-05-29T18:35:33.632Z] 
+========== PROCESSANDO: Brunna Almeida ==========
+[2026-05-29T18:35:37.814Z] Clicando no botão de compartilhar...
+[2026-05-29T18:35:39.761Z] Aguardando modal...
+[2026-05-29T18:35:40.640Z] Digitando nome: Brunna Almeida
+[2026-05-29T18:35:43.772Z] Buscando contato nos resultados...
+[2026-05-29T18:35:43.790Z] Resultados encontrados: 1
+[2026-05-29T18:35:43.812Z] Correspondência encontrada na linha 0: Brunna Almeida Analista Financeira | Ciências Contábeis | SAP Business One (SAP B1)
+[2026-05-29T18:35:46.404Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:35:46.405Z] ✓ Contato selecionado!
+[2026-05-29T18:35:46.910Z] Checkbox confirmado como marcado.
+[2026-05-29T18:35:48.857Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:35:50.037Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:35:50.038Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:35:50.079Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Brunna Almeida ✓✓✓
+[2026-05-29T18:35:52.086Z] ⏰ Pausa de segurança: 133s
+
+[2026-05-29T18:38:05.148Z] 
+========== PROCESSANDO: Brunielle Justino ==========
+[2026-05-29T18:38:09.303Z] Clicando no botão de compartilhar...
+[2026-05-29T18:38:11.098Z] Aguardando modal...
+[2026-05-29T18:38:15.136Z] Digitando nome: Brunielle Justino
+[2026-05-29T18:38:19.554Z] Buscando contato nos resultados...
+[2026-05-29T18:38:19.563Z] Resultados encontrados: 1
+[2026-05-29T18:38:19.568Z] Correspondência encontrada na linha 0: Brunielle Justino Contadora | Contabilidade Fiscal | Pós graduanda em Departamento Pessoal | Yellow Belt.
+[2026-05-29T18:38:21.828Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:38:21.829Z] ✓ Contato selecionado!
+[2026-05-29T18:38:22.336Z] Checkbox confirmado como marcado.
+[2026-05-29T18:38:24.254Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:38:25.436Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:38:25.437Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:38:25.477Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Brunielle Justino ✓✓✓
+[2026-05-29T18:38:27.493Z] ⏰ Pausa de segurança: 137s
+
+[2026-05-29T18:40:44.069Z] 
+========== PROCESSANDO: Bruno Gonçalves ==========
+[2026-05-29T18:40:48.304Z] Clicando no botão de compartilhar...
+[2026-05-29T18:40:49.592Z] Aguardando modal...
+[2026-05-29T18:40:50.484Z] Digitando nome: Bruno Gonçalves
+[2026-05-29T18:40:54.726Z] Buscando contato nos resultados...
+[2026-05-29T18:40:58.643Z] Resultados encontrados: 1
+[2026-05-29T18:40:59.655Z] Correspondência encontrada na linha 0: Bruno Gonçalves Analista Contábil | Contabilidade Controladoria | Finanças | Excel Avançado e Sistemas ERP
+[2026-05-29T18:41:05.336Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:41:05.336Z] ✓ Contato selecionado!
+[2026-05-29T18:41:05.846Z] Checkbox confirmado como marcado.
+[2026-05-29T18:41:07.778Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:41:08.959Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:41:08.960Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:41:09.001Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Bruno Gonçalves ✓✓✓
+[2026-05-29T18:41:11.008Z] --- Disfarçando: Indo para notifications ---
+[2026-05-29T18:41:18.196Z] ⏰ Pausa de segurança: 123s
+
+[2026-05-29T18:43:21.645Z] 
+========== PROCESSANDO: Bruno Lyra ==========
+[2026-05-29T18:43:25.864Z] Clicando no botão de compartilhar...
+[2026-05-29T18:43:27.804Z] Aguardando modal...
+[2026-05-29T18:43:28.695Z] Digitando nome: Bruno Lyra
+[2026-05-29T18:43:31.346Z] Buscando contato nos resultados...
+[2026-05-29T18:43:31.799Z] Resultados encontrados: 1
+[2026-05-29T18:43:31.834Z] Correspondência encontrada na linha 0: Bruno Lyra Gerente Comercial Insumos - RS | Imexsul Insumos Agrícolas
+[2026-05-29T18:43:34.405Z] Destinatário aparece na lista de selecionados após clique.
+[2026-05-29T18:43:34.406Z] ✓ Contato selecionado!
+[2026-05-29T18:43:34.917Z] Checkbox confirmado como marcado.
+[2026-05-29T18:43:36.865Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-05-29T18:43:38.030Z] Mensagem preenchida com sucesso.
+[2026-05-29T18:43:38.031Z] Aguardando botão Enviar ficar habilitado...
+[2026-05-29T18:43:38.071Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Bruno Lyra ✓✓✓
+[2026-05-29T18:43:40.102Z] ⏰ Pausa de segurança: 110s
+
+[2026-06-01T12:32:10.148Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-06-01T12:32:10.196Z] 📋 342 contatos carregados
+[2026-06-01T12:32:11.364Z] ✓ Usando sessão existente...
+[2026-06-01T12:32:13.631Z] ⏭️  PULANDO ADRIANE RODRIGUES DA SILVA DECKER (já enviado)
+[2026-06-01T12:32:13.664Z] ⏭️  PULANDO Adriano Guarato Bastos (já enviado)
+[2026-06-01T12:32:13.677Z] ⏭️  PULANDO Adriano Petry (já enviado)
+[2026-06-01T12:32:13.696Z] ⏭️  PULANDO Adriano Rosa Jr. (já enviado)
+[2026-06-01T12:32:13.746Z] ⏭️  PULANDO Airton Lima (já enviado)
+[2026-06-01T12:32:13.759Z] ⏭️  PULANDO Aldo Lemos (já enviado)
+[2026-06-01T12:32:13.807Z] ⏭️  PULANDO Alessandra Machado da Costa (já enviado)
+[2026-06-01T12:32:13.822Z] ⏭️  PULANDO Alessandra Silva Lopes (já enviado)
+[2026-06-01T12:32:13.830Z] ⏭️  PULANDO Alex Junior (já enviado)
+[2026-06-01T12:32:13.841Z] ⏭️  PULANDO Alex Silva Cunha (já enviado)
+[2026-06-01T12:32:13.856Z] ⏭️  PULANDO Alfredo Sérgio Lazzareschi Neto (já enviado)
+[2026-06-01T12:32:13.864Z] ⏭️  PULANDO Alice Ramonica Nogueira (já enviado)
+[2026-06-01T12:32:13.891Z] ⏭️  PULANDO Alícia Noêmi C. Grayze Machado (já enviado)
+[2026-06-01T12:32:13.923Z] ⏭️  PULANDO Aline Andrade (já enviado)
+[2026-06-01T12:32:13.956Z] ⏭️  PULANDO Aline Ferreira Bernardino (já enviado)
+[2026-06-01T12:32:14.009Z] ⏭️  PULANDO Aline Grando (já enviado)
+[2026-06-01T12:32:14.014Z] ⏭️  PULANDO Aline Lopes (já enviado)
+[2026-06-01T12:32:14.027Z] ⏭️  PULANDO Aline Xavier de Oliveira (já enviado)
+[2026-06-01T12:32:14.086Z] ⏭️  PULANDO Aloisio Nascimento (já enviado)
+[2026-06-01T12:32:14.125Z] ⏭️  PULANDO Amilcan Alexandre Secchi (já enviado)
+[2026-06-01T12:32:14.174Z] ⏭️  PULANDO Amanda Lima dos Santos (já enviado)
+[2026-06-01T12:32:14.203Z] ⏭️  PULANDO Amanda Prata Lopes (já enviado)
+[2026-06-01T12:32:14.246Z] ⏭️  PULANDO Ana Amélia de Oliveira (já enviado)
+[2026-06-01T12:32:14.260Z] ⏭️  PULANDO Ana Carolina Rodrigues da Silva (já enviado)
+[2026-06-01T12:32:14.277Z] ⏭️  PULANDO Ana Luiza Sipp Beling (já enviado)
+[2026-06-01T12:32:14.286Z] ⏭️  PULANDO Ana Oliveira (já enviado)
+[2026-06-01T12:32:14.291Z] ⏭️  PULANDO Ana Paula Pires (já enviado)
+[2026-06-01T12:32:14.293Z] ⏭️  PULANDO Andre Luiz Rodrigues Muraoka (já enviado)
+[2026-06-01T12:32:14.297Z] ⏭️  PULANDO Andrea Debroi (já enviado)
+[2026-06-01T12:32:14.329Z] ⏭️  PULANDO Andreia Abreu (já enviado)
+[2026-06-01T12:32:14.352Z] ⏭️  PULANDO Andreia Souza (já enviado)
+[2026-06-01T12:32:14.354Z] ⏭️  PULANDO Andriele Costa (já enviado)
+[2026-06-01T12:32:14.355Z] ⏭️  PULANDO Andrews Luciato (já enviado)
+[2026-06-01T12:32:14.356Z] ⏭️  PULANDO Angélica Lima (já enviado)
+[2026-06-01T12:32:14.357Z] ⏭️  PULANDO Anne Khelry (já enviado)
+[2026-06-01T12:32:14.358Z] ⏭️  PULANDO Annelise Miranda Paschoalini (já enviado)
+[2026-06-01T12:32:14.359Z] ⏭️  PULANDO Antônio Damaceno (já enviado)
+[2026-06-01T12:32:14.362Z] ⏭️  PULANDO Beatriz Karoline de Moraes (já enviado)
+[2026-06-01T12:32:14.363Z] ⏭️  PULANDO Bethânia Mota Araújo (já enviado)
+[2026-06-01T12:32:14.369Z] ⏭️  PULANDO Bianca Lessa Generoso (já enviado)
+[2026-06-01T12:32:14.373Z] ⏭️  PULANDO Bianca Marques (já enviado)
+[2026-06-01T12:32:14.375Z] ⏭️  PULANDO Brenda Bren (já enviado)
+[2026-06-01T12:32:14.375Z] ⏭️  PULANDO Bruna de Sousa Vieira (já enviado)
+[2026-06-01T12:32:14.376Z] ⏭️  PULANDO Bruna Donata Saturnino (já enviado)
+[2026-06-01T12:32:14.377Z] ⏭️  PULANDO Bruna Fontana (já enviado)
+[2026-06-01T12:32:14.379Z] ⏭️  PULANDO Bruna Rosa (já enviado)
+[2026-06-01T12:32:14.384Z] ⏭️  PULANDO Brunna Almeida (já enviado)
+[2026-06-01T12:32:14.384Z] ⏭️  PULANDO Brunielle Justino (já enviado)
+[2026-06-01T12:32:14.387Z] ⏭️  PULANDO Bruno Gonçalves (já enviado)
+[2026-06-01T12:32:14.387Z] ⏭️  PULANDO Bruno Lyra (já enviado)
+[2026-06-01T12:32:14.392Z] 
+========== PROCESSANDO: Camila Anger Kila ==========
+[2026-06-01T12:32:21.158Z] Clicando no botão de compartilhar...
+[2026-06-01T12:32:21.353Z] Aguardando modal...
+[2026-06-01T12:32:22.348Z] Digitando nome: Camila Anger Kila
+[2026-06-01T12:32:27.100Z] Buscando contato nos resultados...
+[2026-06-01T12:32:27.603Z] Resultados encontrados: 1
+[2026-06-01T12:32:27.612Z] Correspondência encontrada na linha 0: Camila Anger Kila Analista financeiro | Contas a pagar | Contas a receber | Faturamento |
+[2026-06-01T12:32:28.660Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:32:28.672Z] ✓ Contato selecionado!
+[2026-06-01T12:32:29.224Z] Checkbox confirmado como marcado.
+[2026-06-01T12:32:29.654Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:32:33.601Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:32:33.615Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:32:33.742Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Camila Anger Kila ✓✓✓
+[2026-06-01T12:32:35.774Z] ⏰ Pausa de segurança: 145s
+
+[2026-06-01T12:35:01.153Z] 
+========== PROCESSANDO: Camila Bertrameli ==========
+[2026-06-01T12:35:05.619Z] Clicando no botão de compartilhar...
+[2026-06-01T12:35:06.215Z] Aguardando modal...
+[2026-06-01T12:35:08.687Z] Digitando nome: Camila Bertrameli
+[2026-06-01T12:35:12.239Z] Buscando contato nos resultados...
+[2026-06-01T12:35:12.249Z] Resultados encontrados: 1
+[2026-06-01T12:35:12.255Z] Correspondência encontrada na linha 0: Camila Bertrameli Gerente de controladoria | Gerente fiscal e contábil | Planejamento tributário
+[2026-06-01T12:35:12.917Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:35:12.917Z] ✓ Contato selecionado!
+[2026-06-01T12:35:13.428Z] Checkbox confirmado como marcado.
+[2026-06-01T12:35:13.494Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:35:14.658Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:35:14.659Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:35:14.706Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Camila Bertrameli ✓✓✓
+[2026-06-01T12:35:16.723Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T12:35:23.118Z] ⏰ Pausa de segurança: 143s
+
+[2026-06-01T12:37:46.442Z] 
+========== PROCESSANDO: Camila Pavan ==========
+[2026-06-01T12:37:50.498Z] Clicando no botão de compartilhar...
+[2026-06-01T12:37:50.710Z] Aguardando modal...
+[2026-06-01T12:37:52.566Z] Digitando nome: Camila Pavan
+[2026-06-01T12:37:56.048Z] Buscando contato nos resultados...
+[2026-06-01T12:37:56.060Z] Resultados encontrados: 1
+[2026-06-01T12:37:56.068Z] Correspondência encontrada na linha 0: Camila Pavan Analista de contratos no Grupo Olfar | Importação e Exportação | Comercialização de Grãos.
+[2026-06-01T12:37:56.755Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:37:56.755Z] ✓ Contato selecionado!
+[2026-06-01T12:37:57.267Z] Checkbox confirmado como marcado.
+[2026-06-01T12:37:57.333Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:37:58.497Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:37:58.499Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:37:58.555Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Camila Pavan ✓✓✓
+[2026-06-01T12:38:00.562Z] ⏰ Pausa de segurança: 130s
+
+[2026-06-01T12:40:10.998Z] 
+========== PROCESSANDO: Carla Batista ==========
+[2026-06-01T12:40:15.103Z] Clicando no botão de compartilhar...
+[2026-06-01T12:40:15.717Z] Aguardando modal...
+[2026-06-01T12:40:16.748Z] Digitando nome: Carla Batista
+[2026-06-01T12:40:19.698Z] Buscando contato nos resultados...
+[2026-06-01T12:40:19.716Z] Resultados encontrados: 1
+[2026-06-01T12:40:19.720Z] Correspondência encontrada na linha 0: Carla Batista Supervisora contábil e fiscal no Grupo Roncador | MBA em Contabilidade Tributária
+[2026-06-01T12:40:20.402Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:40:20.403Z] ✓ Contato selecionado!
+[2026-06-01T12:40:20.913Z] Checkbox confirmado como marcado.
+[2026-06-01T12:40:20.976Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:40:22.147Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:40:22.148Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:40:22.201Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Carla Batista ✓✓✓
+[2026-06-01T12:40:24.208Z] ⏰ Pausa de segurança: 142s
+
+[2026-06-01T12:42:46.586Z] 
+========== PROCESSANDO: Carla Jost ==========
+[2026-06-01T12:42:50.999Z] Clicando no botão de compartilhar...
+[2026-06-01T12:42:51.201Z] Aguardando modal...
+[2026-06-01T12:42:52.105Z] Digitando nome: Carla Jost
+[2026-06-01T12:42:54.735Z] Buscando contato nos resultados...
+[2026-06-01T12:42:54.743Z] Resultados encontrados: 1
+[2026-06-01T12:42:54.747Z] Correspondência encontrada na linha 0: Carla Jost CPA| C-ProR| Recuperação de Créditos | Financeiro | Atendimento ao Cliente | Agronegócio | SAP | Negócios | Vendas I Cooperativismo | Mercado de Capitais | Investimentos | Conciliação Bancárias | Análise de Crédito |
+[2026-06-01T12:42:55.384Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:42:55.385Z] ✓ Contato selecionado!
+[2026-06-01T12:42:55.903Z] Checkbox confirmado como marcado.
+[2026-06-01T12:42:55.972Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:42:57.130Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:42:57.131Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:42:57.176Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Carla Jost ✓✓✓
+[2026-06-01T12:42:59.192Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T12:43:11.450Z] ⏰ Pausa de segurança: 90s
+
+[2026-06-01T12:44:41.319Z] 
+========== PROCESSANDO: Carlos Henrique Rossetto ==========
+[2026-06-01T12:44:45.849Z] Clicando no botão de compartilhar...
+[2026-06-01T12:44:46.096Z] Aguardando modal...
+[2026-06-01T12:44:47.777Z] Digitando nome: Carlos Henrique Rossetto
+[2026-06-01T12:44:52.265Z] Buscando contato nos resultados...
+[2026-06-01T12:44:52.274Z] Resultados encontrados: 1
+[2026-06-01T12:44:52.280Z] Correspondência encontrada na linha 0: Carlos Henrique Rossetto Sócio proprietário da Origem Com. Exp. Grãos.
+[2026-06-01T12:44:52.963Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:44:52.964Z] ✓ Contato selecionado!
+[2026-06-01T12:44:53.479Z] Checkbox confirmado como marcado.
+[2026-06-01T12:44:53.542Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:44:54.706Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:44:54.707Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:44:54.754Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Carlos Henrique Rossetto ✓✓✓
+[2026-06-01T12:44:56.764Z] ⏰ Pausa de segurança: 127s
+
+[2026-06-01T12:47:03.622Z] 
+========== PROCESSANDO: Carlos Vinicius Gomes Ferreira ==========
+[2026-06-01T12:47:07.980Z] Clicando no botão de compartilhar...
+[2026-06-01T12:47:09.915Z] Aguardando modal...
+[2026-06-01T12:47:10.667Z] Digitando nome: Carlos Vinicius Gomes Ferreira
+[2026-06-01T12:47:15.666Z] Buscando contato nos resultados...
+[2026-06-01T12:47:15.675Z] Resultados encontrados: 1
+[2026-06-01T12:47:15.680Z] Correspondência encontrada na linha 0: Carlos Vinicius Gomes Ferreira Analista Administrativo.
+[2026-06-01T12:47:16.341Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:47:16.342Z] ✓ Contato selecionado!
+[2026-06-01T12:47:16.848Z] Checkbox confirmado como marcado.
+[2026-06-01T12:47:16.934Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:47:18.116Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:47:18.117Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:47:18.270Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Carlos Vinicius Gomes Ferreira ✓✓✓
+[2026-06-01T12:47:20.273Z] ⏰ Pausa de segurança: 72s
+
+[2026-06-01T12:48:31.798Z] 
+========== PROCESSANDO: Caroline Borges Ferreira ==========
+[2026-06-01T12:48:35.935Z] Clicando no botão de compartilhar...
+[2026-06-01T12:48:36.176Z] Aguardando modal...
+[2026-06-01T12:48:37.147Z] Digitando nome: Caroline Borges Ferreira
+[2026-06-01T12:48:41.328Z] Buscando contato nos resultados...
+[2026-06-01T12:48:41.339Z] Resultados encontrados: 1
+[2026-06-01T12:48:41.344Z] Correspondência encontrada na linha 0: Caroline Borges Ferreira Analista Fiscal Sênior | Renuka
+[2026-06-01T12:48:42.009Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:48:42.009Z] ✓ Contato selecionado!
+[2026-06-01T12:48:42.525Z] Checkbox confirmado como marcado.
+[2026-06-01T12:48:42.601Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:48:43.760Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:48:43.761Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:48:43.823Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Caroline Borges Ferreira ✓✓✓
+[2026-06-01T12:48:45.835Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T12:48:51.980Z] ⏰ Pausa de segurança: 92s
+
+[2026-06-01T12:50:24.304Z] 
+========== PROCESSANDO: Caroline Coure Lopes ==========
+[2026-06-01T12:50:28.498Z] Clicando no botão de compartilhar...
+[2026-06-01T12:50:28.907Z] Aguardando modal...
+[2026-06-01T12:50:29.888Z] Digitando nome: Caroline Coure Lopes
+[2026-06-01T12:50:33.603Z] Buscando contato nos resultados...
+[2026-06-01T12:50:33.615Z] Resultados encontrados: 1
+[2026-06-01T12:50:33.622Z] Correspondência encontrada na linha 0: Caroline Coure Lopes Analista financeiro na Luxor Group
+[2026-06-01T12:50:34.313Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:50:34.314Z] ✓ Contato selecionado!
+[2026-06-01T12:50:34.828Z] Checkbox confirmado como marcado.
+[2026-06-01T12:50:34.890Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:50:36.046Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:50:36.048Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:50:36.095Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Caroline Coure Lopes ✓✓✓
+[2026-06-01T12:50:38.109Z] ⏰ Pausa de segurança: 90s
+
+[2026-06-01T12:52:07.710Z] 
+========== PROCESSANDO: Celso Cirino Ferreira ==========
+[2026-06-01T12:52:11.943Z] Clicando no botão de compartilhar...
+[2026-06-01T12:52:12.083Z] Aguardando modal...
+[2026-06-01T12:52:12.965Z] Digitando nome: Celso Cirino Ferreira
+[2026-06-01T12:52:16.817Z] Buscando contato nos resultados...
+[2026-06-01T12:52:16.827Z] Resultados encontrados: 1
+[2026-06-01T12:52:16.833Z] Correspondência encontrada na linha 0: Celso Cirino Ferreira Supervisor de Almoxarifado na bevap Bioenergética ● Administração ● Gestão Comercial ● MBA-Finanças, Auditoria e Controladoria ● MBA-Compliance e Gestão de Riscos ● MBA-Liderança e Gestão de Equipes de Alta Performance
+[2026-06-01T12:52:17.478Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:52:17.478Z] ✓ Contato selecionado!
+[2026-06-01T12:52:17.995Z] Checkbox confirmado como marcado.
+[2026-06-01T12:52:18.055Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:52:19.214Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:52:19.216Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:52:19.269Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Celso Cirino Ferreira ✓✓✓
+[2026-06-01T12:52:21.272Z] ⏰ Pausa de segurança: 127s
+
+[2026-06-01T12:54:28.180Z] 
+========== PROCESSANDO: Celso Ribeiro ==========
+[2026-06-01T12:54:32.191Z] Clicando no botão de compartilhar...
+[2026-06-01T12:54:32.376Z] Aguardando modal...
+[2026-06-01T12:54:33.475Z] Digitando nome: Celso Ribeiro
+[2026-06-01T12:54:36.425Z] Buscando contato nos resultados...
+[2026-06-01T12:54:36.433Z] Resultados encontrados: 1
+[2026-06-01T12:54:36.440Z] Correspondência encontrada na linha 0: Celso Ribeiro Contador | Gerente Contábil e Fiscal | Gestão de Pessoas | Controladoria | Reporting | Gestão Fiscal | IFRS | Especialista Contábil | SAP | CRC Ativo.
+[2026-06-01T12:54:37.092Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:54:37.092Z] ✓ Contato selecionado!
+[2026-06-01T12:54:37.606Z] Checkbox confirmado como marcado.
+[2026-06-01T12:54:37.669Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:54:38.833Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:54:38.834Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:54:38.882Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Celso Ribeiro ✓✓✓
+[2026-06-01T12:54:40.895Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T12:54:49.902Z] ⏰ Pausa de segurança: 78s
+
+[2026-06-01T12:56:08.300Z] 
+========== PROCESSANDO: Cezar Meirelles ==========
+[2026-06-01T12:56:12.803Z] Clicando no botão de compartilhar...
+[2026-06-01T12:56:14.101Z] Aguardando modal...
+[2026-06-01T12:56:14.996Z] Digitando nome: Cezar Meirelles
+[2026-06-01T12:56:18.369Z] Buscando contato nos resultados...
+[2026-06-01T12:56:18.380Z] Resultados encontrados: 1
+[2026-06-01T12:56:18.386Z] Correspondência encontrada na linha 0: Cezar Meirelles Coordenação | Projetos | Produção | Processos | Gestão de Pessoas | Manufatura| Planejamento | S&OP
+[2026-06-01T12:56:19.071Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:56:19.071Z] ✓ Contato selecionado!
+[2026-06-01T12:56:19.588Z] Checkbox confirmado como marcado.
+[2026-06-01T12:56:19.651Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:56:20.824Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:56:20.825Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:56:20.875Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Cezar Meirelles ✓✓✓
+[2026-06-01T12:56:22.879Z] ⏰ Pausa de segurança: 133s
+
+[2026-06-01T12:58:35.954Z] 
+========== PROCESSANDO: Cezario Koslowski ==========
+[2026-06-01T12:58:40.517Z] Clicando no botão de compartilhar...
+[2026-06-01T12:58:40.784Z] Aguardando modal...
+[2026-06-01T12:58:42.389Z] Digitando nome: Cezario Koslowski
+[2026-06-01T12:58:45.817Z] Buscando contato nos resultados...
+[2026-06-01T12:58:45.826Z] Resultados encontrados: 1
+[2026-06-01T12:58:45.833Z] Correspondência encontrada na linha 0: Cezario Koslowski Gerente Administrativo
+[2026-06-01T12:58:46.496Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T12:58:46.497Z] ✓ Contato selecionado!
+[2026-06-01T12:58:47.013Z] Checkbox confirmado como marcado.
+[2026-06-01T12:58:47.073Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T12:58:48.234Z] Mensagem preenchida com sucesso.
+[2026-06-01T12:58:48.235Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T12:58:48.281Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Cezario Koslowski ✓✓✓
+[2026-06-01T12:58:50.296Z] ⏰ Pausa de segurança: 66s
+
+[2026-06-01T12:59:56.769Z] 
+========== PROCESSANDO: Cheila Gemelli ==========
+[2026-06-01T13:00:01.330Z] Clicando no botão de compartilhar...
+[2026-06-01T13:00:02.037Z] Aguardando modal...
+[2026-06-01T13:00:03.703Z] Digitando nome: Cheila Gemelli
+[2026-06-01T13:00:06.953Z] Buscando contato nos resultados...
+[2026-06-01T13:00:07.399Z] Resultados encontrados: 1
+[2026-06-01T13:00:07.406Z] Correspondência encontrada na linha 0: Cheila Gemelli Coordenadora Contábil/Fiscal e DP na Vaccaro
+[2026-06-01T13:00:08.236Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:00:08.237Z] ✓ Contato selecionado!
+[2026-06-01T13:00:08.750Z] Checkbox confirmado como marcado.
+[2026-06-01T13:00:08.811Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:00:09.984Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:00:09.985Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:00:10.054Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Cheila Gemelli ✓✓✓
+[2026-06-01T13:00:12.058Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T13:00:22.269Z] ⏰ Pausa de segurança: 144s
+
+[2026-06-01T13:02:45.949Z] 
+========== PROCESSANDO: Claudemir de Paula Nunes ==========
+[2026-06-01T13:02:50.344Z] Clicando no botão de compartilhar...
+[2026-06-01T13:02:50.599Z] Aguardando modal...
+[2026-06-01T13:02:52.528Z] Digitando nome: Claudemir de Paula Nunes
+[2026-06-01T13:02:56.923Z] Buscando contato nos resultados...
+[2026-06-01T13:02:56.933Z] Resultados encontrados: 1
+[2026-06-01T13:02:56.939Z] Correspondência encontrada na linha 0: Claudemir de Paula Nunes Gerente Executivo de Supply Chain | MRO | Serviços industriais | Strategic Sourcing -Industrial & Agrícola| Logística |Automação de processos| SAP| Power BI | Consultor Estratégico .
+[2026-06-01T13:02:57.589Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:02:57.589Z] ✓ Contato selecionado!
+[2026-06-01T13:02:58.097Z] Checkbox confirmado como marcado.
+[2026-06-01T13:02:58.161Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:02:59.334Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:02:59.335Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:02:59.379Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Claudemir de Paula Nunes ✓✓✓
+[2026-06-01T13:03:01.381Z] ⏰ Pausa de segurança: 135s
+
+[2026-06-01T13:05:16.300Z] 
+========== PROCESSANDO: Clayton França ==========
+[2026-06-01T13:05:21.109Z] Clicando no botão de compartilhar...
+[2026-06-01T13:05:22.393Z] Aguardando modal...
+[2026-06-01T13:05:23.419Z] Digitando nome: Clayton França
+[2026-06-01T13:05:26.490Z] Buscando contato nos resultados...
+[2026-06-01T13:05:26.501Z] Resultados encontrados: 1
+[2026-06-01T13:05:26.505Z] Correspondência encontrada na linha 0: Clayton França analista Fiscal e Financeiro
+[2026-06-01T13:05:27.168Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:05:27.169Z] ✓ Contato selecionado!
+[2026-06-01T13:05:27.684Z] Checkbox confirmado como marcado.
+[2026-06-01T13:05:27.747Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:05:28.901Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:05:28.902Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:05:28.954Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Clayton França ✓✓✓
+[2026-06-01T13:05:30.962Z] ⏰ Pausa de segurança: 147s
+
+[2026-06-01T13:07:57.987Z] 
+========== PROCESSANDO: Cleberson Bessa ==========
+[2026-06-01T13:08:02.028Z] Clicando no botão de compartilhar...
+[2026-06-01T13:08:02.300Z] Aguardando modal...
+[2026-06-01T13:08:03.262Z] Digitando nome: Cleberson Bessa
+[2026-06-01T13:08:06.441Z] Buscando contato nos resultados...
+[2026-06-01T13:08:06.450Z] Resultados encontrados: 1
+[2026-06-01T13:08:06.457Z] Correspondência encontrada na linha 0: Cleberson Bessa Analista Contábil | CRC Ativo | Contabilidade Rural
+[2026-06-01T13:08:07.115Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:08:07.115Z] ✓ Contato selecionado!
+[2026-06-01T13:08:07.627Z] Checkbox confirmado como marcado.
+[2026-06-01T13:08:07.692Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:08:08.862Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:08:08.863Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:08:08.901Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Cleberson Bessa ✓✓✓
+[2026-06-01T13:08:10.903Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T13:08:17.769Z] ⏰ Pausa de segurança: 104s
+
+[2026-06-01T13:10:01.926Z] 
+========== PROCESSANDO: Cledison Januário de Oliveira ==========
+[2026-06-01T13:10:06.007Z] Clicando no botão de compartilhar...
+[2026-06-01T13:10:06.353Z] Aguardando modal...
+[2026-06-01T13:10:07.330Z] Digitando nome: Cledison Januário de Oliveira
+[2026-06-01T13:10:12.093Z] Buscando contato nos resultados...
+[2026-06-01T13:10:12.102Z] Resultados encontrados: 1
+[2026-06-01T13:10:12.107Z] Correspondência encontrada na linha 0: Cledison Januário de Oliveira Coordenador Adm - Fazenda São José
+[2026-06-01T13:10:12.776Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:10:12.777Z] ✓ Contato selecionado!
+[2026-06-01T13:10:13.289Z] Checkbox confirmado como marcado.
+[2026-06-01T13:10:13.350Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:10:14.510Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:10:14.511Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:10:14.561Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Cledison Januário de Oliveira ✓✓✓
+[2026-06-01T13:10:16.563Z] ⏰ Pausa de segurança: 141s
+
+[2026-06-01T13:12:37.176Z] 
+========== PROCESSANDO: Cleiton Oliveira Sousa ==========
+[2026-06-01T13:12:41.385Z] Clicando no botão de compartilhar...
+[2026-06-01T13:12:41.647Z] Aguardando modal...
+[2026-06-01T13:12:42.614Z] Digitando nome: Cleiton Oliveira Sousa
+[2026-06-01T13:12:46.600Z] Buscando contato nos resultados...
+[2026-06-01T13:12:46.609Z] Resultados encontrados: 1
+[2026-06-01T13:12:46.616Z] Correspondência encontrada na linha 0: Cleiton Oliveira Sousa Analista Fiscal Sênior
+[2026-06-01T13:12:47.269Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:12:47.269Z] ✓ Contato selecionado!
+[2026-06-01T13:12:47.778Z] Checkbox confirmado como marcado.
+[2026-06-01T13:12:47.899Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:12:49.045Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:12:49.046Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:12:49.090Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Cleiton Oliveira Sousa ✓✓✓
+[2026-06-01T13:12:51.107Z] ⏰ Pausa de segurança: 104s
+
+[2026-06-01T13:14:34.626Z] 
+========== PROCESSANDO: Cleiton Trolez ==========
+[2026-06-01T13:14:38.722Z] Clicando no botão de compartilhar...
+[2026-06-01T13:14:38.967Z] Aguardando modal...
+[2026-06-01T13:14:39.865Z] Digitando nome: Cleiton Trolez
+[2026-06-01T13:14:42.927Z] Buscando contato nos resultados...
+[2026-06-01T13:14:42.943Z] Resultados encontrados: 1
+[2026-06-01T13:14:42.948Z] Correspondência encontrada na linha 0: Cleiton Trolez Supervisor de Barter/ Operações Estruturadas/ Financeiro/ SAP/ Gestão de Risco e Crédito no Agronegócio
+[2026-06-01T13:14:43.614Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:14:43.614Z] ✓ Contato selecionado!
+[2026-06-01T13:14:44.130Z] Checkbox confirmado como marcado.
+[2026-06-01T13:14:44.201Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:14:45.367Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:14:45.368Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:14:45.414Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Cleiton Trolez ✓✓✓
+[2026-06-01T13:14:47.425Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T13:14:57.774Z] ⏰ Pausa de segurança: 148s
+
+[2026-06-01T13:17:25.774Z] 
+========== PROCESSANDO: Cristiane Leite ==========
+[2026-06-01T13:17:30.623Z] Clicando no botão de compartilhar...
+[2026-06-01T13:17:31.423Z] Aguardando modal...
+[2026-06-01T13:17:32.620Z] Digitando nome: Cristiane Leite
+[2026-06-01T13:17:36.555Z] Buscando contato nos resultados...
+[2026-06-01T13:17:36.566Z] Resultados encontrados: 1
+[2026-06-01T13:17:36.572Z] Correspondência encontrada na linha 0: Cristiane Leite Controladoria | compras | contabilidade | fiscal | rotinas administrativas agropecuárias.
+[2026-06-01T13:17:37.222Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:17:37.223Z] ✓ Contato selecionado!
+[2026-06-01T13:17:37.730Z] Checkbox confirmado como marcado.
+[2026-06-01T13:17:37.800Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:17:38.973Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:17:38.975Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:17:39.019Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Cristiane Leite ✓✓✓
+[2026-06-01T13:17:41.035Z] ⏰ Pausa de segurança: 146s
+
+[2026-06-01T13:20:07.343Z] 
+========== PROCESSANDO: Dagmar Rodrigues ==========
+[2026-06-01T13:20:12.043Z] Clicando no botão de compartilhar...
+[2026-06-01T13:20:14.185Z] Aguardando modal...
+[2026-06-01T13:20:15.023Z] Digitando nome: Dagmar Rodrigues
+[2026-06-01T13:20:18.301Z] Buscando contato nos resultados...
+[2026-06-01T13:20:18.311Z] Resultados encontrados: 1
+[2026-06-01T13:20:18.316Z] Correspondência encontrada na linha 0: Dagmar Rodrigues Assistente Administrativo
+[2026-06-01T13:20:20.546Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:20:20.547Z] ✓ Contato selecionado!
+[2026-06-01T13:20:21.065Z] Checkbox confirmado como marcado.
+[2026-06-01T13:20:22.986Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:20:24.160Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:20:24.161Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:20:24.229Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Dagmar Rodrigues ✓✓✓
+[2026-06-01T13:20:26.236Z] ⏰ Pausa de segurança: 104s
+
+[2026-06-01T13:22:09.890Z] 
+========== PROCESSANDO: Dairio Felix da Costa ==========
+[2026-06-01T13:22:14.188Z] Clicando no botão de compartilhar...
+[2026-06-01T13:22:16.184Z] Aguardando modal...
+[2026-06-01T13:22:17.270Z] Digitando nome: Dairio Felix da Costa
+[2026-06-01T13:22:21.180Z] Buscando contato nos resultados...
+[2026-06-01T13:22:21.191Z] Resultados encontrados: 1
+[2026-06-01T13:22:21.197Z] Correspondência encontrada na linha 0: Dairio Felix da Costa Fiscal Agrícola | Usina Giasa
+[2026-06-01T13:22:23.434Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:22:23.434Z] ✓ Contato selecionado!
+[2026-06-01T13:22:23.951Z] Checkbox confirmado como marcado.
+[2026-06-01T13:22:25.882Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:22:27.100Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:22:27.103Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:22:27.166Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Dairio Felix da Costa ✓✓✓
+[2026-06-01T13:22:29.170Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T13:22:37.003Z] ⏰ Pausa de segurança: 139s
+
+[2026-06-01T13:24:55.510Z] 
+========== PROCESSANDO: Daniel Erba de Souza ==========
+[2026-06-01T13:25:00.266Z] Clicando no botão de compartilhar...
+[2026-06-01T13:25:02.436Z] Aguardando modal...
+[2026-06-01T13:25:04.172Z] Digitando nome: Daniel Erba de Souza
+[2026-06-01T13:25:09.230Z] Buscando contato nos resultados...
+[2026-06-01T13:25:09.243Z] Resultados encontrados: 1
+[2026-06-01T13:25:09.251Z] Correspondência encontrada na linha 0: Daniel Erba de Souza Supervisor de Manutenção Elétrica e Cogeração de Energia Elétrica
+[2026-06-01T13:25:11.260Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:25:11.260Z] ✓ Contato selecionado!
+[2026-06-01T13:25:12.240Z] Checkbox confirmado como marcado.
+[2026-06-01T13:25:13.535Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:25:14.938Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:25:14.943Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:25:15.070Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Daniel Erba de Souza ✓✓✓
+[2026-06-01T13:25:17.082Z] ⏰ Pausa de segurança: 85s
+
+[2026-06-01T13:26:42.305Z] 
+========== PROCESSANDO: Daniel Hartke ==========
+[2026-06-01T13:26:46.513Z] Clicando no botão de compartilhar...
+[2026-06-01T13:26:48.043Z] Aguardando modal...
+[2026-06-01T13:26:48.898Z] Digitando nome: Daniel Hartke
+[2026-06-01T13:26:51.869Z] Buscando contato nos resultados...
+[2026-06-01T13:26:52.049Z] Resultados encontrados: 1
+[2026-06-01T13:26:52.086Z] Correspondência encontrada na linha 0: Daniel Hartke Controller
+[2026-06-01T13:26:54.695Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:26:54.696Z] ✓ Contato selecionado!
+[2026-06-01T13:26:55.207Z] Checkbox confirmado como marcado.
+[2026-06-01T13:26:57.199Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:26:58.458Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:26:58.461Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:26:58.525Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Daniel Hartke ✓✓✓
+[2026-06-01T13:27:00.540Z] ⏰ Pausa de segurança: 90s
+
+[2026-06-01T13:28:30.191Z] 
+========== PROCESSANDO: Daniela Mendonça ==========
+[2026-06-01T13:28:34.817Z] Clicando no botão de compartilhar...
+[2026-06-01T13:28:36.705Z] Aguardando modal...
+[2026-06-01T13:28:37.631Z] Digitando nome: Daniela Mendonça
+[2026-06-01T13:28:41.878Z] Buscando contato nos resultados...
+[2026-06-01T13:28:45.796Z] Resultados encontrados: 1
+[2026-06-01T13:28:46.810Z] Correspondência encontrada na linha 0: Daniela Mendonça Supervisora Contábil e Fiscal | Liderança de equipes | Otimização de processos
+[2026-06-01T13:28:51.489Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:28:51.490Z] ✓ Contato selecionado!
+[2026-06-01T13:28:52.005Z] Checkbox confirmado como marcado.
+[2026-06-01T13:28:53.940Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:28:55.113Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:28:55.114Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:28:55.150Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Daniela Mendonça ✓✓✓
+[2026-06-01T13:28:57.153Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T13:29:05.344Z] ⏰ Pausa de segurança: 107s
+
+[2026-06-01T13:30:52.845Z] 
+========== PROCESSANDO: Daniela Oliveira ==========
+[2026-06-01T13:30:57.160Z] Clicando no botão de compartilhar...
+[2026-06-01T13:30:59.270Z] Aguardando modal...
+[2026-06-01T13:31:00.451Z] Digitando nome: Daniela Oliveira
+[2026-06-01T13:31:04.760Z] Buscando contato nos resultados...
+[2026-06-01T13:31:04.768Z] Resultados encontrados: 1
+[2026-06-01T13:31:04.772Z] Correspondência encontrada na linha 0: Daniela Oliveira Auditora Interna Jr | Compliance & Controles Internos | Fiscal e Jurídico Corporativo | Gestão de Riscos
+[2026-06-01T13:31:06.872Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:31:06.873Z] ✓ Contato selecionado!
+[2026-06-01T13:31:07.381Z] Checkbox confirmado como marcado.
+[2026-06-01T13:31:09.236Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:31:10.429Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:31:10.430Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:31:10.478Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Daniela Oliveira ✓✓✓
+[2026-06-01T13:31:12.490Z] ⏰ Pausa de segurança: 73s
+
+[2026-06-01T13:32:25.128Z] 
+========== PROCESSANDO: Daniela Pagotto ==========
+[2026-06-01T13:32:29.325Z] Clicando no botão de compartilhar...
+[2026-06-01T13:32:31.586Z] Aguardando modal...
+[2026-06-01T13:32:32.454Z] Digitando nome: Daniela Pagotto
+[2026-06-01T13:32:36.604Z] Buscando contato nos resultados...
+[2026-06-01T13:32:40.656Z] Resultados encontrados: 1
+[2026-06-01T13:32:41.664Z] Correspondência encontrada na linha 0: Daniela Pagotto Gerente de Controladoria na Fiagril LTDA
+[2026-06-01T13:32:47.358Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:32:47.358Z] ✓ Contato selecionado!
+[2026-06-01T13:32:47.876Z] Checkbox confirmado como marcado.
+[2026-06-01T13:32:49.788Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:32:50.972Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:32:50.973Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:32:51.035Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Daniela Pagotto ✓✓✓
+[2026-06-01T13:32:53.044Z] ⏰ Pausa de segurança: 67s
+
+[2026-06-01T13:34:00.139Z] 
+========== PROCESSANDO: Daniela Santana ==========
+[2026-06-01T13:34:04.099Z] Clicando no botão de compartilhar...
+[2026-06-01T13:34:06.011Z] Aguardando modal...
+[2026-06-01T13:34:06.880Z] Digitando nome: Daniela Santana
+[2026-06-01T13:34:10.066Z] Buscando contato nos resultados...
+[2026-06-01T13:34:10.077Z] Resultados encontrados: 1
+[2026-06-01T13:34:10.081Z] Correspondência encontrada na linha 0: Daniela Santana Analista financeiro | Usina Central Olho D'Água S/A
+[2026-06-01T13:34:12.655Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:34:12.655Z] ✓ Contato selecionado!
+[2026-06-01T13:34:13.171Z] Checkbox confirmado como marcado.
+[2026-06-01T13:34:15.105Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:34:16.303Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:34:16.304Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:34:16.346Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Daniela Santana ✓✓✓
+[2026-06-01T13:34:18.362Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T13:34:25.553Z] ⏰ Pausa de segurança: 83s
+
+[2026-06-01T13:35:48.717Z] 
+========== PROCESSANDO: Daniele Castro ==========
+[2026-06-01T13:35:53.056Z] Clicando no botão de compartilhar...
+[2026-06-01T13:35:55.359Z] Aguardando modal...
+[2026-06-01T13:35:56.504Z] Digitando nome: Daniele Castro
+[2026-06-01T13:35:59.557Z] Buscando contato nos resultados...
+[2026-06-01T13:35:59.573Z] Resultados encontrados: 1
+[2026-06-01T13:35:59.579Z] Correspondência encontrada na linha 0: Daniele Castro Supervisora Fiscal tributário
+[2026-06-01T13:36:01.748Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:36:01.749Z] ✓ Contato selecionado!
+[2026-06-01T13:36:02.305Z] Checkbox confirmado como marcado.
+[2026-06-01T13:36:04.196Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:36:05.374Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:36:05.376Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:36:05.414Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Daniele Castro ✓✓✓
+[2026-06-01T13:36:07.419Z] ⏰ Pausa de segurança: 102s
+
+[2026-06-01T13:37:49.453Z] 
+========== PROCESSANDO: Danielle Alves de Santana ==========
+[2026-06-01T13:37:53.784Z] Clicando no botão de compartilhar...
+[2026-06-01T13:37:56.459Z] Aguardando modal...
+[2026-06-01T13:37:57.692Z] Digitando nome: Danielle Alves de Santana
+[2026-06-01T13:38:02.927Z] Buscando contato nos resultados...
+[2026-06-01T13:38:02.936Z] Resultados encontrados: 1
+[2026-06-01T13:38:02.941Z] Correspondência encontrada na linha 0: Danielle Alves de Santana Auditora Interna e Contadora | CRC Ativo
+[2026-06-01T13:38:04.639Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:38:04.640Z] ✓ Contato selecionado!
+[2026-06-01T13:38:05.153Z] Checkbox confirmado como marcado.
+[2026-06-01T13:38:07.093Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:38:08.288Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:38:08.289Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:38:08.341Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Danielle Alves de Santana ✓✓✓
+[2026-06-01T13:38:10.349Z] ⏰ Pausa de segurança: 81s
+
+[2026-06-01T13:39:30.966Z] 
+========== PROCESSANDO: Danglei Zardo ==========
+[2026-06-01T13:39:34.948Z] Clicando no botão de compartilhar...
+[2026-06-01T13:39:36.531Z] Aguardando modal...
+[2026-06-01T13:39:37.908Z] Digitando nome: Danglei Zardo
+[2026-06-01T13:39:41.800Z] Buscando contato nos resultados...
+[2026-06-01T13:39:44.605Z] Resultados encontrados: 1
+[2026-06-01T13:39:45.617Z] Correspondência encontrada na linha 0: Danglei zardo Analista Fiscal RafitecPropex
+[2026-06-01T13:39:52.370Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T13:39:52.371Z] ✓ Contato selecionado!
+[2026-06-01T13:39:52.883Z] Checkbox confirmado como marcado.
+[2026-06-01T13:39:52.938Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T13:39:54.115Z] Mensagem preenchida com sucesso.
+[2026-06-01T13:39:54.116Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T13:39:54.200Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Danglei Zardo ✓✓✓
+[2026-06-01T13:39:56.213Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T13:39:58.264Z] ⚠️ Disfarce ignorado: page.goto: Target page, context or browser has been closed
+Call log:
+[2m  - navigating to "https://www.linkedin.com/feed/", waiting until "domcontentloaded"[22m
+
+[2026-06-01T17:23:20.964Z] 🚀 INICIANDO AUTOMAÇÃO...
+[2026-06-01T17:23:21.035Z] 📋 342 contatos carregados
+[2026-06-01T17:23:21.979Z] ✓ Usando sessão existente...
+[2026-06-01T17:23:22.730Z] ⏭️  PULANDO ADRIANE RODRIGUES DA SILVA DECKER (já enviado)
+[2026-06-01T17:23:22.745Z] ⏭️  PULANDO Adriano Guarato Bastos (já enviado)
+[2026-06-01T17:23:22.747Z] ⏭️  PULANDO Adriano Petry (já enviado)
+[2026-06-01T17:23:22.754Z] ⏭️  PULANDO Adriano Rosa Jr. (já enviado)
+[2026-06-01T17:23:22.758Z] ⏭️  PULANDO Airton Lima (já enviado)
+[2026-06-01T17:23:22.760Z] ⏭️  PULANDO Aldo Lemos (já enviado)
+[2026-06-01T17:23:22.771Z] ⏭️  PULANDO Alessandra Machado da Costa (já enviado)
+[2026-06-01T17:23:22.773Z] ⏭️  PULANDO Alessandra Silva Lopes (já enviado)
+[2026-06-01T17:23:22.775Z] ⏭️  PULANDO Alex Junior (já enviado)
+[2026-06-01T17:23:22.778Z] ⏭️  PULANDO Alex Silva Cunha (já enviado)
+[2026-06-01T17:23:22.779Z] ⏭️  PULANDO Alfredo Sérgio Lazzareschi Neto (já enviado)
+[2026-06-01T17:23:22.781Z] ⏭️  PULANDO Alice Ramonica Nogueira (já enviado)
+[2026-06-01T17:23:22.786Z] ⏭️  PULANDO Alícia Noêmi C. Grayze Machado (já enviado)
+[2026-06-01T17:23:22.789Z] ⏭️  PULANDO Aline Andrade (já enviado)
+[2026-06-01T17:23:22.790Z] ⏭️  PULANDO Aline Ferreira Bernardino (já enviado)
+[2026-06-01T17:23:22.792Z] ⏭️  PULANDO Aline Grando (já enviado)
+[2026-06-01T17:23:22.793Z] ⏭️  PULANDO Aline Lopes (já enviado)
+[2026-06-01T17:23:22.794Z] ⏭️  PULANDO Aline Xavier de Oliveira (já enviado)
+[2026-06-01T17:23:22.796Z] ⏭️  PULANDO Aloisio Nascimento (já enviado)
+[2026-06-01T17:23:22.809Z] ⏭️  PULANDO Amilcan Alexandre Secchi (já enviado)
+[2026-06-01T17:23:22.826Z] ⏭️  PULANDO Amanda Lima dos Santos (já enviado)
+[2026-06-01T17:23:22.830Z] ⏭️  PULANDO Amanda Prata Lopes (já enviado)
+[2026-06-01T17:23:22.839Z] ⏭️  PULANDO Ana Amélia de Oliveira (já enviado)
+[2026-06-01T17:23:22.842Z] ⏭️  PULANDO Ana Carolina Rodrigues da Silva (já enviado)
+[2026-06-01T17:23:22.854Z] ⏭️  PULANDO Ana Luiza Sipp Beling (já enviado)
+[2026-06-01T17:23:22.879Z] ⏭️  PULANDO Ana Oliveira (já enviado)
+[2026-06-01T17:23:22.891Z] ⏭️  PULANDO Ana Paula Pires (já enviado)
+[2026-06-01T17:23:22.896Z] ⏭️  PULANDO Andre Luiz Rodrigues Muraoka (já enviado)
+[2026-06-01T17:23:22.901Z] ⏭️  PULANDO Andrea Debroi (já enviado)
+[2026-06-01T17:23:22.906Z] ⏭️  PULANDO Andreia Abreu (já enviado)
+[2026-06-01T17:23:22.912Z] ⏭️  PULANDO Andreia Souza (já enviado)
+[2026-06-01T17:23:22.913Z] ⏭️  PULANDO Andriele Costa (já enviado)
+[2026-06-01T17:23:22.914Z] ⏭️  PULANDO Andrews Luciato (já enviado)
+[2026-06-01T17:23:22.918Z] ⏭️  PULANDO Angélica Lima (já enviado)
+[2026-06-01T17:23:22.920Z] ⏭️  PULANDO Anne Khelry (já enviado)
+[2026-06-01T17:23:22.923Z] ⏭️  PULANDO Annelise Miranda Paschoalini (já enviado)
+[2026-06-01T17:23:22.925Z] ⏭️  PULANDO Antônio Damaceno (já enviado)
+[2026-06-01T17:23:22.926Z] ⏭️  PULANDO Beatriz Karoline de Moraes (já enviado)
+[2026-06-01T17:23:22.927Z] ⏭️  PULANDO Bethânia Mota Araújo (já enviado)
+[2026-06-01T17:23:22.928Z] ⏭️  PULANDO Bianca Lessa Generoso (já enviado)
+[2026-06-01T17:23:22.929Z] ⏭️  PULANDO Bianca Marques (já enviado)
+[2026-06-01T17:23:22.931Z] ⏭️  PULANDO Brenda Bren (já enviado)
+[2026-06-01T17:23:22.969Z] ⏭️  PULANDO Bruna de Sousa Vieira (já enviado)
+[2026-06-01T17:23:22.972Z] ⏭️  PULANDO Bruna Donata Saturnino (já enviado)
+[2026-06-01T17:23:22.974Z] ⏭️  PULANDO Bruna Fontana (já enviado)
+[2026-06-01T17:23:22.975Z] ⏭️  PULANDO Bruna Rosa (já enviado)
+[2026-06-01T17:23:22.975Z] ⏭️  PULANDO Brunna Almeida (já enviado)
+[2026-06-01T17:23:22.976Z] ⏭️  PULANDO Brunielle Justino (já enviado)
+[2026-06-01T17:23:22.977Z] ⏭️  PULANDO Bruno Gonçalves (já enviado)
+[2026-06-01T17:23:22.977Z] ⏭️  PULANDO Bruno Lyra (já enviado)
+[2026-06-01T17:23:22.979Z] ⏭️  PULANDO Camila Anger Kila (já enviado)
+[2026-06-01T17:23:22.980Z] ⏭️  PULANDO Camila Bertrameli (já enviado)
+[2026-06-01T17:23:22.983Z] ⏭️  PULANDO Camila Pavan (já enviado)
+[2026-06-01T17:23:22.984Z] ⏭️  PULANDO Carla Batista (já enviado)
+[2026-06-01T17:23:22.986Z] ⏭️  PULANDO Carla Jost (já enviado)
+[2026-06-01T17:23:22.987Z] ⏭️  PULANDO Carlos Henrique Rossetto (já enviado)
+[2026-06-01T17:23:22.989Z] ⏭️  PULANDO Carlos Vinicius Gomes Ferreira (já enviado)
+[2026-06-01T17:23:22.990Z] ⏭️  PULANDO Caroline Borges Ferreira (já enviado)
+[2026-06-01T17:23:22.990Z] ⏭️  PULANDO Caroline Coure Lopes (já enviado)
+[2026-06-01T17:23:22.992Z] ⏭️  PULANDO Celso Cirino Ferreira (já enviado)
+[2026-06-01T17:23:22.993Z] ⏭️  PULANDO Celso Ribeiro (já enviado)
+[2026-06-01T17:23:22.994Z] ⏭️  PULANDO Cezar Meirelles (já enviado)
+[2026-06-01T17:23:22.995Z] ⏭️  PULANDO Cezario Koslowski (já enviado)
+[2026-06-01T17:23:22.996Z] ⏭️  PULANDO Cheila Gemelli (já enviado)
+[2026-06-01T17:23:22.997Z] ⏭️  PULANDO Claudemir de Paula Nunes (já enviado)
+[2026-06-01T17:23:23.000Z] ⏭️  PULANDO Clayton França (já enviado)
+[2026-06-01T17:23:23.003Z] ⏭️  PULANDO Cleberson Bessa (já enviado)
+[2026-06-01T17:23:23.006Z] ⏭️  PULANDO Cledison Januário de Oliveira (já enviado)
+[2026-06-01T17:23:23.038Z] ⏭️  PULANDO Cleiton Oliveira Sousa (já enviado)
+[2026-06-01T17:23:23.040Z] ⏭️  PULANDO Cleiton Trolez (já enviado)
+[2026-06-01T17:23:23.042Z] ⏭️  PULANDO Cristiane Leite (já enviado)
+[2026-06-01T17:23:23.045Z] ⏭️  PULANDO Dagmar Rodrigues (já enviado)
+[2026-06-01T17:23:23.045Z] ⏭️  PULANDO Dairio Felix da Costa (já enviado)
+[2026-06-01T17:23:23.046Z] ⏭️  PULANDO Daniel Erba de Souza (já enviado)
+[2026-06-01T17:23:23.053Z] ⏭️  PULANDO Daniel Hartke (já enviado)
+[2026-06-01T17:23:23.059Z] ⏭️  PULANDO Daniela Mendonça (já enviado)
+[2026-06-01T17:23:23.062Z] ⏭️  PULANDO Daniela Oliveira (já enviado)
+[2026-06-01T17:23:23.066Z] ⏭️  PULANDO Daniela Pagotto (já enviado)
+[2026-06-01T17:23:23.074Z] ⏭️  PULANDO Daniela Santana (já enviado)
+[2026-06-01T17:23:23.077Z] ⏭️  PULANDO Daniele Castro (já enviado)
+[2026-06-01T17:23:23.079Z] ⏭️  PULANDO Danielle Alves de Santana (já enviado)
+[2026-06-01T17:23:23.084Z] ⏭️  PULANDO Danglei Zardo (já enviado)
+[2026-06-01T17:23:23.087Z] 
+========== PROCESSANDO: Darks Fabiano ==========
+[2026-06-01T17:23:28.492Z] Clicando no botão de compartilhar...
+[2026-06-01T17:23:28.651Z] Aguardando modal...
+[2026-06-01T17:23:30.155Z] Digitando nome: Darks Fabiano
+[2026-06-01T17:23:33.494Z] Buscando contato nos resultados...
+[2026-06-01T17:23:33.625Z] Resultados encontrados: 1
+[2026-06-01T17:23:33.632Z] Correspondência encontrada na linha 0: Darks Fabiano Executivo Financeiro | Controladoria | FP&A | Agronegócio | Turnaround | M&A
+[2026-06-01T17:23:35.482Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:23:35.496Z] ✓ Contato selecionado!
+[2026-06-01T17:23:36.013Z] Checkbox confirmado como marcado.
+[2026-06-01T17:23:36.087Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:23:37.264Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:23:37.265Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:23:37.315Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Darks Fabiano ✓✓✓
+[2026-06-01T17:23:39.321Z] ⏰ Pausa de segurança: 114s
+
+[2026-06-01T17:25:33.709Z] 
+========== PROCESSANDO: Darlei Stein ==========
+[2026-06-01T17:25:37.979Z] Clicando no botão de compartilhar...
+[2026-06-01T17:25:38.122Z] Aguardando modal...
+[2026-06-01T17:25:39.450Z] Digitando nome: Darlei Stein
+[2026-06-01T17:25:43.292Z] Buscando contato nos resultados...
+[2026-06-01T17:25:43.302Z] Resultados encontrados: 1
+[2026-06-01T17:25:43.307Z] Correspondência encontrada na linha 0: Darlei Stein Engenheiro Agrônomo, Gerente Comercial na Camera Agroalimentos S.A.
+[2026-06-01T17:25:43.948Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:25:43.949Z] ✓ Contato selecionado!
+[2026-06-01T17:25:44.459Z] Checkbox confirmado como marcado.
+[2026-06-01T17:25:44.526Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:25:45.690Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:25:45.690Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:25:45.737Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Darlei Stein ✓✓✓
+[2026-06-01T17:25:47.750Z] ⏰ Pausa de segurança: 124s
+
+[2026-06-01T17:27:51.517Z] 
+========== PROCESSANDO: Dayvid Danton ==========
+[2026-06-01T17:27:55.660Z] Clicando no botão de compartilhar...
+[2026-06-01T17:27:56.505Z] Aguardando modal...
+[2026-06-01T17:27:57.432Z] Digitando nome: Dayvid Danton
+[2026-06-01T17:28:00.461Z] Buscando contato nos resultados...
+[2026-06-01T17:28:00.493Z] Resultados encontrados: 1
+[2026-06-01T17:28:00.499Z] Correspondência encontrada na linha 0: Dayvid Danton Analista Fiscal Jr
+[2026-06-01T17:28:01.163Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:28:01.164Z] ✓ Contato selecionado!
+[2026-06-01T17:28:01.674Z] Checkbox confirmado como marcado.
+[2026-06-01T17:28:01.811Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:28:03.006Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:28:03.007Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:28:03.049Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Dayvid Danton ✓✓✓
+[2026-06-01T17:28:05.054Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T17:28:11.398Z] ⏰ Pausa de segurança: 123s
+
+[2026-06-01T17:30:14.473Z] 
+========== PROCESSANDO: Debora B. Mota de Souza ==========
+[2026-06-01T17:30:18.588Z] Clicando no botão de compartilhar...
+[2026-06-01T17:30:18.748Z] Aguardando modal...
+[2026-06-01T17:30:19.658Z] Digitando nome: Debora B. Mota de Souza
+[2026-06-01T17:30:23.751Z] Buscando contato nos resultados...
+[2026-06-01T17:30:23.763Z] Resultados encontrados: 1
+[2026-06-01T17:30:23.768Z] Correspondência encontrada na linha 0: Debora B. Mota de Souza Logística
+[2026-06-01T17:30:24.404Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:30:24.405Z] ✓ Contato selecionado!
+[2026-06-01T17:30:24.916Z] Checkbox confirmado como marcado.
+[2026-06-01T17:30:24.967Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:30:26.115Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:30:26.116Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:30:26.155Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Debora B. Mota de Souza ✓✓✓
+[2026-06-01T17:30:28.163Z] ⏰ Pausa de segurança: 107s
+
+[2026-06-01T17:32:14.689Z] 
+========== PROCESSANDO: DÉBORA ARANTES SILVA ==========
+[2026-06-01T17:32:20.049Z] Clicando no botão de compartilhar...
+[2026-06-01T17:32:20.300Z] Aguardando modal...
+[2026-06-01T17:32:21.271Z] Digitando nome: DÉBORA ARANTES SILVA
+[2026-06-01T17:32:25.049Z] Buscando contato nos resultados...
+[2026-06-01T17:32:25.059Z] Resultados encontrados: 1
+[2026-06-01T17:32:25.065Z] Correspondência encontrada na linha 0: DÉBORA ARANTES SILVA Especialista/ Analista Contábil Sênior
+[2026-06-01T17:32:25.721Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:32:25.722Z] ✓ Contato selecionado!
+[2026-06-01T17:32:26.228Z] Checkbox confirmado como marcado.
+[2026-06-01T17:32:26.282Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:32:27.444Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:32:27.445Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:32:27.490Z] ✓✓✓ SUCESSO: COMPARTILHADO COM DÉBORA ARANTES SILVA ✓✓✓
+[2026-06-01T17:32:29.495Z] ⏰ Pausa de segurança: 137s
+
+[2026-06-01T17:34:46.243Z] ⏭️  PULANDO DÉBORA ARANTES SILVA (já enviado)
+[2026-06-01T17:34:46.245Z] 
+========== PROCESSANDO: Diego Baruk ==========
+[2026-06-01T17:34:50.563Z] Clicando no botão de compartilhar...
+[2026-06-01T17:34:50.767Z] Aguardando modal...
+[2026-06-01T17:34:51.748Z] Digitando nome: Diego Baruk
+[2026-06-01T17:34:54.516Z] Buscando contato nos resultados...
+[2026-06-01T17:34:54.526Z] Resultados encontrados: 1
+[2026-06-01T17:34:54.530Z] Correspondência encontrada na linha 0: Diego Baruk Supervisor Jurídico | Compliance | LGPD | Governança Corporativa | Análise de Riscos | Due Diligence | Gestão de Contratos | Contencioso Estratégico | Auditoria Interna | Políticas e Controles
+[2026-06-01T17:34:55.200Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:34:55.201Z] ✓ Contato selecionado!
+[2026-06-01T17:34:55.713Z] Checkbox confirmado como marcado.
+[2026-06-01T17:34:55.769Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:34:56.927Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:34:56.928Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:34:56.972Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Diego Baruk ✓✓✓
+[2026-06-01T17:34:58.992Z] ⏰ Pausa de segurança: 126s
+
+[2026-06-01T17:37:04.940Z] 
+========== PROCESSANDO: Diogo Luz Meirelles ==========
+[2026-06-01T17:37:09.185Z] Clicando no botão de compartilhar...
+[2026-06-01T17:37:09.340Z] Aguardando modal...
+[2026-06-01T17:37:10.329Z] Digitando nome: Diogo Luz Meirelles
+[2026-06-01T17:37:14.048Z] Buscando contato nos resultados...
+[2026-06-01T17:37:14.059Z] Resultados encontrados: 1
+[2026-06-01T17:37:14.064Z] Correspondência encontrada na linha 0: Diogo Luz Meirelles Director of Procurement at Grupo Pochteca
+[2026-06-01T17:37:14.712Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:37:14.712Z] ✓ Contato selecionado!
+[2026-06-01T17:37:15.217Z] Checkbox confirmado como marcado.
+[2026-06-01T17:37:15.282Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:37:16.442Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:37:16.443Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:37:16.492Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Diogo Luz Meirelles ✓✓✓
+[2026-06-01T17:37:18.495Z] ⏰ Pausa de segurança: 63s
+
+[2026-06-01T17:38:21.935Z] 
+========== PROCESSANDO: Edison Lelis ==========
+[2026-06-01T17:38:26.191Z] Clicando no botão de compartilhar...
+[2026-06-01T17:38:27.607Z] Aguardando modal...
+[2026-06-01T17:38:28.218Z] Digitando nome: Edison Lelis
+[2026-06-01T17:38:31.145Z] Buscando contato nos resultados...
+[2026-06-01T17:38:31.699Z] Resultados encontrados: 1
+[2026-06-01T17:38:31.733Z] Correspondência encontrada na linha 0: Edison Lelis Controller at Renuka do Brasil S.A.
+[2026-06-01T17:38:33.801Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:38:33.802Z] ✓ Contato selecionado!
+[2026-06-01T17:38:34.322Z] Checkbox confirmado como marcado.
+[2026-06-01T17:38:34.389Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:38:35.628Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:38:35.630Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:38:35.742Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Edison Lelis ✓✓✓
+[2026-06-01T17:38:37.745Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T17:38:46.372Z] ⏰ Pausa de segurança: 106s
+
+[2026-06-01T17:40:32.069Z] 
+========== PROCESSANDO: Edison Paiva ==========
+[2026-06-01T17:40:36.189Z] Clicando no botão de compartilhar...
+[2026-06-01T17:40:36.992Z] Aguardando modal...
+[2026-06-01T17:40:38.067Z] Digitando nome: Edison Paiva
+[2026-06-01T17:40:40.944Z] Buscando contato nos resultados...
+[2026-06-01T17:40:40.960Z] Resultados encontrados: 1
+[2026-06-01T17:40:40.966Z] Correspondência encontrada na linha 0: Edison Paiva CFO | Controller de Negócios | Gestor Estatutário | Finanças | M&A | Business Performance | Contabilidade | FP&A | Gestão de pessoas | Estratégia | Planejamento
+[2026-06-01T17:40:41.620Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:40:41.620Z] ✓ Contato selecionado!
+[2026-06-01T17:40:42.131Z] Checkbox confirmado como marcado.
+[2026-06-01T17:40:42.196Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:40:43.359Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:40:43.360Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:40:43.401Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Edison Paiva ✓✓✓
+[2026-06-01T17:40:45.408Z] ⏰ Pausa de segurança: 137s
+
+[2026-06-01T17:43:02.125Z] 
+========== PROCESSANDO: Eduardo Cordeiro Santos ==========
+[2026-06-01T17:43:06.151Z] Clicando no botão de compartilhar...
+[2026-06-01T17:43:06.833Z] Aguardando modal...
+[2026-06-01T17:43:08.416Z] Digitando nome: Eduardo Cordeiro Santos
+[2026-06-01T17:43:12.712Z] Buscando contato nos resultados...
+[2026-06-01T17:43:12.727Z] Resultados encontrados: 1
+[2026-06-01T17:43:12.734Z] Correspondência encontrada na linha 0: Eduardo Cordeiro Santos Coordenador Financeiro | Tesouraria | Fluxo de Caixa | Crédito e Cobrança | Capital de Giro
+[2026-06-01T17:43:13.490Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:43:13.491Z] ✓ Contato selecionado!
+[2026-06-01T17:43:13.999Z] Checkbox confirmado como marcado.
+[2026-06-01T17:43:14.081Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:43:15.260Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:43:15.262Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:43:15.307Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Eduardo Cordeiro Santos ✓✓✓
+[2026-06-01T17:43:17.311Z] ⏰ Pausa de segurança: 135s
+
+[2026-06-01T17:45:32.174Z] 
+========== PROCESSANDO: Eduardo Henrique de Assis ==========
+[2026-06-01T17:45:36.306Z] Clicando no botão de compartilhar...
+[2026-06-01T17:45:36.416Z] Aguardando modal...
+[2026-06-01T17:45:37.310Z] Digitando nome: Eduardo Henrique de Assis
+[2026-06-01T17:45:42.983Z] Buscando contato nos resultados...
+[2026-06-01T17:45:42.992Z] Resultados encontrados: 1
+[2026-06-01T17:45:42.996Z] Correspondência encontrada na linha 0: Eduardo Henrique de Assis Assistente Fiscal JR
+[2026-06-01T17:45:43.638Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:45:43.638Z] ✓ Contato selecionado!
+[2026-06-01T17:45:44.147Z] Checkbox confirmado como marcado.
+[2026-06-01T17:45:44.200Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:45:45.346Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:45:45.347Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:45:45.385Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Eduardo Henrique de Assis ✓✓✓
+[2026-06-01T17:45:47.397Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T17:45:53.625Z] ⏰ Pausa de segurança: 144s
+
+[2026-06-01T17:48:17.332Z] 
+========== PROCESSANDO: Eduardo José Pinto ==========
+[2026-06-01T17:48:21.667Z] Clicando no botão de compartilhar...
+[2026-06-01T17:48:22.987Z] Aguardando modal...
+[2026-06-01T17:48:24.029Z] Digitando nome: Eduardo José Pinto
+[2026-06-01T17:48:27.772Z] Buscando contato nos resultados...
+[2026-06-01T17:48:27.788Z] Resultados encontrados: 1
+[2026-06-01T17:48:27.794Z] Correspondência encontrada na linha 0: Eduardo José Pinto Coordenador Tributário | Reforma Tributária | Gestão Fiscal, Power BI
+[2026-06-01T17:48:28.445Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:48:28.446Z] ✓ Contato selecionado!
+[2026-06-01T17:48:28.958Z] Checkbox confirmado como marcado.
+[2026-06-01T17:48:29.022Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:48:30.169Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:48:30.170Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:48:30.214Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Eduardo José Pinto ✓✓✓
+[2026-06-01T17:48:32.215Z] ⏰ Pausa de segurança: 133s
+
+[2026-06-01T17:50:44.771Z] 
+========== PROCESSANDO: Edilma Zanardi ==========
+[2026-06-01T17:50:48.994Z] Clicando no botão de compartilhar...
+[2026-06-01T17:50:49.146Z] Aguardando modal...
+[2026-06-01T17:50:50.107Z] Digitando nome: Edilma Zanardi
+[2026-06-01T17:50:53.344Z] Buscando contato nos resultados...
+[2026-06-01T17:50:53.354Z] Resultados encontrados: 1
+[2026-06-01T17:50:53.359Z] Correspondência encontrada na linha 0: Edilma Zanardi Analista contábil - Grupo Barralcool / Contadora
+[2026-06-01T17:50:54.018Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:50:54.019Z] ✓ Contato selecionado!
+[2026-06-01T17:50:54.530Z] Checkbox confirmado como marcado.
+[2026-06-01T17:50:54.596Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:50:55.744Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:50:55.745Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:50:55.789Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Edilma Zanardi ✓✓✓
+[2026-06-01T17:50:57.791Z] ⏰ Pausa de segurança: 146s
+
+[2026-06-01T17:53:23.724Z] 
+========== PROCESSANDO: Elaine Fernandes Ferreira ==========
+[2026-06-01T17:53:27.748Z] Clicando no botão de compartilhar...
+[2026-06-01T17:53:28.604Z] Aguardando modal...
+[2026-06-01T17:53:29.714Z] Digitando nome: Elaine Fernandes Ferreira
+[2026-06-01T17:53:34.475Z] Buscando contato nos resultados...
+[2026-06-01T17:53:34.486Z] Resultados encontrados: 1
+[2026-06-01T17:53:34.492Z] Correspondência encontrada na linha 0: Elaine Fernandes Ferreira Analista Contábil Sênior
+[2026-06-01T17:53:35.234Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:53:35.235Z] ✓ Contato selecionado!
+[2026-06-01T17:53:35.755Z] Checkbox confirmado como marcado.
+[2026-06-01T17:53:35.821Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:53:36.998Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:53:37.000Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:53:37.223Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Elaine Fernandes Ferreira ✓✓✓
+[2026-06-01T17:53:39.233Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T17:53:49.824Z] ⏰ Pausa de segurança: 107s
+
+[2026-06-01T17:55:36.717Z] 
+========== PROCESSANDO: Elcivandro Rodrigues ==========
+[2026-06-01T17:55:41.336Z] Clicando no botão de compartilhar...
+[2026-06-01T17:55:42.460Z] Aguardando modal...
+[2026-06-01T17:55:44.206Z] Digitando nome: Elcivandro Rodrigues
+[2026-06-01T17:55:48.243Z] Buscando contato nos resultados...
+[2026-06-01T17:55:48.260Z] Resultados encontrados: 1
+[2026-06-01T17:55:48.267Z] Correspondência encontrada na linha 0: Elcivandro Rodrigues Gerente de Produção | Gerente de Logística | Coordenador de Logística | Coordenador de Produção | Gestão Industrial | Supply Chain | Planejamento Produtivo | KPIs | Lean Six Sigma | Redução de Custos
+[2026-06-01T17:55:48.929Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:55:48.930Z] ✓ Contato selecionado!
+[2026-06-01T17:55:49.442Z] Checkbox confirmado como marcado.
+[2026-06-01T17:55:49.509Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:55:50.674Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:55:50.676Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:55:50.732Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Elcivandro Rodrigues ✓✓✓
+[2026-06-01T17:55:52.743Z] ⏰ Pausa de segurança: 94s
+
+[2026-06-01T17:57:26.631Z] 
+========== PROCESSANDO: Elen Aparecida Trindade de Castro ==========
+[2026-06-01T17:57:31.105Z] Clicando no botão de compartilhar...
+[2026-06-01T17:57:31.450Z] Aguardando modal...
+[2026-06-01T17:57:33.102Z] Digitando nome: Elen Aparecida Trindade de Castro
+[2026-06-01T17:57:38.449Z] Buscando contato nos resultados...
+[2026-06-01T17:57:38.458Z] Resultados encontrados: 1
+[2026-06-01T17:57:38.462Z] Correspondência encontrada na linha 0: Elen Aparecida Trindade de Castro Auxiliar Contábil
+[2026-06-01T17:57:39.122Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:57:39.122Z] ✓ Contato selecionado!
+[2026-06-01T17:57:39.632Z] Checkbox confirmado como marcado.
+[2026-06-01T17:57:39.682Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:57:40.846Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:57:40.848Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:57:40.892Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Elen Aparecida Trindade de Castro ✓✓✓
+[2026-06-01T17:57:42.912Z] ⏰ Pausa de segurança: 101s
+
+[2026-06-01T17:59:23.813Z] 
+========== PROCESSANDO: Eliana Wollmeister Tirloni ==========
+[2026-06-01T17:59:28.128Z] Clicando no botão de compartilhar...
+[2026-06-01T17:59:30.500Z] Aguardando modal...
+[2026-06-01T17:59:31.593Z] Digitando nome: Eliana Wollmeister Tirloni
+[2026-06-01T17:59:36.219Z] Buscando contato nos resultados...
+[2026-06-01T17:59:36.236Z] Resultados encontrados: 1
+[2026-06-01T17:59:36.245Z] Correspondência encontrada na linha 0: Eliana Wollmeister Tirloni Analista Financeiro | Contas a pagar | Contas a receber | Gestão de Recursos Humanos
+[2026-06-01T17:59:36.964Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T17:59:36.965Z] ✓ Contato selecionado!
+[2026-06-01T17:59:37.482Z] Checkbox confirmado como marcado.
+[2026-06-01T17:59:37.533Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T17:59:38.674Z] Mensagem preenchida com sucesso.
+[2026-06-01T17:59:38.675Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T17:59:38.724Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Eliana Wollmeister Tirloni ✓✓✓
+[2026-06-01T17:59:40.730Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T17:59:48.318Z] ⏰ Pausa de segurança: 89s
+
+[2026-06-01T18:01:17.198Z] 
+========== PROCESSANDO: Elisandra Beatriz Guntzel ==========
+[2026-06-01T18:01:21.662Z] Clicando no botão de compartilhar...
+[2026-06-01T18:01:22.010Z] Aguardando modal...
+[2026-06-01T18:01:24.072Z] Digitando nome: Elisandra Beatriz Guntzel
+[2026-06-01T18:01:28.623Z] Buscando contato nos resultados...
+[2026-06-01T18:01:28.637Z] Resultados encontrados: 1
+[2026-06-01T18:01:28.643Z] Correspondência encontrada na linha 0: Elisandra Beatriz Guntzel Engenharia de Software | Analista de sistemas | Ciência da Computação | Power BI | Gestão de Projetos | Administração
+[2026-06-01T18:01:29.359Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:01:29.360Z] ✓ Contato selecionado!
+[2026-06-01T18:01:29.875Z] Checkbox confirmado como marcado.
+[2026-06-01T18:01:29.941Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:01:31.105Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:01:31.106Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:01:31.152Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Elisandra Beatriz Guntzel ✓✓✓
+[2026-06-01T18:01:33.164Z] ⏰ Pausa de segurança: 103s
+
+[2026-06-01T18:03:15.756Z] 
+========== PROCESSANDO: Elisandra de Campos ==========
+[2026-06-01T18:03:20.063Z] Clicando no botão de compartilhar...
+[2026-06-01T18:03:21.169Z] Aguardando modal...
+[2026-06-01T18:03:22.200Z] Digitando nome: Elisandra de Campos
+[2026-06-01T18:03:25.788Z] Buscando contato nos resultados...
+[2026-06-01T18:03:25.797Z] Resultados encontrados: 2
+[2026-06-01T18:03:25.802Z] Correspondência encontrada na linha 0: Elisandra De Campos Analista contábil na Cotribá Cooperativa Agrícola Mista General Osório
+[2026-06-01T18:03:26.429Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:03:26.429Z] ✓ Contato selecionado!
+[2026-06-01T18:03:26.945Z] Checkbox confirmado como marcado.
+[2026-06-01T18:03:27.009Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:03:28.161Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:03:28.163Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:03:28.203Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Elisandra de Campos ✓✓✓
+[2026-06-01T18:03:30.207Z] ⏰ Pausa de segurança: 126s
+
+[2026-06-01T18:05:36.021Z] 
+========== PROCESSANDO: Eliton Sávio Lima ==========
+[2026-06-01T18:05:40.480Z] Clicando no botão de compartilhar...
+[2026-06-01T18:05:40.638Z] Aguardando modal...
+[2026-06-01T18:05:41.602Z] Digitando nome: Eliton Sávio Lima
+[2026-06-01T18:05:45.038Z] Buscando contato nos resultados...
+[2026-06-01T18:05:45.050Z] Resultados encontrados: 1
+[2026-06-01T18:05:45.055Z] Correspondência encontrada na linha 0: Eliton Sávio Lima Analista Financeiro na Portal Agro
+[2026-06-01T18:05:45.706Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:05:45.706Z] ✓ Contato selecionado!
+[2026-06-01T18:05:46.222Z] Checkbox confirmado como marcado.
+[2026-06-01T18:05:46.289Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:05:47.458Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:05:47.459Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:05:47.498Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Eliton Sávio Lima ✓✓✓
+[2026-06-01T18:05:49.500Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T18:05:56.825Z] ⏰ Pausa de segurança: 119s
+
+[2026-06-01T18:07:56.022Z] 
+========== PROCESSANDO: Elisangela Borges ==========
+[2026-06-01T18:08:00.593Z] Clicando no botão de compartilhar...
+[2026-06-01T18:08:02.054Z] Aguardando modal...
+[2026-06-01T18:08:02.821Z] Digitando nome: Elisangela Borges
+[2026-06-01T18:08:06.284Z] Buscando contato nos resultados...
+[2026-06-01T18:08:06.295Z] Resultados encontrados: 1
+[2026-06-01T18:08:06.300Z] Correspondência encontrada na linha 0: Elisangela Borges Suporte Administrativo | Atendimento ao Cliente | Financeiro.
+[2026-06-01T18:08:06.951Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:08:06.951Z] ✓ Contato selecionado!
+[2026-06-01T18:08:07.477Z] Checkbox confirmado como marcado.
+[2026-06-01T18:08:07.533Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:08:08.677Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:08:08.678Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:08:08.713Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Elisangela Borges ✓✓✓
+[2026-06-01T18:08:10.727Z] ⏰ Pausa de segurança: 76s
+
+[2026-06-01T18:09:26.472Z] 
+========== PROCESSANDO: Eliezer Júnior ==========
+[2026-06-01T18:09:30.868Z] Clicando no botão de compartilhar...
+[2026-06-01T18:09:32.063Z] Aguardando modal...
+[2026-06-01T18:09:32.998Z] Digitando nome: Eliezer Júnior
+[2026-06-01T18:09:36.098Z] Buscando contato nos resultados...
+[2026-06-01T18:09:36.115Z] Resultados encontrados: 1
+[2026-06-01T18:09:36.120Z] Correspondência encontrada na linha 0: Eliezer Júnior Analista Contábil | Usina Giasa LTDA
+[2026-06-01T18:09:36.764Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:09:36.765Z] ✓ Contato selecionado!
+[2026-06-01T18:09:37.290Z] Checkbox confirmado como marcado.
+[2026-06-01T18:09:37.346Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:09:38.510Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:09:38.511Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:09:38.557Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Eliezer Júnior ✓✓✓
+[2026-06-01T18:09:40.575Z] ⏰ Pausa de segurança: 114s
+
+[2026-06-01T18:11:34.343Z] 
+========== PROCESSANDO: Emanoeli Cebalho ==========
+[2026-06-01T18:11:38.358Z] Clicando no botão de compartilhar...
+[2026-06-01T18:11:38.607Z] Aguardando modal...
+[2026-06-01T18:11:40.082Z] Digitando nome: Emanoeli Cebalho
+[2026-06-01T18:11:43.371Z] Buscando contato nos resultados...
+[2026-06-01T18:11:43.379Z] Resultados encontrados: 1
+[2026-06-01T18:11:43.382Z] Correspondência encontrada na linha 0: Emanoeli Cebalho Analista Fiscal PL
+[2026-06-01T18:11:44.012Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:11:44.013Z] ✓ Contato selecionado!
+[2026-06-01T18:11:44.524Z] Checkbox confirmado como marcado.
+[2026-06-01T18:11:44.588Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:11:45.751Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:11:45.752Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:11:45.789Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Emanoeli Cebalho ✓✓✓
+[2026-06-01T18:11:47.797Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T18:11:55.176Z] ⏰ Pausa de segurança: 123s
+
+[2026-06-01T18:13:57.856Z] 
+========== PROCESSANDO: Enioli Júnior Dutra ==========
+[2026-06-01T18:14:02.316Z] Clicando no botão de compartilhar...
+[2026-06-01T18:14:02.743Z] Aguardando modal...
+[2026-06-01T18:14:04.646Z] Digitando nome: Enioli Júnior Dutra
+[2026-06-01T18:14:08.543Z] Buscando contato nos resultados...
+[2026-06-01T18:14:08.553Z] Resultados encontrados: 1
+[2026-06-01T18:14:08.557Z] Correspondência encontrada na linha 0: Enioli Júnior Dutra Sócio
+[2026-06-01T18:14:09.219Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:14:09.219Z] ✓ Contato selecionado!
+[2026-06-01T18:14:09.731Z] Checkbox confirmado como marcado.
+[2026-06-01T18:14:09.796Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:14:10.977Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:14:10.978Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:14:11.019Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Enioli Júnior Dutra ✓✓✓
+[2026-06-01T18:14:13.021Z] ⏰ Pausa de segurança: 107s
+
+[2026-06-01T18:16:00.203Z] 
+========== PROCESSANDO: Eric Medeiros ==========
+[2026-06-01T18:16:04.559Z] Clicando no botão de compartilhar...
+[2026-06-01T18:16:04.761Z] Aguardando modal...
+[2026-06-01T18:16:06.752Z] Digitando nome: Eric Medeiros
+[2026-06-01T18:16:09.807Z] Buscando contato nos resultados...
+[2026-06-01T18:16:09.817Z] Resultados encontrados: 1
+[2026-06-01T18:16:09.821Z] Nenhuma correspondência exata encontrada; marcando a primeira sugestão disponível.
+[2026-06-01T18:16:09.974Z] ✓ Contato selecionado!
+[2026-06-01T18:16:10.481Z] Checkbox confirmado como marcado.
+[2026-06-01T18:16:10.544Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:16:11.707Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:16:11.709Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:16:11.754Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Eric Medeiros ✓✓✓
+[2026-06-01T18:16:13.773Z] ⏰ Pausa de segurança: 73s
+
+[2026-06-01T18:17:27.167Z] 
+========== PROCESSANDO: Eudes Marçal Lellis ==========
+[2026-06-01T18:17:31.313Z] Clicando no botão de compartilhar...
+[2026-06-01T18:17:31.472Z] Aguardando modal...
+[2026-06-01T18:17:32.410Z] Digitando nome: Eudes Marçal Lellis
+[2026-06-01T18:17:36.125Z] Buscando contato nos resultados...
+[2026-06-01T18:17:36.135Z] Resultados encontrados: 1
+[2026-06-01T18:17:36.139Z] Correspondência encontrada na linha 0: Eudes Marçal Lellis --
+[2026-06-01T18:17:36.778Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:17:36.779Z] ✓ Contato selecionado!
+[2026-06-01T18:17:37.290Z] Checkbox confirmado como marcado.
+[2026-06-01T18:17:37.342Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:17:38.489Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:17:38.491Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:17:38.538Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Eudes Marçal Lellis ✓✓✓
+[2026-06-01T18:17:40.539Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T18:17:47.943Z] ⏰ Pausa de segurança: 89s
+
+[2026-06-01T18:19:17.292Z] 
+========== PROCESSANDO: Everaldo Ribeiro de Carvalho ==========
+[2026-06-01T18:19:21.622Z] Clicando no botão de compartilhar...
+[2026-06-01T18:19:21.798Z] Aguardando modal...
+[2026-06-01T18:19:23.335Z] Digitando nome: Everaldo Ribeiro de Carvalho
+[2026-06-01T18:19:28.315Z] Buscando contato nos resultados...
+[2026-06-01T18:19:28.328Z] Resultados encontrados: 1
+[2026-06-01T18:19:28.334Z] Correspondência encontrada na linha 0: Everaldo Ribeiro de Carvalho Analista Contábil
+[2026-06-01T18:19:28.987Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:19:28.988Z] ✓ Contato selecionado!
+[2026-06-01T18:19:29.502Z] Checkbox confirmado como marcado.
+[2026-06-01T18:19:29.567Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:19:30.730Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:19:30.731Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:19:30.778Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Everaldo Ribeiro de Carvalho ✓✓✓
+[2026-06-01T18:19:32.796Z] ⏰ Pausa de segurança: 114s
+
+[2026-06-01T18:21:26.849Z] 
+========== PROCESSANDO: EVERTON TIAGO LAUXEN ==========
+[2026-06-01T18:21:31.345Z] Clicando no botão de compartilhar...
+[2026-06-01T18:21:33.217Z] Aguardando modal...
+[2026-06-01T18:21:33.615Z] Digitando nome: EVERTON TIAGO LAUXEN
+[2026-06-01T18:21:37.423Z] Buscando contato nos resultados...
+[2026-06-01T18:21:37.433Z] Resultados encontrados: 1
+[2026-06-01T18:21:37.438Z] Correspondência encontrada na linha 0: EVERTON TIAGO LAUXEN Coordenador Crédito e Cobrança
+[2026-06-01T18:21:38.079Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:21:38.080Z] ✓ Contato selecionado!
+[2026-06-01T18:21:38.590Z] Checkbox confirmado como marcado.
+[2026-06-01T18:21:38.656Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:21:39.803Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:21:39.805Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:21:39.848Z] ✓✓✓ SUCESSO: COMPARTILHADO COM EVERTON TIAGO LAUXEN ✓✓✓
+[2026-06-01T18:21:41.851Z] ⏰ Pausa de segurança: 131s
+
+[2026-06-01T18:23:52.939Z] 
+========== PROCESSANDO: Ewerton Santos ==========
+[2026-06-01T18:23:57.021Z] Clicando no botão de compartilhar...
+[2026-06-01T18:23:57.562Z] Aguardando modal...
+[2026-06-01T18:23:58.464Z] Digitando nome: Ewerton Santos
+[2026-06-01T18:24:01.653Z] Buscando contato nos resultados...
+[2026-06-01T18:24:01.679Z] Resultados encontrados: 1
+[2026-06-01T18:24:01.684Z] Correspondência encontrada na linha 0: Ewerton Santos Analista Departamento Pessoal na Terra Santa Propriedades Agrícolas
+[2026-06-01T18:24:02.375Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:24:02.377Z] ✓ Contato selecionado!
+[2026-06-01T18:24:02.900Z] Checkbox confirmado como marcado.
+[2026-06-01T18:24:02.965Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:24:04.127Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:24:04.130Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:24:04.175Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Ewerton Santos ✓✓✓
+[2026-06-01T18:24:06.191Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T18:24:12.575Z] ⏰ Pausa de segurança: 80s
+
+[2026-06-01T18:25:32.690Z] 
+========== PROCESSANDO: Érica Toledo ==========
+[2026-06-01T18:25:36.803Z] Clicando no botão de compartilhar...
+[2026-06-01T18:25:37.015Z] Aguardando modal...
+[2026-06-01T18:25:37.960Z] Digitando nome: Érica Toledo
+[2026-06-01T18:25:40.884Z] Buscando contato nos resultados...
+[2026-06-01T18:25:40.896Z] Resultados encontrados: 1
+[2026-06-01T18:25:40.901Z] Correspondência encontrada na linha 0: Érica Toledo Gerente Jurídica | Direito dos Negócios e Relações de Trabalho | Gestão Estratégica, Contencioso de Massa e Compliance | Governança e Gestão de Riscos
+[2026-06-01T18:25:41.527Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:25:41.528Z] ✓ Contato selecionado!
+[2026-06-01T18:25:42.033Z] Checkbox confirmado como marcado.
+[2026-06-01T18:25:42.084Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:25:43.241Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:25:43.242Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:25:43.276Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Érica Toledo ✓✓✓
+[2026-06-01T18:25:45.281Z] ⏰ Pausa de segurança: 139s
+
+[2026-06-01T18:28:04.209Z] 
+========== PROCESSANDO: Édina Thais Taglieber ==========
+[2026-06-01T18:28:08.185Z] Clicando no botão de compartilhar...
+[2026-06-01T18:28:08.320Z] Aguardando modal...
+[2026-06-01T18:28:09.220Z] Digitando nome: Édina Thais Taglieber
+[2026-06-01T18:28:13.115Z] Buscando contato nos resultados...
+[2026-06-01T18:28:13.124Z] Resultados encontrados: 1
+[2026-06-01T18:28:13.129Z] Correspondência encontrada na linha 0: Édina Thais Taglieber Analista Contábil/Faturamento
+[2026-06-01T18:28:13.778Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:28:13.779Z] ✓ Contato selecionado!
+[2026-06-01T18:28:14.283Z] Checkbox confirmado como marcado.
+[2026-06-01T18:28:14.335Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:28:15.506Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:28:15.507Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:28:15.547Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Édina Thais Taglieber ✓✓✓
+[2026-06-01T18:28:17.563Z] ⏰ Pausa de segurança: 141s
+
+[2026-06-01T18:30:38.516Z] 
+========== PROCESSANDO: Fabio Crestani ==========
+[2026-06-01T18:30:42.654Z] Clicando no botão de compartilhar...
+[2026-06-01T18:30:42.919Z] Aguardando modal...
+[2026-06-01T18:30:43.838Z] Digitando nome: Fabio Crestani
+[2026-06-01T18:30:46.951Z] Buscando contato nos resultados...
+[2026-06-01T18:30:46.962Z] Resultados encontrados: 1
+[2026-06-01T18:30:46.969Z] Correspondência encontrada na linha 0: Fabio Crestani Supervisor comercial na Cooperativa Agropecuaria Videirense Ltda
+[2026-06-01T18:30:47.624Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:30:47.624Z] ✓ Contato selecionado!
+[2026-06-01T18:30:48.136Z] Checkbox confirmado como marcado.
+[2026-06-01T18:30:48.201Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:30:49.348Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:30:49.349Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:30:49.389Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Fabio Crestani ✓✓✓
+[2026-06-01T18:30:51.396Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T18:30:59.171Z] ⏰ Pausa de segurança: 145s
+
+[2026-06-01T18:33:24.583Z] 
+========== PROCESSANDO: Fabio Felini ==========
+[2026-06-01T18:33:28.983Z] Clicando no botão de compartilhar...
+[2026-06-01T18:33:30.223Z] Aguardando modal...
+[2026-06-01T18:33:31.098Z] Digitando nome: Fabio Felini
+[2026-06-01T18:33:34.018Z] Buscando contato nos resultados...
+[2026-06-01T18:33:34.027Z] Resultados encontrados: 1
+[2026-06-01T18:33:34.031Z] Correspondência encontrada na linha 0: Fabio Felini Coordenador / Gerente/ Administrativo / Controladoria / Finanças / Foco em Resultados / Performance / Pessoas / MBA em Controladoria.
+[2026-06-01T18:33:34.668Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:33:34.669Z] ✓ Contato selecionado!
+[2026-06-01T18:33:35.190Z] Checkbox confirmado como marcado.
+[2026-06-01T18:33:35.254Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:33:36.427Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:33:36.428Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:33:36.476Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Fabio Felini ✓✓✓
+[2026-06-01T18:33:38.492Z] ⏰ Pausa de segurança: 119s
+
+[2026-06-01T18:35:37.302Z] 
+========== PROCESSANDO: Fernanda Ataides ==========
+[2026-06-01T18:35:41.577Z] Clicando no botão de compartilhar...
+[2026-06-01T18:35:41.798Z] Aguardando modal...
+[2026-06-01T18:35:43.203Z] Digitando nome: Fernanda Ataides
+[2026-06-01T18:35:46.619Z] Buscando contato nos resultados...
+[2026-06-01T18:35:46.632Z] Resultados encontrados: 1
+[2026-06-01T18:35:46.639Z] Correspondência encontrada na linha 0: Fernanda Ataides Analista Fiscal na empresa Agromantova
+[2026-06-01T18:35:47.280Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:35:47.280Z] ✓ Contato selecionado!
+[2026-06-01T18:35:47.788Z] Checkbox confirmado como marcado.
+[2026-06-01T18:35:47.858Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:35:49.020Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:35:49.020Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:35:49.063Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Fernanda Ataides ✓✓✓
+[2026-06-01T18:35:51.071Z] ⏰ Pausa de segurança: 145s
+
+[2026-06-01T18:38:16.412Z] 
+========== PROCESSANDO: Fernanda Helena Gonçalves ==========
+[2026-06-01T18:38:20.376Z] Clicando no botão de compartilhar...
+[2026-06-01T18:38:20.674Z] Aguardando modal...
+[2026-06-01T18:38:21.660Z] Digitando nome: Fernanda Helena Gonçalves
+[2026-06-01T18:38:26.119Z] Buscando contato nos resultados...
+[2026-06-01T18:38:26.130Z] Resultados encontrados: 1
+[2026-06-01T18:38:26.135Z] Correspondência encontrada na linha 0: Fernanda Helena Gonçalves PhD Candidate | Lawyer | Accountant | Legal and Financial Consultant | Board Member | Capital Markets and Sustainability Committees | Committees member (OAB/RJ, CRC/RJ, ICBR)
+[2026-06-01T18:38:26.797Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:38:26.797Z] ✓ Contato selecionado!
+[2026-06-01T18:38:27.308Z] Checkbox confirmado como marcado.
+[2026-06-01T18:38:27.371Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:38:28.518Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:38:28.520Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:38:28.559Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Fernanda Helena Gonçalves ✓✓✓
+[2026-06-01T18:38:30.567Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T18:38:36.784Z] ⏰ Pausa de segurança: 99s
+
+[2026-06-01T18:40:16.293Z] 
+========== PROCESSANDO: Fernando De Sá ==========
+[2026-06-01T18:40:20.288Z] Clicando no botão de compartilhar...
+[2026-06-01T18:40:20.646Z] Aguardando modal...
+[2026-06-01T18:40:21.609Z] Digitando nome: Fernando De Sá
+[2026-06-01T18:40:24.802Z] Buscando contato nos resultados...
+[2026-06-01T18:40:24.812Z] Resultados encontrados: 1
+[2026-06-01T18:40:24.816Z] Correspondência encontrada na linha 0: Fernando De Sá Coordenador Comercial Insumos
+[2026-06-01T18:40:25.475Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:40:25.476Z] ✓ Contato selecionado!
+[2026-06-01T18:40:25.992Z] Checkbox confirmado como marcado.
+[2026-06-01T18:40:26.051Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:40:27.209Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:40:27.210Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:40:27.260Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Fernando De Sá ✓✓✓
+[2026-06-01T18:40:29.263Z] ⏰ Pausa de segurança: 102s
+
+[2026-06-01T18:42:10.880Z] 
+========== PROCESSANDO: Fernando Ferreira ==========
+[2026-06-01T18:42:14.920Z] Clicando no botão de compartilhar...
+[2026-06-01T18:42:15.107Z] Aguardando modal...
+[2026-06-01T18:42:15.828Z] Digitando nome: Fernando Ferreira
+[2026-06-01T18:42:19.239Z] Buscando contato nos resultados...
+[2026-06-01T18:42:19.251Z] Resultados encontrados: 2
+[2026-06-01T18:42:19.256Z] Correspondência encontrada na linha 0: Fernando Ferreira Gerente Comercial
+[2026-06-01T18:42:19.887Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:42:19.888Z] ✓ Contato selecionado!
+[2026-06-01T18:42:20.400Z] Checkbox confirmado como marcado.
+[2026-06-01T18:42:20.661Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:42:21.817Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:42:21.818Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:42:21.857Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Fernando Ferreira ✓✓✓
+[2026-06-01T18:42:23.864Z] ⏰ Pausa de segurança: 110s
+
+[2026-06-01T18:44:13.826Z] 
+========== PROCESSANDO: Fernando Murcia ==========
+[2026-06-01T18:44:17.887Z] Clicando no botão de compartilhar...
+[2026-06-01T18:44:18.044Z] Aguardando modal...
+[2026-06-01T18:44:18.945Z] Digitando nome: Fernando Murcia
+[2026-06-01T18:44:22.152Z] Buscando contato nos resultados...
+[2026-06-01T18:44:22.162Z] Resultados encontrados: 1
+[2026-06-01T18:44:22.166Z] Correspondência encontrada na linha 0: Fernando Murcia Professor, Consultor e Membro de Comitês e Conselhos
+[2026-06-01T18:44:22.808Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:44:22.809Z] ✓ Contato selecionado!
+[2026-06-01T18:44:23.320Z] Checkbox confirmado como marcado.
+[2026-06-01T18:44:23.385Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:44:24.548Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:44:24.550Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:44:24.665Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Fernando Murcia ✓✓✓
+[2026-06-01T18:44:26.681Z] --- Disfarçando: Indo para notifications ---
+[2026-06-01T18:44:34.191Z] ⏰ Pausa de segurança: 130s
+
+[2026-06-01T18:46:43.787Z] 
+========== PROCESSANDO: Flavio Eduardo ==========
+[2026-06-01T18:46:48.067Z] Clicando no botão de compartilhar...
+[2026-06-01T18:46:49.262Z] Aguardando modal...
+[2026-06-01T18:46:49.984Z] Digitando nome: Flavio Eduardo
+[2026-06-01T18:46:53.104Z] Buscando contato nos resultados...
+[2026-06-01T18:46:53.114Z] Resultados encontrados: 1
+[2026-06-01T18:46:53.118Z] Nenhuma correspondência exata encontrada; marcando a primeira sugestão disponível.
+[2026-06-01T18:46:53.249Z] ✓ Contato selecionado!
+[2026-06-01T18:46:53.773Z] Checkbox confirmado como marcado.
+[2026-06-01T18:46:53.841Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:46:55.002Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:46:55.003Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:46:55.048Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Flavio Eduardo ✓✓✓
+[2026-06-01T18:46:57.065Z] ⏰ Pausa de segurança: 109s
+
+[2026-06-01T18:48:46.061Z] 
+========== PROCESSANDO: Flavio Tosta ==========
+[2026-06-01T18:48:50.302Z] Clicando no botão de compartilhar...
+[2026-06-01T18:48:51.592Z] Aguardando modal...
+[2026-06-01T18:48:52.710Z] Digitando nome: Flavio Tosta
+[2026-06-01T18:48:55.599Z] Buscando contato nos resultados...
+[2026-06-01T18:48:55.650Z] Resultados encontrados: 1
+[2026-06-01T18:48:55.659Z] Correspondência encontrada na linha 0: Flavio Tosta Coordenador de Logística no Agronegócio | Engenheiro Civil, MBA em Supply Chain | Estruturação de Operações, Frete e Eficiência Logística
+[2026-06-01T18:48:56.308Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:48:56.308Z] ✓ Contato selecionado!
+[2026-06-01T18:48:56.820Z] Checkbox confirmado como marcado.
+[2026-06-01T18:48:56.884Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:48:58.032Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:48:58.033Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:48:58.072Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Flavio Tosta ✓✓✓
+[2026-06-01T18:49:00.081Z] ⏰ Pausa de segurança: 69s
+
+[2026-06-01T18:50:09.412Z] 
+========== PROCESSANDO: Francisco das C Cristiano lima de araujo ==========
+[2026-06-01T18:50:13.810Z] Clicando no botão de compartilhar...
+[2026-06-01T18:50:14.095Z] Aguardando modal...
+[2026-06-01T18:50:15.052Z] Digitando nome: Francisco das C Cristiano lima de araujo
+[2026-06-01T18:50:21.117Z] Buscando contato nos resultados...
+[2026-06-01T18:50:21.126Z] Resultados encontrados: 1
+[2026-06-01T18:50:21.130Z] Correspondência encontrada na linha 0: Francisco das C Cristiano lima de araujo Analista Fiscal e Coordenador Administrativo | Especialista em Logística, Suprimentos e Gestão de Custos
+[2026-06-01T18:50:21.772Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:50:21.773Z] ✓ Contato selecionado!
+[2026-06-01T18:50:22.283Z] Checkbox confirmado como marcado.
+[2026-06-01T18:50:22.333Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:50:23.505Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:50:23.507Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:50:23.542Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Francisco das C Cristiano lima de araujo ✓✓✓
+[2026-06-01T18:50:25.546Z] --- Disfarçando: Indo para feed ---
+[2026-06-01T18:50:31.936Z] ⏰ Pausa de segurança: 131s
+
+[2026-06-01T18:52:43.006Z] 
+========== PROCESSANDO: Gabriel Fernandes Meira ==========
+[2026-06-01T18:52:47.401Z] Clicando no botão de compartilhar...
+[2026-06-01T18:52:47.653Z] Aguardando modal...
+[2026-06-01T18:52:48.664Z] Digitando nome: Gabriel Fernandes Meira
+[2026-06-01T18:52:52.834Z] Buscando contato nos resultados...
+[2026-06-01T18:52:52.843Z] Resultados encontrados: 1
+[2026-06-01T18:52:52.848Z] Correspondência encontrada na linha 0: Gabriel Fernandes Meira Analista Fiscal | Especialista em Apuração de Impostos e Obrigações Acessórias | Experiência com SAP | CRC Ativo
+[2026-06-01T18:52:53.491Z] Destinatário aparece na lista de selecionados após clique.
+[2026-06-01T18:52:53.492Z] ✓ Contato selecionado!
+[2026-06-01T18:52:54.004Z] Checkbox confirmado como marcado.
+[2026-06-01T18:52:54.070Z] Preenchendo mensagem no editor encontrado com seletor: div[contenteditable="true"][role="textbox"]
+[2026-06-01T18:52:55.233Z] Mensagem preenchida com sucesso.
+[2026-06-01T18:52:55.233Z] Aguardando botão Enviar ficar habilitado...
+[2026-06-01T18:52:55.273Z] ✓✓✓ SUCESSO: COMPARTILHADO COM Gabriel Fernandes Meira ✓✓✓
+[2026-06-01T18:52:57.275Z] ⏰ Pausa de segurança: 149s
+

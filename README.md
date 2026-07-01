@@ -1,198 +1,130 @@
-# 🤖 LinkedIn Share Automation
- 
-Automação de marketing B2B em Node.js com Playwright para compartilhar publicações do LinkedIn via mensagem privada (DM) para uma lista de contatos.
- 
+﻿# LinkedIn Share Automation
+
+Automação simples em Node.js para compartilhar uma publicação do LinkedIn por mensagem privada com uma lista de contatos.
+
 ---
- 
-## 📋 Índice
- 
-- [O que faz](#-o-que-faz)
-- [Estrutura do projeto](#-estrutura-do-projeto)
-- [Pré-requisitos](#-pré-requisitos)
-- [Instalação](#-instalação)
-- [Configuração](#-configuração)
-- [Como usar](#-como-usar)
-- [Segurança anti-ban](#-segurança-anti-ban)
-- [Arquivos gerados automaticamente](#-arquivos-gerados-automaticamente)
-- [Solução de problemas](#-solução-de-problemas)
+
+## O que o projeto faz
+
+O script acessa uma publicação do LinkedIn e compartilha o post com cada contato da lista. Ele personaliza a mensagem usando o primeiro nome do contato, tenta enviar duas vezes em caso de falha e registra os envios concluídos.
+
 ---
- 
-## ✅ O que faz
- 
-Para cada contato da sua lista CSV, o script:
- 
-1. Acessa a publicação configurada no LinkedIn
-2. Clica em "Enviar" para abrir o modal de mensagens
-3. Busca o contato pelo nome completo e valida antes de clicar
-4. Digita a mensagem personalizada com o primeiro nome da pessoa
-5. Envia e registra o sucesso em `enviados.json`
-6. Aguarda um tempo aleatório antes do próximo envio
-7. A cada 2 envios, simula navegação humana no feed ou notificações
-Se um envio falhar, o script tenta **mais uma vez automaticamente** antes de pular para o próximo contato.
- 
+
+## Arquivos do projeto
+
+- `linkedin-share-automation.js` – script principal
+- `contatos.csv` – lista de contatos com coluna `nome`
+- `mensagem.txt` – texto da mensagem enviada
+- `.env` – credenciais do LinkedIn
+- `session.json` – sessão salva do navegador
+- `session-meta.json` – metadados da sessão
+- `enviados.json` – registros de envios concluídos
+- `log.txt` – histórico de execução
+- `package.json` – dependências do projeto
+
 ---
- 
-## 📁 Estrutura do projeto
- 
-```
-📁 linkedin/
-├── linkedin-share-automation.js  ← Script principal
-├── contatos.csv                  ← Sua lista de leads
-├── mensagem.txt                  ← Texto da mensagem (editável)
-├── .env                          ← Credenciais (nunca sobe pro Git)
-├── .gitignore                    ← Proteção dos arquivos sensíveis
-├── package.json
-├── package-lock.json
-│
-│   (gerados automaticamente na execução)
-├── session.json                  ← Sessão do LinkedIn salva
-├── enviados.json                 ← Registro de quem já recebeu
-└── log.txt                       ← Log completo de execução
-```
- 
+
+## Pré-requisitos
+
+- Node.js 18 ou superior
+- Conta ativa no LinkedIn
+- Contatos já conectados com você no LinkedIn para receber DM
+
 ---
- 
-## 🔧 Pré-requisitos
- 
-- [Node.js](https://nodejs.org/) versão **18 ou superior**
-- Conta no LinkedIn
-- Conexão com os contatos da lista (LinkedIn exige conexão para enviar DM)
----
- 
-## 📦 Instalação
- 
+
+## Instalação
+
+Abra o terminal na pasta do projeto e rode:
+
 ```bash
-# 1. Clone ou baixe o projeto na sua máquina
- 
-# 2. Entre na pasta do projeto
-cd linkedin
- 
-# 3. Instale as dependências
 npm install
- 
-# 4. Instale os navegadores do Playwright
 npx playwright install chromium
 ```
- 
+
 ---
- 
-## ⚙️ Configuração
- 
-### 1. Credenciais (`.env`)
- 
-Crie um arquivo `.env` na raiz do projeto:
- 
+
+## Configuração
+
+### 1. Credenciais
+
+Crie ou edite o arquivo `.env` com seu login do LinkedIn:
+
 ```
 LINKEDIN_EMAIL=seu_email@exemplo.com
 LINKEDIN_PASSWORD=sua_senha
 ```
- 
-> ⚠️ Nunca compartilhe este arquivo. Ele está protegido pelo `.gitignore`.
- 
-### 2. Lista de contatos (`contatos.csv`)
- 
-O arquivo deve ter um cabeçalho `nome` com um contato por linha:
- 
+
+### 2. Lista de contatos
+
+O `contatos.csv` deve conter uma coluna `nome`:
+
 ```csv
 nome
-Natan Kainak
-Samuel Malaquias Sadovnik
-Maria Fernanda Silva
+João Silva
+Maria Oliveira
+Carlos Souza
 ```
- 
-> O script usa o **primeiro nome** automaticamente para personalizar a mensagem.
- 
-### 3. Mensagem (`mensagem.txt`)
- 
-Edite o texto que será enviado para cada contato. Use `{{firstName}}` onde quiser que o primeiro nome apareça:
- 
-```
-Olá, {{firstName}}, tudo tranquilo?
- 
-Passando para compartilhar uma publicação nova da nossa página ExportControl sobre um tema extremamente relevante para empresas que realizam vendas com fim específico de exportações.
- 
-Fico à disposição caso queira trocar alguma ideia sobre o assunto.
-```
- 
-### 4. URL da publicação (`linkedin-share-automation.js`)
- 
-No início do script, atualize a URL do post que deseja divulgar:
- 
-```javascript
-const CONFIG = {
-  postUrl: 'https://www.linkedin.com/posts/SEU-POST-AQUI',
-  ...
-};
-```
- 
+
+O script usa automaticamente o primeiro nome para personalizar a mensagem.
+
+### 3. Mensagem
+
+Edite o `mensagem.txt` com o texto que será enviado. Use `{{firstName}}` para inserir o primeiro nome do contato.
+
+### 4. Publicação do LinkedIn
+
+No início do `linkedin-share-automation.js`, atualize `CONFIG.postUrl` para a URL do post que você quer compartilhar.
+
 ---
- 
-## ▶️ Como usar
- 
+
+## Uso
+
+Execute o script:
+
 ```bash
 node linkedin-share-automation.js
 ```
- 
-**Na primeira execução:**
-- Um navegador abrirá na tela de login do LinkedIn
-- Faça o login **manualmente**
-- Aguarde carregar o feed
-- O script salva a sessão automaticamente e começa os envios
-**Nas execuções seguintes:**
-- O script entra direto, sem precisar logar novamente
-- Contatos que já receberam mensagem são pulados automaticamente
+
+### Funcionamento
+
+- Na primeira execução, o navegador abre e você precisa fazer login manualmente.
+- Se o LinkedIn pedir verificação por código, complete no browser e pressione `ENTER` no terminal.
+- Depois do login, o script salva a sessão em `session.json` e segue com os envios.
+- Nas próximas execuções, ele tenta usar a sessão salva antes de fazer login novamente.
+
 ---
- 
-## 🛡️ Segurança anti-ban
- 
-O script foi construído para minimizar o risco de bloqueio da conta:
- 
-| Recurso | Descrição |
-|---|---|
-| **Delays aleatórios** | Espera entre 60 e 150 segundos entre cada envio |
-| **Simulação humana** | A cada 2 envios, navega pelo feed ou notificações |
-| **Digitação cadenciada** | Digita a mensagem letra por letra com delay de 60ms |
-| **Seletores com validação** | Verifica o nome antes de clicar no contato |
-| **Headless: false** | Navegador visível, comportamento menos suspeito |
-| **Retry automático** | 2 tentativas por contato antes de desistir |
- 
-> ⚠️ Mesmo com todas as proteções, use com moderação. Recomenda-se no máximo **20 a 30 envios por dia**.
- 
+
+## Ajustes úteis
+
+- Mude `batchSize` em `linkedin-share-automation.js` para alterar o número de contatos por lote.
+- Se o script estiver usando a conta errada, delete `session.json` e `session-meta.json` antes de rodar de novo.
+
 ---
- 
-## 📄 Arquivos gerados automaticamente
- 
-| Arquivo | Função |
-|---|---|
-| `session.json` | Cookies de sessão do LinkedIn. Delete para forçar novo login. |
-| `enviados.json` | Lista de quem já recebeu mensagem. Impede reenvios em caso de reinício. |
-| `log.txt` | Registro completo com data e hora de cada ação e erro. |
- 
+
+## Comportamento de segurança
+
+O script inclui alguns controles para reduzir risco de bloqueio:
+
+- intervalos aleatórios entre envios
+- navegação pelo feed ou notificações a cada dois envios
+- navegador visível (`headless: false`)
+- duas tentativas por envio antes de pular o contato
+
+Use com moderação e evite enviar muitas mensagens em sequência.
+
 ---
- 
-## 🔍 Solução de problemas
- 
-**O script não encontra o botão "Enviar" da publicação**
-- Verifique se a URL do post em `CONFIG.postUrl` está correta e acessível
-- O post pode ter sido removido ou a URL mudou
-**O contato não é encontrado na busca**
-- Verifique se o nome no CSV está exatamente igual ao do LinkedIn
-- Confirme que vocês são conexões (o LinkedIn bloqueia DMs para não-conexões)
-**Erro de sessão / redirecionado para o login**
-- Delete o arquivo `session.json` e execute novamente para fazer um novo login
-**A mensagem aparece vazia ao enviar**
-- Verifique se o arquivo `mensagem.txt` existe e tem conteúdo
-- Confirme que o marcador está escrito exatamente como `{{firstName}}`
-**Variáveis de ambiente não carregadas**
-- Confirme que o arquivo se chama exatamente `.env` (não `.evn` ou `env.txt`)
-- Verifique se o `require('dotenv').config()` está na primeira linha do script
+
+## Arquivos gerados
+
+- `session.json` – guarda a sessão do navegador
+- `session-meta.json` – registra a conta usada
+- `enviados.json` – contatos já processados
+- `log.txt` – log detalhado de execução
+
 ---
- 
-## 📌 Dependências
- 
-| Pacote | Versão | Função |
-|---|---|---|
-| `playwright` | ^1.59.1 | Controle do navegador |
-| `csv-parser` | ^3.2.0 | Leitura do CSV de contatos |
-| `dotenv` | latest | Leitura do arquivo `.env` |
- 
+
+## Dependências
+
+- `dotenv` – carrega variáveis do `.env`
+- `csv-parser` – lê o arquivo `contatos.csv`
+- `playwright` – controla o navegador Chrome
