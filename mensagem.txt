@@ -1,5 +1,3 @@
-Bom dia, tudo certo?
-
-Com as novas exigências na Manifestação do Destinatário, o Fisco passa a cruzar os dados de forma ainda mais automatizada para validar a manutenção da imunidade fiscal. Se houver qualquer quebra de rastreabilidade entre a origem e o destino, a conta do imposto retroativo é cobrada direto de quem emitiu a nota.
-
-A equipe da ExportControl detalhou o impacto prático dessa recente mudança e como blindar a sua operação antes que qualquer inconsistência vire uma autuação. Vale a leitura técnica no post abaixo:
+Muitas empresas acreditam que, quando a trading devolve a nota fiscal porque a exportação não aconteceu, o problema fiscal está resolvido.
+Em uma fiscalização, a Receita Estadual pode exigir a comprovação da movimentação física dessa devolução, e a ausência dessa documentação pode gerar cobrança de ICMS, multas e juros.
+Compartilhei uma publicação explicando esse cenário e por que esse risco costuma passar despercebido nas exportações indiretas. Vale a leitura!

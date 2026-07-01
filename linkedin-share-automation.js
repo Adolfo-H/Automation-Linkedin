@@ -10,7 +10,7 @@ const SESSION_META_FILE = 'session-meta.json';
 const SENT_FILE = 'enviados.json';
 
 const CONFIG = {
-  postUrl: 'https://www.linkedin.com/posts/export-control_alerta-fiscal-mudan%C3%A7a-na-manifesta%C3%A7%C3%A3o-activity-7467284055873544192-i2d1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE6h4DIBN3u9tybRm2aS5FNVwT9cUKwdWKk',
+  postUrl: 'https://www.linkedin.com/posts/export-control_a-ilus%C3%A3o-da-devolu%C3%A7%C3%A3o-por-que-receber-a-activity-7478061653650051072-LAYQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE6h4DIBN3u9tybRm2aS5FNVwT9cUKwdWKk',
   csvFile: 'contatos.csv',
   batchSize: 10,
   minDelay: 60000,
@@ -109,6 +109,141 @@ async function fillFirstVisible(page, selectors, value) {
   }
 
   return null;
+}
+
+async function findVisibleModal(page, selectors) {
+  for (const selector of selectors) {
+    const locator = page.locator(selector);
+    const count = await locator.count().catch(() => 0);
+
+    for (let i = 0; i < count; i++) {
+      const candidate = locator.nth(i);
+      try {
+        await candidate.waitFor({ state: 'visible', timeout: 2000 });
+        return candidate;
+      } catch (e) {
+        // continue trying other matches
+      }
+    }
+  }
+
+  for (const selector of selectors) {
+    try {
+      const fallback = page.locator(selector).first();
+      await fallback.waitFor({ state: 'visible', timeout: 5000 });
+      return fallback;
+    } catch (e) {
+      // continue trying other selectors
+    }
+  }
+
+  return null;
+}
+
+async function findRecipientField(modal) {
+  // Prefer input search fields at the top of the modal to avoid selecting the message box
+  const inputSelectors = [
+    'input[placeholder*="Digite"]',
+    'input[placeholder*="Pesquisar"]',
+    'input[placeholder*="Search"]',
+    'input[aria-label*="Pesquisar"]',
+    'input[aria-label*="Search"]',
+    'input[type="search"]',
+    'input[role="combobox"]',
+    'input'
+  ];
+
+  let modalBox = null;
+  try { modalBox = await modal.boundingBox(); } catch (e) { modalBox = null; }
+
+  for (const selector of inputSelectors) {
+    const locator = modal.locator(selector);
+    const count = await locator.count().catch(() => 0);
+    for (let i = 0; i < count; i++) {
+      const candidate = locator.nth(i);
+      try {
+        if (!(await candidate.isVisible().catch(() => false))) continue;
+        const box = await candidate.boundingBox().catch(() => null);
+        if (box && modalBox) {
+          // prefer inputs in the upper region of the modal (avoid message textarea at bottom)
+          if (box.y > (modalBox.y + modalBox.height * 0.6)) continue;
+        }
+        await candidate.scrollIntoViewIfNeeded().catch(() => {});
+        log(`findRecipientField -> chosen input selector: ${selector}`);
+        return candidate;
+      } catch (e) {
+        // continue
+      }
+    }
+  }
+
+  // fallback: try textarea selectors but still prefer upper modal region
+  const textareaSelectors = ['textarea[placeholder*="Pesquisar"]','textarea[placeholder*="Search"]','textarea','div[contenteditable="true"]'];
+  for (const selector of textareaSelectors) {
+    const locator = modal.locator(selector);
+    const count = await locator.count().catch(() => 0);
+    for (let i = 0; i < count; i++) {
+      const candidate = locator.nth(i);
+      try {
+        if (!(await candidate.isVisible().catch(() => false))) continue;
+        const box = await candidate.boundingBox().catch(() => null);
+        if (box && modalBox) {
+          if (box.y > (modalBox.y + modalBox.height * 0.85)) continue; // avoid bottom-most editors
+        }
+        await candidate.scrollIntoViewIfNeeded().catch(() => {});
+        log(`findRecipientField -> chosen fallback selector: ${selector}`);
+        return candidate;
+      } catch (e) {}
+    }
+  }
+
+  // last resort: return the first focusable input-like element inside modal
+  return modal.locator('input, textarea, [contenteditable="true"]').first();
+}
+
+
+async function typeIntoRecipientField(locator, value) {
+  await locator.click({ force: true });
+  await locator.scrollIntoViewIfNeeded().catch(() => {});
+
+  const isContentEditable = await locator.evaluate((el) => el.isContentEditable).catch(() => false);
+  const isTextInput = await locator.evaluate((el) => el instanceof HTMLTextAreaElement || el instanceof HTMLInputElement).catch(() => false);
+
+  if (isContentEditable) {
+    try {
+      await locator.focus();
+      await locator.type(value, { delay: 100 });
+      return;
+    } catch (e) {
+      // fallback: append a text node so we don't wipe existing child 'pills'
+      try {
+        await locator.evaluate((el, text) => {
+          const tn = document.createTextNode(text);
+          el.appendChild(tn);
+          el.dispatchEvent(new InputEvent('input', { bubbles: true }));
+        }, value);
+        return;
+      } catch (err) {
+        // last resort: continue to text input branch below
+      }
+    }
+  }
+
+  if (isTextInput) {
+    await locator.press('Control+a').catch(() => {});
+    await locator.fill('');
+    await locator.type(value, { delay: 100 });
+    return;
+  }
+
+  // generic fallback: try focusing and typing
+  try {
+    await locator.focus();
+    await locator.type(value, { delay: 100 });
+  } catch (e) {
+    try { await locator.fill(''); } catch (err) {}
+    await locator.type(value, { delay: 100 });
+  }
 }
 
 async function fillByLabelOrSelector(page, candidates, value) {
@@ -215,6 +350,200 @@ async function fillMessageInModal(modal, contact) {
   return false;
 }
 
+async function ensureMessageInModal(modal, message) {
+  const modalBox = await modal.boundingBox().catch(() => null);
+  const bottomSelectors = [
+    'textarea[placeholder*="Escrever"]',
+    'textarea[placeholder*="Write a message"]',
+    'textarea[placeholder*="Add a message"]',
+    'textarea',
+    'div[contenteditable="true"][role="textbox"]',
+    'div[contenteditable="true"]'
+  ];
+
+  for (const selector of bottomSelectors) {
+    const locator = modal.locator(selector);
+    const count = await locator.count().catch(() => 0);
+    for (let i = 0; i < count; i++) {
+      const candidate = locator.nth(i);
+      try {
+        if (!(await candidate.isVisible().catch(() => false))) continue;
+        const box = await candidate.boundingBox().catch(() => null);
+        // prefer elements in lower part of modal
+        if (modalBox && box && box.y < (modalBox.y + modalBox.height * 0.5)) continue;
+
+        // fill without wiping selected recipients
+        const isTextInput = await candidate.evaluate((el) => el instanceof HTMLTextAreaElement || el instanceof HTMLInputElement).catch(() => false);
+        const isContentEditable = await candidate.evaluate((el) => el.isContentEditable).catch(() => false);
+
+        if (isTextInput) {
+          await candidate.focus();
+          await candidate.fill('');
+          await candidate.type(message, { delay: 30 });
+          await candidate.evaluate((el) => { el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); });
+          await sleep(300);
+          log('ensureMessageInModal -> filled textarea');
+          return true;
+        }
+
+        if (isContentEditable) {
+          await candidate.focus();
+          try {
+            await candidate.type(message, { delay: 30 });
+          } catch (e) {
+            // fallback: append text node
+            await candidate.evaluate((el, text) => {
+              const tn = document.createTextNode(text);
+              el.appendChild(tn);
+              el.dispatchEvent(new InputEvent('input', { bubbles: true }));
+            }, message);
+          }
+          await candidate.evaluate((el) => el.dispatchEvent(new Event('input', { bubbles: true })));
+          await sleep(300);
+          log('ensureMessageInModal -> filled contenteditable');
+          return true;
+        }
+      } catch (e) {
+        // continue
+      }
+    }
+  }
+
+  return false;
+}
+
+async function getModalText(modal) {
+  return (await modal.innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
+}
+
+async function waitForRecipientSelection(modal, contact, timeout = 4000) {
+  const targetTokens = [contact.fullName, contact.firstName, contact.fullName.split(' ')[0]].filter(Boolean);
+  const deadline = Date.now() + timeout;
+
+  while (Date.now() < deadline) {
+    const text = await getModalText(modal);
+    if (targetTokens.some(token => token && text.includes(token))) {
+      return true;
+    }
+    await sleep(300);
+  }
+
+  return false;
+}
+
+async function findDialogActionButton(modal, patterns) {
+  const candidates = modal.locator('button, a');
+  const count = await candidates.count().catch(() => 0);
+
+  for (let i = 0; i < count; i++) {
+    const candidate = candidates.nth(i);
+    try {
+      if (!(await candidate.isVisible().catch(() => false))) continue;
+      const text = (await candidate.textContent().catch(() => '')).replace(/\s+/g, ' ').trim();
+      const aria = (await candidate.getAttribute('aria-label').catch(() => '')).trim();
+      const combined = `${text} ${aria}`.trim();
+      if (patterns.some(pattern => pattern.test(combined))) return candidate;
+    } catch (e) {
+      // continuar procurando
+    }
+  }
+
+  return null;
+}
+
+async function clickSendSeparately(page, modal) {
+  const tryPatterns = [/enviar separadamente/i, /send separately/i, /enviar separad/i, /enviar como grupo/i];
+  // 1) Try modal-local patterns
+  let btn = await findDialogActionButton(modal, tryPatterns);
+  if (btn) {
+    try {
+      await btn.click({ force: true });
+      await sleep(1200);
+      return true;
+    } catch (e) {
+      // continue to other strategies
+    }
+  }
+
+  // 2) Search for buttons whose text includes 'separad' anywhere in modal
+  try {
+    const all = modal.locator('button, a');
+    const total = await all.count().catch(() => 0);
+    for (let i = 0; i < total; i++) {
+      const candidate = all.nth(i);
+      try {
+        if (!(await candidate.isVisible().catch(() => false))) continue;
+        const text = (await candidate.textContent().catch(() => '')).trim();
+        if (/separad/i.test(text) || /separately/i.test(text)) {
+          await candidate.click({ force: true });
+          await sleep(1200);
+          return true;
+        }
+      } catch (e) {}
+    }
+  } catch (e) {}
+
+  // 3) Global fallback: search whole document for matching button or link
+  try {
+    const did = await page.evaluate(() => {
+      const patterns = [/enviar separadamente/i, /send separately/i, /enviar separad/i];
+      const els = Array.from(document.querySelectorAll('button, a'));
+      for (const el of els) {
+        const text = (el.textContent || '').trim();
+        const aria = (el.getAttribute && el.getAttribute('aria-label')) || '';
+        const combined = `${text} ${aria}`;
+        if (patterns.some(p => p.test(combined))) { el.click(); return true; }
+      }
+      return false;
+    });
+    if (did) { await sleep(1200); return true; }
+  } catch (e) {}
+
+  // 4) Positional heuristic: click the primary action at bottom-right of modal
+  try {
+    const mb = await modal.boundingBox().catch(() => null);
+    if (mb) {
+      const candidates = modal.locator('button, a');
+      const total = await candidates.count().catch(() => 0);
+      let best = null;
+      let bestScore = -Infinity;
+      for (let i = 0; i < total; i++) {
+        const c = candidates.nth(i);
+        try {
+          if (!(await c.isVisible().catch(() => false))) continue;
+          const b = await c.boundingBox().catch(() => null);
+          if (!b) continue;
+          // prefer elements near bottom-right
+          const score = (b.x - mb.x) + (b.y - mb.y) + (mb.x + mb.width - (b.x + b.width));
+          if (score > bestScore) { bestScore = score; best = c; }
+        } catch (e) {}
+      }
+      if (best) {
+        try { await best.click({ force: true }); await sleep(1200); return true; } catch (e) {}
+      }
+    }
+  } catch (e) {}
+
+  return false;
+}
+
+async function commitRecipientSelection(page, modal, searchInput) {
+  try {
+    await searchInput.press('Enter');
+    await sleep(250);
+  } catch (e) {}
+
+  try {
+    await searchInput.press('Tab');
+    await sleep(250);
+  } catch (e) {}
+
+  try {
+    await modal.click({ position: { x: 10, y: 10 } });
+    await sleep(250);
+  } catch (e) {}
+}
+
 async function selectSuggestionRow(page, modal, row, logPrefix = '') {
   const label = row.locator('label').first();
   const checkbox = row.locator('input[type="checkbox"]').first();
@@ -246,6 +575,18 @@ async function selectSuggestionRow(page, modal, row, logPrefix = '') {
   }
 
   if (await attemptClick(row, 'linha')) return true;
+
+  try {
+    await row.evaluate((el) => {
+      const eventOptions = { bubbles: true, cancelable: true };
+      el.dispatchEvent(new MouseEvent('mousedown', eventOptions));
+      el.dispatchEvent(new MouseEvent('mouseup', eventOptions));
+      el.dispatchEvent(new MouseEvent('click', eventOptions));
+    });
+    return true;
+  } catch (err) {
+    log(`${logPrefix}Falha ao disparar clique JS na linha: ${err.message}`);
+  }
 
   if ((await checkbox.count()) > 0) {
     try {
@@ -326,33 +667,9 @@ async function sendToContact(page, contact) {
     // 3️⃣ ESPERAR O MODAL ABRIR (testa vários seletores e salva debug se falhar)
     log('Aguardando modal...');
     const modalSelectors = ['dialog[open]', 'dialog[data-testid="dialog"]', 'dialog', '.artdeco-modal', '[role="dialog"]', 'div[aria-modal="true"]', '.share-box', '.msg-overlay-conversation-container'];
-    let modal = null;
-    let found = false;
+    const modal = await findVisibleModal(page, modalSelectors);
 
-    for (const sel of modalSelectors) {
-      try {
-        const loc = page.locator(sel).last();
-        await loc.waitFor({ state: 'visible', timeout: 10000 });
-        modal = loc;
-        found = true;
-        break;
-      } catch (e) {
-        // continua tentando outros seletores
-      }
-    }
-
-    if (!found) {
-      try {
-        const loc = page.locator('[role="dialog"], div[aria-modal="true"]').last();
-        await loc.waitFor({ state: 'visible', timeout: 5000 });
-        modal = loc;
-        found = true;
-      } catch (e) {
-        // nada
-      }
-    }
-
-    if (!found) {
+    if (!modal) {
       log('✗ Modal não detectado pelo Playwright! Salvando debug...');
       const debugTime = Date.now();
       const screenshotPath = `debug_modal_${debugTime}.png`;
@@ -365,14 +682,12 @@ async function sendToContact(page, contact) {
     }
 
     // 4️⃣ PROCURAR E PREENCHER O CAMPO DE BUSCA DENTRO DO MODAL
-    const searchInput = modal.locator('input[placeholder*="Pesquisar"], input[placeholder*="Search"]').first();
+    const searchInput = await findRecipientField(modal);
     await searchInput.waitFor({ state: 'visible', timeout: 5000 });
 
     // Garantir foco e digitar com pequena latência para acionar o autocomplete
-    await searchInput.click({ force: true });
-    await searchInput.fill('');
     log(`Digitando nome: ${contact.fullName}`);
-    await searchInput.type(contact.fullName, { delay: 100 });
+    await typeIntoRecipientField(searchInput, contact.fullName);
     await sleep(1500); // Aguardar sugestões carregarem
 
     // 5️⃣ TENTAR SELECIONAR O CONTATO NAS SUGESTÕES
@@ -625,29 +940,9 @@ async function sendBatchToContacts(page, contactsBatch) {
 
   log('Aguardando modal...');
   const modalSelectors = ['dialog[open]', 'dialog[data-testid="dialog"]', 'dialog', '.artdeco-modal', '[role="dialog"]', 'div[aria-modal="true"]', '.share-box', '.msg-overlay-conversation-container'];
-  let modal = null;
-  let found = false;
+  const modal = await findVisibleModal(page, modalSelectors);
 
-  for (const sel of modalSelectors) {
-    try {
-      const loc = page.locator(sel).last();
-      await loc.waitFor({ state: 'visible', timeout: 10000 });
-      modal = loc;
-      found = true;
-      break;
-    } catch (e) {}
-  }
-
-  if (!found) {
-    try {
-      const loc = page.locator('[role="dialog"], div[aria-modal="true"]').last();
-      await loc.waitFor({ state: 'visible', timeout: 5000 });
-      modal = loc;
-      found = true;
-    } catch (e) {}
-  }
-
-  if (!found) {
+  if (!modal) {
     log('✗ Modal não detectado pelo Playwright! Salvando debug...');
     const debugTime = Date.now();
     await page.screenshot({ path: `debug_modal_${debugTime}.png`, fullPage: true }).catch(() => {});
@@ -658,12 +953,10 @@ async function sendBatchToContacts(page, contactsBatch) {
   const selectedRecipients = new Set();
 
   for (const contact of contactsBatch) {
-    const searchInput = modal.locator('input[placeholder*="Pesquisar"], input[placeholder*="Search"]').first();
+    const searchInput = await findRecipientField(modal);
     await searchInput.waitFor({ state: 'visible', timeout: 5000 });
-    await searchInput.click({ force: true });
-    await searchInput.fill('');
     log(`Digitando nome: ${contact.fullName}`);
-    await searchInput.type(contact.fullName, { delay: 100 });
+    await typeIntoRecipientField(searchInput, contact.fullName);
     await sleep(1500);
 
     log('Buscando contato nos resultados...');
@@ -681,6 +974,16 @@ async function sendBatchToContacts(page, contactsBatch) {
       if (text.includes(contact.fullName) || text.includes(contact.firstName)) {
         log(`Correspondência encontrada na linha ${i}: ${text}`);
         selected = await selectSuggestionRow(page, modal, r, 'Sugestão correspondente: ');
+        if (selected) {
+          await sleep(500);
+          const confirmed = await waitForRecipientSelection(modal, contact, 5000);
+          if (!confirmed) {
+            log('Seleção ainda não apareceu no modal; tentando confirmar por teclado...');
+            try {
+              await commitRecipientSelection(page, modal, searchInput);
+            } catch (e) {}
+          }
+        }
         break;
       }
     }
@@ -688,6 +991,15 @@ async function sendBatchToContacts(page, contactsBatch) {
     if (!selected && count > 0) {
       log('Nenhuma correspondência exata encontrada; marcando a primeira sugestão disponível.');
       selected = await selectSuggestionRow(page, modal, rows.first(), 'Primeira sugestão: ');
+      if (selected) {
+        await sleep(500);
+        const confirmed = await waitForRecipientSelection(modal, contact, 5000);
+        if (!confirmed) {
+          try {
+            await commitRecipientSelection(page, modal, searchInput);
+          } catch (e) {}
+        }
+      }
     }
 
     if (!selected) {
@@ -695,56 +1007,32 @@ async function sendBatchToContacts(page, contactsBatch) {
       continue;
     }
 
-    selectedRecipients.add(contact.fullName);
+    const confirmedSelection = await waitForRecipientSelection(modal, contact, 5000);
+    if (confirmedSelection) {
+      selectedRecipients.add(contact.fullName);
+      log(`✓ Destinatário confirmado: ${contact.fullName}`);
+    } else {
+      log(`⚠️ Destinatário ${contact.fullName} não ficou visível na lista após a seleção.`);
+    }
     await sleep(600);
   }
 
   const firstContact = contactsBatch[0];
-  const messageFilled = await fillMessageInModal(modal, firstContact);
+  const message = template.replace(/\{\{\s*firstName\s*\}\}/gi, firstContact.firstName);
+  let messageFilled = false;
+  try {
+    messageFilled = await ensureMessageInModal(modal, message);
+  } catch (e) {
+    messageFilled = await fillMessageInModal(modal, firstContact).catch(() => false);
+  }
   if (messageFilled) log('Mensagem preenchida com sucesso.');
 
   log('Aguardando botões finais do modal...');
-  const sendSeparatelyCandidates = [
-    modal.getByRole('button', { name: /enviar separadamente/i }).first(),
-    modal.locator('button:has-text("Enviar separadamente")').first(),
-    modal.locator('a:has-text("Enviar separadamente")').first(),
-    modal.locator('[aria-label="Enviar separadamente"]').first()
-  ];
-
-  let sendSeparatelyBtn = null;
-  for (const candidate of sendSeparatelyCandidates) {
-    if ((await candidate.count().catch(() => 0)) === 0) continue;
-    if (await candidate.isVisible().catch(() => false)) {
-      sendSeparatelyBtn = candidate;
-      break;
-    }
-  }
-
-  if (!sendSeparatelyBtn) {
-    log('✗ Botão "Enviar separadamente" não encontrado.');
+  // Use the robust helper to click the private/send-separately action with fallbacks
+  const clicked = await clickSendSeparately(page, modal).catch(() => false);
+  if (!clicked) {
+    log('✗ Falha ao acionar a ação de "Enviar separadamente" (todos os fallback falharam).');
     return false;
-  }
-
-  const start = Date.now();
-  while (Date.now() - start < 10000) {
-    try {
-      if (await sendSeparatelyBtn.isVisible() && await sendSeparatelyBtn.isEnabled()) break;
-    } catch (e) {}
-    await sleep(300);
-  }
-
-  try {
-    await sendSeparatelyBtn.click({ force: true });
-  } catch (err) {
-    log(`Aviso: falha ao clicar no botão "Enviar separadamente" via Playwright: ${err.message}`);
-    await page.evaluate(() => {
-      const btn = Array.from(document.querySelectorAll('button, a')).find(el => {
-        const text = el.textContent?.trim();
-        const aria = el.getAttribute('aria-label');
-        return /enviar separadamente/i.test(text || '') || /enviar separadamente/i.test(aria || '');
-      });
-      btn?.click();
-    });
   }
 
   log(`✓✓✓ SUCESSO: COMPARTILHADO COM LOTE DE ${selectedRecipients.size} CONTATOS ✓✓✓`);
